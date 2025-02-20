@@ -1,0 +1,62 @@
+:root {
+  --background: #ffffff;
+
+  --text-primary: #1A1A1A;
+
+  --primary: #5955E7;
+
+
+  --gray-g20: #F5F5F5;
+
+  /* --------Fonts------------- */
+  /* Base Reguair */
+  --font-inter: 'Inter', sans-serif;
+  --font-base-size: 1rem;
+  --font-base-line: 1.4;
+  --font-base-weight: 400;
+
+  /* ---------------------------- */
+
+
+
+
+
+
+  --gray-rgb: 0, 0, 0;
+  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
+  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
+  
+  
+  --primary-hover: #4338CA;
+  
+  
+  --text-secondary: #6B7280;
+  
+  --button-primary-hover: #383838;
+  --button-secondary-hover: #f2f2f2;
+  
+  --max-width: 1200px;
+  --header-height: 80px;
+  --border-radius: 6px;
+}
+
+
+  /* --foreground: #171717; */
+
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    
+    --gray-rgb: 255, 255, 255;
+    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
+    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
+    
+    --text-primary: #ededed;
+    --text-secondary: #9CA3AF;
+    
+    --button-primary-hover: #ccc;
+    --button-secondary-hover: #1a1a1a;
+  }
+} */
