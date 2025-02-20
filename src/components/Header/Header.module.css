@@ -1,18 +1,23 @@
 .header {
+  height: var(--header-height);
   position: fixed;
   top: 0;
   width: 100%;
   background: var(--background);
   z-index: 100;
   border-bottom: 1px solid var(--gray-g20);
+  display: flex;
+  justify-content: center;
 }
 
-.container {
+nav.headerNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: clamp(32px, 5vw + 16px, 150px);
-  padding-block: 16px;
+  padding: 16px 32px;
+  max-width: 1140px;
+  width: 100%;
+  box-sizing: content-box;
 }
 
 .logo {
