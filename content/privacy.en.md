@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Effective Date: [YYYY-MM-DD] · Version 1.0
+Effective Date: 2026-08-26 · Version 1.0
 
 This Privacy Policy ("Policy") explains how Oleh Herasymenko ("we", "us", "our") collects, uses and protects your personal information when you use the mobile application Eduvia (the "App").
 
@@ -36,7 +36,7 @@ Website: <https://geteduvia.com>
 - **Controller**: Oleh Herasymenko, who decides why and how personal data is processed.
 - **You, User**: any person who uses the App.
 - **App**: the mobile application Eduvia, available on the App Store.
-- **AI Tutor ("Torsten")**: the automated voice tutor in the App. It runs conversation practice in German and generates feedback using Google's Gemini models. Torsten is software, not a human.
+- **AI Tutor ("Thorsten")**: the automated voice tutor in the App. It runs conversation practice in German and generates feedback using Google's Gemini models. Thorsten is software, not a human.
 - **Practice Session**: a spoken exercise with the AI Tutor: a free conversation or one of the role-play scenarios.
 - **Voice Data**: the audio of your speech captured during a Practice Session.
 - **Transcript**: the text record of a Practice Session: your utterances as recognized by the AI, the tutor's replies, and the corrections, hints and translations shown to you.
@@ -45,7 +45,7 @@ Website: <https://geteduvia.com>
 
 ## 2. What Eduvia is
 
-Eduvia is an app for practicing spoken German with an AI voice tutor. It offers free conversation, 204 role-play scenarios from A1 to C1, live corrections, an analysis after each session in your own language, a long-term tutor memory, a vocabulary trainer with spaced repetition, progress statistics, short reading texts, and translation of any tutor phrase. The interface and content are available in ten languages.
+Eduvia is an app for practicing spoken German with an AI voice tutor. It offers free conversation, 202 role-play scenarios from A1 to C1, live corrections, an analysis after each session in your own language, a long-term tutor memory, a vocabulary trainer with spaced repetition, progress statistics, short reading texts, and translation of any tutor phrase. The interface and content are available in ten languages.
 
 Eduvia is an independent practice tool. It contains no exam simulations and is not connected to any examination provider. Details are in the [Terms of Use](https://geteduvia.com/terms).
 
@@ -56,11 +56,11 @@ Eduvia is an independent practice tool. It contains no exam simulations and is n
 - Your Firebase user ID, your email address, your display name from your Apple or Google profile, and your profile photo URL.
 - A "pronounceable name": a simplified version of your name that the German voice can pronounce, for example transliterated from Cyrillic to Latin letters.
 - Your interface language, time zone, tutor voice, daily learning goal in minutes, and the adaptive learning pause setting.
-- Your reminder settings: whether reminders are on, the daily reminder with its hour and minute, streak reminders, weekly progress, words due for review, and quiet hours.
+- Your reminder settings: whether reminders are on, the daily reminder with its hour and minute, streak reminders, weekly progress, and words due for review.
 - Your tutor settings: speech speed, automatic audio for word cards, and microphone mode (hands-free or push-to-talk).
 - Your two privacy decisions with their dates: analytics on or off, and crash reports on or off (Section 7).
-- Your interests (at least three). They shape the topics of your conversations.
-- Your learning goal: a type (everyday life, work, exam, or maintaining the language), an optional free-text description, and an optional exam name. The exam name only guides conversation topics; the App contains no exam simulations.
+- Your interests. They shape the topics of your conversations.
+- Your learning goal: the type of goal you pursue (everyday life, work, exam, or maintaining the language); if you add a description or an exam name, they are stored too. The exam name only guides conversation topics; the App contains no exam simulations.
 - An internal customer identifier for RevenueCat (rcAppUserId) that we create. It is not your name or email.
 
 ### 3.2 Tutor Memory: what the tutor remembers about you
@@ -69,9 +69,8 @@ After each free-conversation session, the AI automatically extracts stable perso
 
 Each memory entry contains:
 
-- a topic, such as home, work, family, hobby or plans (the model may choose other topics),
-- a short phrase in your native language, up to 160 characters,
-- a note whether the tutor should ask about it next time.
+- a topic, such as home, work, family, hobby or plans; if you raise them yourself, notes can also touch sensitive areas such as your health or residence status (Section 3.5),
+- a short note in your native language.
 
 The AI also keeps "open topics": things worth asking about in the next conversation.
 
@@ -96,7 +95,7 @@ Important things to know:
 ### 3.4 Technical and service data
 
 - AI usage records: the number of AI calls, tokens, and the estimated cost per session, per month and in total. We use them only to protect the service from abuse and to control our own costs. They are internal service records and are not part of your data export.
-- Subscription records: your subscription state, the start of the current usage window, the time of the last check with RevenueCat, and the usage counter for the window.
+- Subscription records: your subscription state and whether it will renew, the start of the current usage window, the time of the last check with RevenueCat, the usage counter for the window, and related technical details reported by RevenueCat (such as the store and environment of the purchase).
 - Server logs: see Section 3.6.
 - Push tokens: none. Eduvia sends no push notifications from servers (Section 6).
 
@@ -114,9 +113,9 @@ Practical advice: do not say things you do not want stored.
 
 ### 3.6 Server logs and IP addresses
 
-Our servers keep technical logs so we can find errors and protect the service. Besides the time of a request, the type of operation and error codes, the logs may contain **short excerpts of your conversation with the tutor**. We do not use logs to study you or build a profile of you: they exist only for diagnostics. Logs are deleted automatically within 7 days, including after account deletion.
+Our servers keep technical logs so we can find errors and protect the service. Besides the time of a request, the type of operation, error codes, your user ID, session identifiers and technical usage figures, the logs may contain **short excerpts of your conversation with the tutor**. We do not use logs to study you or build a profile of you: they exist only for diagnostics. Logs are deleted automatically within 7 days, including after account deletion.
 
-The logs of our load balancer and API contain IP addresses. Legal basis: our legitimate interest in security and diagnostics (Art. 6(1)(f) GDPR).
+The logs of our load balancer contain IP addresses. Legal basis: our legitimate interest in security and diagnostics (Art. 6(1)(f) GDPR).
 
 ### 3.7 Processing on your device
 
@@ -139,20 +138,22 @@ The AI Tutor is powered by Google's Gemini models. For each Practice Session, th
 - your recurring grammar weak spots, so the tutor can weave practice into the conversation,
 - the scenario context: the tutor's role, the situation, and your goals,
 - **the audio of each utterance you speak**,
-- your recent utterances in the session,
-- your time zone and locale.
+- your recent utterances in the session.
 
-Outside of sessions, we send to Gemini:
+Outside of a live session, we also use Gemini for:
 
 - text you ask the App to translate,
-- text for the Reader feature,
-- the full session Transcript, to produce the post-session analysis.
+- generating Reader texts (the request contains your level and, if you choose one, a topic),
+- the post-session analysis: the full session Transcript, together with your stored facts, your recurring weak spots and the scenario goals,
+- your saved words: to complete word cards, we send batches of your saved words together with the sentence each word came from,
+- your name: to create the "pronounceable name" (Section 3.1), we send the name from your profile once at onboarding and when you change it,
+- a short request that turns a level change into one sentence of feedback (it contains only the two levels and your app language).
 
 **What we do NOT send to Gemini:** your email address, your Firebase user ID, device identifiers, payment information, or subscription data.
 
 ### Where this processing happens
 
-Your account data is stored in Google Cloud Firestore in the Frankfurt region (Germany, EU). Our API and voice synthesis run on Hetzner servers in Germany. For understanding speech and generating the tutor's replies we use Google's Gemini model via Vertex AI: this model is not yet available in any EU region, so the request during a conversation may be processed on Google's infrastructure outside the EU. This processing is covered by the Google Cloud Data Processing Addendum, the EU Standard Contractual Clauses (SCCs), and Google's certification under the EU-US Data Privacy Framework. Google does not use your data to train its models and does not keep it after processing. As soon as the model becomes available in a European region, we will switch the processing to the EU.
+Your account data is stored in Google Cloud Firestore in the Frankfurt region (Germany, EU). Our API and voice synthesis run on Hetzner servers in Germany. For understanding speech and generating the tutor's replies we use Google's Gemini model via Vertex AI: this model is not yet available in any EU region, so these requests (the live conversation as well as the analysis and the other calls listed above) may be processed on Google's infrastructure outside the EU. This processing is covered by the Google Cloud Data Processing Addendum, the EU Standard Contractual Clauses (SCCs), and Google's certification under the EU-US Data Privacy Framework. Google does not use your data to train its models and does not keep it after processing. As soon as the model becomes available in a European region, we will switch the processing to the EU.
 
 ### What happens to your voice
 
@@ -166,13 +167,13 @@ We use the following providers to run the App.
 
 | Provider | Role | What it receives | Location and safeguards |
 | --- | --- | --- | --- |
-| Google: Firebase Authentication | Sign-in | User ID, email, sign-in method and time | Google Cloud DPA, SCCs, EU-US Data Privacy Framework |
+| Google: Firebase Authentication | Sign-in | User ID, email, sign-in method and time | Global (US) infrastructure; Google Cloud DPA, SCCs, EU-US Data Privacy Framework |
 | Google: Cloud Firestore | Main database | All account and learning data | Frankfurt (europe-west3), EU |
 | Google: Vertex AI (Gemini) | Speech understanding, tutor replies, session analysis | Audio of your utterances plus the context listed in Section 4 | Global endpoint: processing may occur outside the EU; DPA, SCCs, DPF; no model training |
 | Google: Firebase Analytics | Product analytics | App events, only if you consent (Section 7) | DPA, SCCs, DPF |
-| Google: Firebase Crashlytics | Crash reports | Crash stack traces, device model, OS and App version, breadcrumb events | DPA, SCCs, DPF |
+| Google: Firebase Crashlytics | Crash reports | Crash and non-fatal error reports: stack traces, device model, OS and App version, breadcrumb events and technical context keys (Section 7); plus basic service data at each App launch (a Firebase installation identifier and session events) | DPA, SCCs, DPF |
 | Hetzner Online GmbH | Hosting of our API and voice synthesis | Traffic in transit, plus the technical logs of Section 3.6 (IP addresses and possibly short conversation excerpts), kept 7 days; no database of your data | Germany, EU; data processing agreement (AV-Vertrag) |
-| RevenueCat, Inc. | Subscription management | The internal customer ID we create (rcAppUserId) and the purchase and renewal history reported by Apple | USA; SCCs |
+| RevenueCat, Inc. | Subscription management | The internal customer ID we create (rcAppUserId), the purchase and renewal history reported by Apple, and standard technical data its SDK sends with each request (device model and vendor identifier (IDFV), storefront country, app version, IP address) | USA; SCCs |
 | Apple Inc. | App Store and In-App Purchase | Payment data (we never see it) | Under Apple's own terms |
 
 We do not sell your personal data. We never share your data with examination organizations, language schools, or government authorities.
@@ -195,6 +196,7 @@ These are two different things with two different rules.
   - when a session starts and finishes,
   - what you do in the App, for example starting a session, saving a word or opening the subscription page,
   - never your conversations, voice or name.
+- If you agree, analytics events are linked to your user ID, so your usage counts once across your devices; withdrawing consent stops this.
 - Your decision is stored with its date and synced to your account, so it survives reinstalling the App.
 - Advertising signals are disabled: no advertising identifiers (IDFA), no ad personalization, no cross-app tracking, and no tracking prompts. We do not track you.
 - Analytics retention at Google is set to 2 months.
@@ -204,7 +206,7 @@ These are two different things with two different rules.
 - Purpose: keeping the service working. A crash report tells us what broke.
 - **On by default.** Legal basis: our legitimate interest in a stable and secure service (Art. 6(1)(f) GDPR).
 - **You can object at any time**: switch crash reports off under Profile → Privacy.
-- A report contains the crash stack trace, your device model, the OS and App versions, and breadcrumb events. Reports are linked to your user ID so we can investigate problems you tell us about.
+- A report contains the crash stack trace, your device model, the OS and App versions, breadcrumb events, and technical context keys such as the active screen, the session mode, the app language, the state of permissions and your current level estimate. The App also reports non-fatal errors with the same technical context. Reports are linked to your user ID so we can investigate problems you tell us about.
 - Your decision is stored with its date and synced to your account.
 - Crash reports are kept by Google for 90 days (the standard Firebase retention).
 
@@ -266,7 +268,8 @@ The export does not include, and the App tells you this when you export:
 - server logs,
 - notification tokens (Eduvia stores none: reminders are local),
 - copies held by RevenueCat,
-- internal service records about usage costs.
+- the internal customer identifier we create for RevenueCat,
+- internal service records about usage and costs.
 
 ## 11. Your rights
 
@@ -283,7 +286,7 @@ We reply within one month. Contact: <thevaltorna@gmail.com>.
 
 ## 12. Automated processing and AI transparency
 
-You are talking to an artificial intelligence system (transparency under Article 50 of the EU AI Act). Torsten is software, not a human, and the App presents it as such.
+You are talking to an artificial intelligence system (transparency under Article 50 of the EU AI Act). Thorsten is software, not a human, and the App presents it as such.
 
 The App uses AI to recognize your speech, correct you, analyze sessions and estimate your CEFR level. These estimates are approximate study aids. No decision with legal or similarly significant effects is made about you by automated means (Art. 22 GDPR): your estimates are never sent to any examination body, have no effect on any official result, and you can ignore or repeat them at any time.
 
@@ -319,6 +322,6 @@ Website: <https://geteduvia.com>
 
 ## 18. Changelog
 
-**Version 1.0 ([YYYY-MM-DD])**: Initial release.
+**Version 1.0 (2026-08-26)**: Initial release.
 
-© 2026 Eduvia. All rights reserved.
+© 2026 Oleh Herasymenko. All rights reserved.

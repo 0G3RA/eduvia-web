@@ -1,6 +1,6 @@
 # Datenschutzerklärung
 
-Gültig ab: [YYYY-MM-DD] · Version 1.0
+Gültig ab: 2026-08-26 · Version 1.0
 
 Diese Datenschutzerklärung ("Erklärung") beschreibt, wie Oleh Herasymenko ("wir", "uns", "unser") Ihre personenbezogenen Daten verarbeitet und schützt, wenn Sie die mobile Anwendung Eduvia (die "App") nutzen.
 
@@ -36,7 +36,7 @@ Website: <https://geteduvia.com>
 - **Verantwortlicher**: Oleh Herasymenko, der über Zwecke und Mittel der Verarbeitung entscheidet.
 - **Sie, Nutzer**: jede Person, die die App nutzt.
 - **App**: die mobile Anwendung Eduvia aus dem App Store.
-- **KI-Tutor ("Torsten")**: der automatische Sprachtutor der App. Er führt Gesprächsübungen auf Deutsch und erzeugt Rückmeldungen mit Googles Gemini-Modellen. Torsten ist Software, kein Mensch.
+- **KI-Tutor ("Thorsten")**: der automatische Sprachtutor der App. Er führt Gesprächsübungen auf Deutsch und erzeugt Rückmeldungen mit Googles Gemini-Modellen. Thorsten ist Software, kein Mensch.
 - **Übungssitzung**: eine gesprochene Übung mit dem KI-Tutor: ein freies Gespräch oder eines der Rollenspiel-Szenarien.
 - **Sprachdaten**: die Audioaufnahme Ihrer Sprache während einer Übungssitzung.
 - **Transkript**: die Textaufzeichnung einer Übungssitzung: Ihre Äußerungen, wie die KI sie erkannt hat, die Antworten des Tutors sowie die angezeigten Korrekturen, Hinweise und Übersetzungen.
@@ -45,7 +45,7 @@ Website: <https://geteduvia.com>
 
 ## 2. Was Eduvia ist
 
-Eduvia ist eine App zum Üben von gesprochenem Deutsch mit einem KI-Sprachtutor. Sie bietet freie Gespräche, 204 Rollenspiel-Szenarien von A1 bis C1, Korrekturen im laufenden Gespräch, eine Auswertung nach jeder Sitzung in Ihrer Sprache, ein langfristiges Tutor-Gedächtnis, einen Wortschatztrainer mit Intervallwiederholung, Fortschrittsstatistiken, kurze Lesetexte und die Übersetzung jeder Tutor-Äußerung. Oberfläche und Inhalte sind in zehn Sprachen verfügbar.
+Eduvia ist eine App zum Üben von gesprochenem Deutsch mit einem KI-Sprachtutor. Sie bietet freie Gespräche, 202 Rollenspiel-Szenarien von A1 bis C1, Korrekturen im laufenden Gespräch, eine Auswertung nach jeder Sitzung in Ihrer Sprache, ein langfristiges Tutor-Gedächtnis, einen Wortschatztrainer mit Intervallwiederholung, Fortschrittsstatistiken, kurze Lesetexte und die Übersetzung jeder Tutor-Äußerung. Oberfläche und Inhalte sind in zehn Sprachen verfügbar.
 
 Eduvia ist ein unabhängiges Übungswerkzeug. Die App enthält keine Prüfungssimulationen und ist mit keinem Prüfungsanbieter verbunden. Einzelheiten stehen in den [Nutzungsbedingungen](https://geteduvia.com/terms).
 
@@ -56,11 +56,11 @@ Eduvia ist ein unabhängiges Übungswerkzeug. Die App enthält keine Prüfungssi
 - Ihre Firebase-Nutzerkennung, Ihre E-Mail-Adresse, Ihr Anzeigename aus Ihrem Apple- oder Google-Profil und die URL Ihres Profilbilds.
 - Ein "aussprechbarer Name": eine vereinfachte Version Ihres Namens, die die deutsche Stimme aussprechen kann, zum Beispiel aus dem Kyrillischen in lateinische Buchstaben übertragen.
 - Ihre Oberflächensprache, Ihre Zeitzone, die Tutor-Stimme, Ihr tägliches Lernziel in Minuten und die Einstellung der adaptiven Lernpause.
-- Ihre Erinnerungseinstellungen: ob Erinnerungen an sind, die tägliche Erinnerung mit Stunde und Minute, Streak-Erinnerungen, Wochenfortschritt, fällige Wörter zur Wiederholung und Ruhezeiten.
+- Ihre Erinnerungseinstellungen: ob Erinnerungen an sind, die tägliche Erinnerung mit Stunde und Minute, Streak-Erinnerungen, Wochenfortschritt und fällige Wörter zur Wiederholung.
 - Ihre Tutor-Einstellungen: Sprechgeschwindigkeit, automatisches Vorlesen der Wortkarten und Mikrofonmodus (freihändig oder Push-to-talk).
 - Ihre zwei Datenschutz-Entscheidungen mit Datum: Analyse an oder aus, Absturzberichte an oder aus (Abschnitt 7).
-- Ihre Interessen (mindestens drei). Sie prägen die Gesprächsthemen.
-- Ihr Lernziel: eine Art (Alltag, Arbeit, Prüfung oder Sprache erhalten), eine optionale Freitext-Beschreibung und ein optionaler Prüfungsname. Der Prüfungsname steuert nur die Gesprächsthemen; die App enthält keine Prüfungssimulationen.
+- Ihre Interessen. Sie prägen die Gesprächsthemen.
+- Ihr Lernziel: die Art des Ziels (Alltag, Arbeit, Prüfung oder Sprache erhalten); wenn Sie eine Beschreibung oder einen Prüfungsnamen hinzufügen, werden auch diese gespeichert. Der Prüfungsname steuert nur die Gesprächsthemen; die App enthält keine Prüfungssimulationen.
 - Eine interne Kundenkennung für RevenueCat (rcAppUserId), die wir erzeugen. Sie ist weder Ihr Name noch Ihre E-Mail-Adresse.
 
 ### 3.2 Tutor-Gedächtnis: was sich der Tutor über Sie merkt
@@ -69,9 +69,8 @@ Nach jeder Sitzung im freien Gespräch zieht die KI automatisch stabile persönl
 
 Jeder Gedächtniseintrag enthält:
 
-- ein Thema, etwa Wohnen, Arbeit, Familie, Hobby oder Pläne (das Modell kann auch andere Themen wählen),
-- einen kurzen Satz in Ihrer Muttersprache, bis zu 160 Zeichen,
-- einen Vermerk, ob der Tutor beim nächsten Mal danach fragen soll.
+- ein Thema, etwa Wohnen, Arbeit, Familie, Hobby oder Pläne; wenn Sie sie selbst ansprechen, können Notizen auch sensible Bereiche wie Ihre Gesundheit oder Ihren Aufenthaltsstatus berühren (Abschnitt 3.5),
+- eine kurze Notiz in Ihrer Muttersprache.
 
 Die KI führt außerdem "offene Themen": Dinge, nach denen sich im nächsten Gespräch zu fragen lohnt.
 
@@ -96,7 +95,7 @@ Wichtig zu wissen:
 ### 3.4 Technische Daten und Betriebsdaten
 
 - KI-Nutzungsdaten: Anzahl der KI-Aufrufe, Token und geschätzte Kosten je Sitzung, je Monat und insgesamt. Wir nutzen sie nur, um den Dienst vor Missbrauch zu schützen und unsere eigenen Kosten zu kontrollieren. Es sind interne Betriebsdaten und nicht Teil Ihres Datenexports.
-- Abonnementdaten: Ihr Abo-Status, der Beginn des laufenden Nutzungsfensters, der Zeitpunkt des letzten Abgleichs mit RevenueCat und der Nutzungszähler des Fensters.
+- Abonnementdaten: Ihr Abo-Status und ob es sich verlängert, der Beginn des laufenden Nutzungsfensters, der Zeitpunkt des letzten Abgleichs mit RevenueCat, der Nutzungszähler des Fensters sowie zugehörige technische Angaben von RevenueCat (etwa Store und Umgebung des Kaufs).
 - Server-Protokolle: siehe Abschnitt 3.6.
 - Push-Token: keine. Eduvia sendet keine Push-Mitteilungen von Servern (Abschnitt 6).
 
@@ -114,13 +113,13 @@ Praktischer Rat: Sagen Sie nichts, was nicht gespeichert werden soll.
 
 ### 3.6 Server-Protokolle und IP-Adressen
 
-Unsere Server führen technische Protokolle, um Fehler zu finden und den Dienst zu schützen. Neben dem Zeitpunkt der Anfrage, der Art des Vorgangs und Fehlercodes können darin **kurze Ausschnitte Ihres Gesprächs mit dem Tutor** enthalten sein. Wir nutzen die Protokolle nicht, um Sie zu analysieren oder ein Profil zu erstellen: Sie dienen nur der Diagnose. Protokolle werden automatisch innerhalb von 7 Tagen gelöscht, auch nach einer Kontolöschung.
+Unsere Server führen technische Protokolle, um Fehler zu finden und den Dienst zu schützen. Neben dem Zeitpunkt der Anfrage, der Art des Vorgangs, Fehlercodes, Ihrer Nutzerkennung, Sitzungskennungen und technischen Nutzungswerten können darin **kurze Ausschnitte Ihres Gesprächs mit dem Tutor** enthalten sein. Wir nutzen die Protokolle nicht, um Sie zu analysieren oder ein Profil zu erstellen: Sie dienen nur der Diagnose. Protokolle werden automatisch innerhalb von 7 Tagen gelöscht, auch nach einer Kontolöschung.
 
-Die Protokolle unseres Load Balancers und unserer API enthalten IP-Adressen. Rechtsgrundlage: unser berechtigtes Interesse an Sicherheit und Diagnose (Art. 6 Abs. 1 lit. f DSGVO).
+Die Protokolle unseres Load Balancers enthalten IP-Adressen. Rechtsgrundlage: unser berechtigtes Interesse an Sicherheit und Diagnose (Art. 6 Abs. 1 lit. f DSGVO).
 
 ### 3.7 Verarbeitung auf Ihrem Gerät
 
-- Die Spracherkennungsaktivierung läuft vollständig auf Ihrem Telefon. Ein kleines neuronales Modell (Silero VAD, über die Bibliothek FluidAudio) erkennt nur, wann Sie zu sprechen beginnen und aufhören. Es erkennt keine Wörter und sendet nichts.
+- Die Sprachaktivitätserkennung (Voice Activity Detection) läuft vollständig auf Ihrem Telefon. Ein kleines neuronales Modell (Silero VAD, über die Bibliothek FluidAudio) erkennt nur, wann Sie zu sprechen beginnen und aufhören. Es erkennt keine Wörter und sendet nichts.
 - Erinnerungen werden lokal auf Ihrem Telefon geplant (Abschnitt 6).
 
 ### 3.8 Kinder und Jugendliche
@@ -139,20 +138,22 @@ Der KI-Tutor arbeitet mit Googles Gemini-Modellen. Für jede Übungssitzung enth
 - Ihre wiederkehrenden Grammatik-Schwachstellen, damit der Tutor Übung ins Gespräch einweben kann,
 - den Szenario-Kontext: die Rolle des Tutors, die Situation und Ihre Ziele,
 - **das Audio jeder Äußerung, die Sie sprechen**,
-- Ihre letzten Äußerungen in der Sitzung,
-- Ihre Zeitzone und Ihr Gebietsschema.
+- Ihre letzten Äußerungen in der Sitzung.
 
-Außerhalb von Sitzungen senden wir an Gemini:
+Außerhalb einer laufenden Sitzung nutzen wir Gemini außerdem für:
 
 - Text, den Sie von der App übersetzen lassen,
-- Text für die Reader-Funktion,
-- das vollständige Sitzungs-Transkript für die Auswertung nach der Sitzung.
+- die Erzeugung von Reader-Texten (die Anfrage enthält Ihr Niveau und, falls gewählt, ein Thema),
+- die Auswertung nach der Sitzung: das vollständige Sitzungs-Transkript zusammen mit Ihren gespeicherten Fakten, Ihren wiederkehrenden Schwachstellen und den Szenario-Zielen,
+- Ihre gespeicherten Wörter: um Wortkarten zu vervollständigen, senden wir Ihre gespeicherten Wörter zusammen mit dem Satz, aus dem jedes Wort stammt,
+- Ihren Namen: für den "aussprechbaren Namen" (Abschnitt 3.1) senden wir den Namen aus Ihrem Profil einmal beim Onboarding und bei jeder Änderung,
+- eine kurze Anfrage, die einen Niveauwechsel in einen Satz Rückmeldung verwandelt (sie enthält nur die beiden Niveaus und Ihre App-Sprache).
 
 **Was wir NICHT an Gemini senden:** Ihre E-Mail-Adresse, Ihre Firebase-Nutzerkennung, Gerätekennungen, Zahlungsinformationen oder Abonnementdaten.
 
 ### Wo diese Verarbeitung stattfindet
 
-Ihre Kontodaten werden in Google Cloud Firestore in der Region Frankfurt (Deutschland, EU) gespeichert. Unsere API und die Sprachsynthese laufen auf Hetzner-Servern in Deutschland. Für das Verstehen von Sprache und die Erzeugung der Tutor-Antworten nutzen wir Googles Gemini-Modell über Vertex AI: Dieses Modell ist derzeit in keiner EU-Region verfügbar, deshalb kann die Anfrage während eines Gesprächs auf Google-Infrastruktur außerhalb der EU verarbeitet werden. Diese Verarbeitung ist durch das Google Cloud Data Processing Addendum, die EU-Standardvertragsklauseln (SCC) und Googles Zertifizierung nach dem EU-US Data Privacy Framework abgesichert. Google verwendet Ihre Daten nicht zum Training seiner Modelle und speichert sie nach der Verarbeitung nicht. Sobald das Modell in einer europäischen Region verfügbar ist, stellen wir die Verarbeitung auf die EU um.
+Ihre Kontodaten werden in Google Cloud Firestore in der Region Frankfurt (Deutschland, EU) gespeichert. Unsere API und die Sprachsynthese laufen auf Hetzner-Servern in Deutschland. Für das Verstehen von Sprache und die Erzeugung der Tutor-Antworten nutzen wir Googles Gemini-Modell über Vertex AI: Dieses Modell ist derzeit in keiner EU-Region verfügbar, deshalb können diese Anfragen (das laufende Gespräch ebenso wie die Auswertung und die übrigen oben genannten Aufrufe) auf Google-Infrastruktur außerhalb der EU verarbeitet werden. Diese Verarbeitung ist durch das Google Cloud Data Processing Addendum, die EU-Standardvertragsklauseln (SCC) und Googles Zertifizierung nach dem EU-US Data Privacy Framework abgesichert. Google verwendet Ihre Daten nicht zum Training seiner Modelle und speichert sie nach der Verarbeitung nicht. Sobald das Modell in einer europäischen Region verfügbar ist, stellen wir die Verarbeitung auf die EU um.
 
 ### Was mit Ihrer Stimme passiert
 
@@ -166,13 +167,13 @@ Wir setzen die folgenden Anbieter ein, um die App zu betreiben.
 
 | Anbieter | Rolle | Was er erhält | Standort und Garantien |
 | --- | --- | --- | --- |
-| Google: Firebase Authentication | Anmeldung | Nutzerkennung, E-Mail, Anmeldemethode und Zeitpunkt | Google Cloud DPA, SCC, EU-US Data Privacy Framework |
+| Google: Firebase Authentication | Anmeldung | Nutzerkennung, E-Mail, Anmeldemethode und Zeitpunkt | Globale (US-)Infrastruktur; Google Cloud DPA, SCC, EU-US Data Privacy Framework |
 | Google: Cloud Firestore | Hauptdatenbank | Alle Konto- und Lerndaten | Frankfurt (europe-west3), EU |
 | Google: Vertex AI (Gemini) | Sprachverstehen, Tutor-Antworten, Sitzungsauswertung | Audio Ihrer Äußerungen sowie der in Abschnitt 4 genannte Kontext | Globaler Endpunkt: Verarbeitung kann außerhalb der EU stattfinden; DPA, SCC, DPF; kein Modelltraining |
 | Google: Firebase Analytics | Produktanalyse | App-Ereignisse, nur mit Ihrer Einwilligung (Abschnitt 7) | DPA, SCC, DPF |
-| Google: Firebase Crashlytics | Absturzberichte | Absturz-Stacktraces, Gerätemodell, OS- und App-Version, Breadcrumb-Ereignisse | DPA, SCC, DPF |
+| Google: Firebase Crashlytics | Absturzberichte | Absturz- und Fehlerberichte: Stacktraces, Gerätemodell, OS- und App-Version, Breadcrumb-Ereignisse und technische Kontextschlüssel (Abschnitt 7); dazu technische Basisdaten bei jedem App-Start (eine Firebase-Installationskennung und Sitzungsereignisse) | DPA, SCC, DPF |
 | Hetzner Online GmbH | Hosting unserer API und der Sprachsynthese | Datenverkehr während der Übertragung sowie die technischen Protokolle aus Abschnitt 3.6 (IP-Adressen und möglicherweise kurze Gesprächsausschnitte), 7 Tage aufbewahrt; keine Datenbank mit Ihren Daten | Deutschland, EU; Auftragsverarbeitungsvertrag (AV-Vertrag) |
-| RevenueCat, Inc. | Abonnementverwaltung | Die von uns erzeugte interne Kundenkennung (rcAppUserId) sowie die von Apple gemeldete Kauf- und Verlängerungshistorie | USA; SCC |
+| RevenueCat, Inc. | Abonnementverwaltung | Die von uns erzeugte interne Kundenkennung (rcAppUserId), die von Apple gemeldete Kauf- und Verlängerungshistorie sowie technische Standarddaten, die das SDK mit jeder Anfrage sendet (Gerätemodell und Herstellerkennung (IDFV), Storefront-Land, App-Version, IP-Adresse) | USA; SCC |
 | Apple Inc. | App Store und In-App-Kauf | Zahlungsdaten (wir sehen sie nie) | Nach Apples eigenen Bedingungen |
 
 Wir verkaufen Ihre personenbezogenen Daten nicht. Wir geben Ihre Daten nie an Prüfungsanbieter, Sprachschulen oder Behörden weiter.
@@ -195,6 +196,7 @@ Das sind zwei verschiedene Dinge mit zwei verschiedenen Regeln.
   - wann eine Sitzung beginnt und endet,
   - was Sie in der App tun, zum Beispiel eine Sitzung starten, ein Wort speichern oder die Abo-Seite öffnen,
   - niemals Ihre Gespräche, Ihre Stimme oder Ihren Namen.
+- Wenn Sie zustimmen, werden Analyse-Ereignisse mit Ihrer Nutzerkennung verknüpft, damit Ihre Nutzung über Ihre Geräte hinweg nur einmal zählt; mit dem Widerruf endet das.
 - Ihre Entscheidung wird mit Datum gespeichert und mit Ihrem Konto abgeglichen, sodass sie eine Neuinstallation der App übersteht.
 - Werbesignale sind deaktiviert: keine Werbekennungen (IDFA), keine Werbepersonalisierung, kein App-übergreifendes Tracking und keine Tracking-Abfragen. Wir verfolgen Sie nicht.
 - Die Aufbewahrung der Analysedaten bei Google ist auf 2 Monate eingestellt.
@@ -204,7 +206,7 @@ Das sind zwei verschiedene Dinge mit zwei verschiedenen Regeln.
 - Zweck: den Dienst am Laufen halten. Ein Absturzbericht zeigt uns, was kaputtgegangen ist.
 - **Standardmäßig an.** Rechtsgrundlage: unser berechtigtes Interesse an einem stabilen und sicheren Dienst (Art. 6 Abs. 1 lit. f DSGVO).
 - **Sie können jederzeit widersprechen**: Schalten Sie die Absturzberichte in Ihrem Profil unter Datenschutz aus.
-- Ein Bericht enthält den Absturz-Stacktrace, Ihr Gerätemodell, die OS- und App-Version und Breadcrumb-Ereignisse. Berichte sind mit Ihrer Nutzerkennung verknüpft, damit wir von Ihnen gemeldete Probleme untersuchen können.
+- Ein Bericht enthält den Absturz-Stacktrace, Ihr Gerätemodell, die OS- und App-Version, Breadcrumb-Ereignisse sowie technische Kontextschlüssel wie den aktiven Bildschirm, den Sitzungsmodus, die App-Sprache, den Stand der Berechtigungen und Ihre aktuelle Niveau-Einschätzung. Die App meldet auch behebbare Fehler (non-fatal) mit demselben technischen Kontext. Berichte sind mit Ihrer Nutzerkennung verknüpft, damit wir von Ihnen gemeldete Probleme untersuchen können.
 - Ihre Entscheidung wird mit Datum gespeichert und mit Ihrem Konto abgeglichen.
 - Absturzberichte werden von Google 90 Tage aufbewahrt (Firebase-Standard).
 
@@ -266,7 +268,8 @@ Der Export enthält nicht, und die App weist Sie beim Export darauf hin:
 - Server-Protokolle,
 - Mitteilungs-Token (Eduvia speichert keine: Erinnerungen sind lokal),
 - Kopien bei RevenueCat,
-- interne Betriebsdaten über Nutzungskosten.
+- die von uns erzeugte interne Kundenkennung für RevenueCat,
+- interne Betriebsdaten über Nutzung und Kosten.
 
 ## 11. Ihre Rechte
 
@@ -283,7 +286,7 @@ Wir antworten innerhalb eines Monats. Kontakt: <thevaltorna@gmail.com>.
 
 ## 12. Automatisierte Verarbeitung und KI-Transparenz
 
-Sie sprechen mit einem System künstlicher Intelligenz (Transparenz nach Art. 50 der KI-Verordnung (EU) 2024/1689). Torsten ist Software, kein Mensch, und die App stellt ihn auch so dar.
+Sie sprechen mit einem System künstlicher Intelligenz (Transparenz nach Art. 50 der KI-Verordnung (EU) 2024/1689). Thorsten ist Software, kein Mensch, und die App stellt ihn auch so dar.
 
 Die App nutzt KI, um Ihre Sprache zu erkennen, Sie zu korrigieren, Sitzungen auszuwerten und Ihr CEFR-Niveau einzuschätzen. Diese Einschätzungen sind ungefähre Lernhilfen. Keine Entscheidung mit rechtlicher oder ähnlich erheblicher Wirkung wird automatisiert über Sie getroffen (Art. 22 DSGVO): Ihre Einschätzungen werden nie an Prüfungsanbieter übermittelt, haben keine Wirkung auf offizielle Ergebnisse, und Sie können sie jederzeit ignorieren oder wiederholen.
 
@@ -319,6 +322,6 @@ Website: <https://geteduvia.com>
 
 ## 18. Änderungsprotokoll
 
-**Version 1.0 ([YYYY-MM-DD])**: Erstveröffentlichung.
+**Version 1.0 (2026-08-26)**: Erstveröffentlichung.
 
-© 2026 Eduvia. Alle Rechte vorbehalten.
+© 2026 Oleh Herasymenko. Alle Rechte vorbehalten.

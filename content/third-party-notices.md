@@ -1,6 +1,6 @@
 # Third-Party Notices
 
-Last updated: [YYYY-MM-DD]
+Last updated: 2026-08-26
 
 Eduvia (the iOS app and its backend service) includes the open-source components listed below. We are grateful to their authors and maintainers.
 
@@ -31,13 +31,23 @@ Exact version numbers are pinned in the project lockfiles (Package.resolved for 
 | Component | License | Source |
 | --- | --- | --- |
 | FluidAudio | Apache-2.0 | <https://github.com/FluidInference/FluidAudio> |
-| Silero VAD (voice activity detection model) | MIT | <https://github.com/snakers4/silero-vad> |
-| Firebase Apple SDK (FirebaseAuth, FirebaseAnalytics, FirebaseCrashlytics) | Apache-2.0 | <https://github.com/firebase/firebase-ios-sdk> |
+| Silero VAD (voice activity detection model, bundled with the App) | MIT | <https://github.com/snakers4/silero-vad> |
+| Firebase Apple SDK (FirebaseCore, FirebaseAuth, FirebaseCrashlytics, FirebaseInstallations, FirebaseSessions) | Apache-2.0 | <https://github.com/firebase/firebase-ios-sdk> |
+| FirebaseAnalytics / GoogleAppMeasurement (closed-source Google binaries used by Firebase) | Google APIs Terms of Service | <https://developers.google.com/terms> |
 | RevenueCat (purchases-ios) | MIT | <https://github.com/RevenueCat/purchases-ios> |
 | GoogleSignIn-iOS | Apache-2.0 | <https://github.com/google/GoogleSignIn-iOS> |
+| AppAuth-iOS | Apache-2.0 | <https://github.com/openid/AppAuth-iOS> |
+| GTMAppAuth | Apache-2.0 | <https://github.com/google/GTMAppAuth> |
+| GTMSessionFetcher | Apache-2.0 | <https://github.com/google/gtm-session-fetcher> |
+| GoogleUtilities | Apache-2.0 | <https://github.com/google/GoogleUtilities> |
+| GoogleDataTransport | Apache-2.0 | <https://github.com/google/GoogleDataTransport> |
+| AppCheckCore | Apache-2.0 | <https://github.com/google/app-check> |
+| Promises (FBLPromises) | Apache-2.0 | <https://github.com/google/promises> |
+| nanopb | zlib | <https://github.com/nanopb/nanopb> |
 
 ## Notes
 
+- The Silero VAD model ships inside the App bundle; nothing is downloaded from third parties at runtime.
 - GPL-3.0 licensed components (Piper, eSpeak NG) run exclusively on the server side and are not distributed to end users as part of the App. GPL-3.0 source obligations attach to the distribution of binaries.
 - The de_DE-thorsten-medium voice model card states that the training dataset is CC0 and that the model was finetuned from the U.S. English lessac voice.
 - Full license texts are available at the linked repositories.

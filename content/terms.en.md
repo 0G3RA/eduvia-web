@@ -1,6 +1,6 @@
 # Terms of Use (EULA)
 
-Effective Date: [YYYY-MM-DD] · Version 1.0
+Effective Date: 2026-08-26 · Version 1.0
 
 This End User License Agreement ("Agreement", "Terms") is a legal agreement between you and Oleh Herasymenko, Röntgenstraße 5, 88048 Friedrichshafen, Deutschland ("Licensor", "we", "us", "our"), governing your use of the mobile application Eduvia (the "App"), available on the App Store.
 
@@ -12,10 +12,10 @@ By downloading, installing or using the App, you agree to these Terms. If you do
 
 ## 1. What Eduvia is
 
-Eduvia is an app for practicing spoken German with an AI voice tutor ("Torsten"). It offers:
+Eduvia is an app for practicing spoken German with an AI voice tutor ("Thorsten"). It offers:
 
 - free conversation on any topic, adapted to your level,
-- 204 role-play scenarios from A1 to C1, in which the tutor plays a role (for example a doctor, a landlord or a cashier) and you have a list of goals,
+- 202 role-play scenarios from A1 to C1, in which the tutor plays a role (for example a doctor, a landlord or a cashier) and you have a list of goals,
 - live corrections during the conversation,
 - an analysis after each session: a summary in your language, your mistakes with categories, an accuracy percentage, new words and a CEFR level estimate,
 - a long-term tutor memory, so conversations can continue where they left off,
@@ -27,7 +27,7 @@ Eduvia is an app for practicing spoken German with an AI voice tutor ("Torsten")
 
 The interface and content are available in ten languages.
 
-Eduvia is a conversation practice tool, not exam preparation software: the App contains no exam simulations (Section 3). Torsten is an artificial intelligence, not a human teacher.
+Eduvia is a conversation practice tool, not exam preparation software: the App contains no exam simulations (Section 3). Thorsten is an artificial intelligence, not a human teacher.
 
 ## 2. Scope of license
 
@@ -86,13 +86,13 @@ Without a subscription you can:
 - export your data,
 - delete your account.
 
-In addition, every account includes exactly one introductory session with the tutor: the getting-to-know-you conversation during onboarding. After that session ends, every further session requires a subscription.
+In addition, every account includes exactly one completed introductory session with the tutor: the getting-to-know-you conversation during onboarding. Once you complete it, every further session requires a subscription.
 
 Viewing your own data is never limited: not by the subscription and not by the fair-use cap below.
 
 ### What requires Eduvia Pro
 
-- live conversation sessions with the tutor: free conversation and all 204 scenarios,
+- live conversation sessions with the tutor: free conversation and all 202 scenarios,
 - the vocabulary training modes (your word list itself is free; training with it requires Pro),
 - translation of utterances,
 - the Reader.
@@ -110,7 +110,7 @@ The free trial exists only on the yearly plan; the monthly plan has no trial. Tr
 
 ### Unlimited practice and fair use
 
-Pro gives you unlimited practice with the tutor: we do not count your sessions, minutes or messages. Like any unlimited service, it is subject to fair use: to protect the service from automated and abusive load, a monthly intensity cap applies that normal daily learning does not reach. The cap renews monthly from your payment date, including on the yearly plan. If you ever reach it, the App shows you the exact renewal date. Viewing your own data (your conversation history, summaries and vocabulary) is never limited.
+Pro gives you unlimited practice with the tutor: we do not count your sessions, minutes or messages. Like any unlimited service, it is subject to fair use: to protect the service from automated and abusive load, a monthly intensity cap applies that normal daily learning does not reach. The cap renews monthly from your payment date, including on the yearly plan. If you ever reach it, the App shows you the exact renewal date. For technical stability, a single live session is limited in length (currently about 50 minutes); you can start the next session right away. Viewing your own data (your conversation history, summaries and vocabulary) is never limited.
 
 ### Payment, renewal, cancellation
 
@@ -155,7 +155,7 @@ Also important:
 
 ## 12. Intellectual property and open-source components
 
-The Licensor owns the App's code and design, the 204 scenarios, the learning texts, the prompts and the Eduvia brand, all protected by applicable intellectual property laws. You receive a limited, non-exclusive, non-transferable license to use the App under these Terms.
+The Licensor owns the App's code and design, the 202 scenarios, the learning texts, the prompts and the Eduvia brand, all protected by applicable intellectual property laws. You receive a limited, non-exclusive, non-transferable license to use the App under these Terms.
 
 Examination names mentioned in the App are trademarks of their respective owners (Section 3) and are not licensed to you.
 
@@ -172,6 +172,8 @@ The App is provided as it is and as available. We do not promise that:
 - using the App will lead to passing any examination or reaching any language level.
 
 Your statutory rights as a consumer, including statutory warranty rights, remain unaffected by this section.
+
+In the event of any failure of the App to conform to an applicable warranty, you may notify Apple, and Apple will refund the purchase price (if any) of the App to you. To the maximum extent permitted by applicable law, Apple has no other warranty obligation with respect to the App.
 
 ## 14. Liability
 
@@ -253,6 +255,6 @@ For questions about App Store purchases, contact [Apple Support](https://support
 
 ## 27. Changelog
 
-**Version 1.0 ([YYYY-MM-DD])**: Initial release.
+**Version 1.0 (2026-08-26)**: Initial release.
 
-© 2026 Eduvia. All rights reserved.
+© 2026 Oleh Herasymenko. All rights reserved.

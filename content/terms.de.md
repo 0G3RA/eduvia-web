@@ -1,6 +1,6 @@
 # Nutzungsbedingungen (EULA)
 
-Gültig ab: [YYYY-MM-DD] · Version 1.0
+Gültig ab: 2026-08-26 · Version 1.0
 
 Diese Endnutzer-Lizenzvereinbarung ("Vereinbarung", "Bedingungen") ist ein rechtsverbindlicher Vertrag zwischen Ihnen und Oleh Herasymenko, Röntgenstraße 5, 88048 Friedrichshafen, Deutschland ("Lizenzgeber", "wir", "uns"), über die Nutzung der mobilen Anwendung Eduvia (die "App") aus dem App Store.
 
@@ -12,10 +12,10 @@ Mit dem Herunterladen, Installieren oder Nutzen der App stimmen Sie diesen Bedin
 
 ## 1. Was Eduvia ist
 
-Eduvia ist eine App zum Üben von gesprochenem Deutsch mit einem KI-Sprachtutor ("Torsten"). Sie bietet:
+Eduvia ist eine App zum Üben von gesprochenem Deutsch mit einem KI-Sprachtutor ("Thorsten"). Sie bietet:
 
 - freie Gespräche zu jedem Thema, angepasst an Ihr Niveau,
-- 204 Rollenspiel-Szenarien von A1 bis C1, in denen der Tutor eine Rolle spielt (zum Beispiel Arzt, Vermieter oder Kassierer) und Sie eine Liste von Zielen haben,
+- 202 Rollenspiel-Szenarien von A1 bis C1, in denen der Tutor eine Rolle spielt (zum Beispiel Arzt, Vermieter oder Kassierer) und Sie eine Liste von Zielen haben,
 - Korrekturen im laufenden Gespräch,
 - eine Auswertung nach jeder Sitzung: eine Zusammenfassung in Ihrer Sprache, Ihre Fehler mit Kategorien, eine Genauigkeitsquote, neue Wörter und eine CEFR-Niveau-Einschätzung,
 - ein langfristiges Tutor-Gedächtnis, damit Gespräche dort anknüpfen können, wo sie aufgehört haben,
@@ -27,7 +27,7 @@ Eduvia ist eine App zum Üben von gesprochenem Deutsch mit einem KI-Sprachtutor 
 
 Oberfläche und Inhalte sind in zehn Sprachen verfügbar.
 
-Eduvia ist ein Werkzeug für Gesprächspraxis, keine Prüfungsvorbereitungssoftware: Die App enthält keine Prüfungssimulationen (Abschnitt 3). Torsten ist eine künstliche Intelligenz, kein menschlicher Lehrer.
+Eduvia ist ein Werkzeug für Gesprächspraxis, keine Prüfungsvorbereitungssoftware: Die App enthält keine Prüfungssimulationen (Abschnitt 3). Thorsten ist eine künstliche Intelligenz, kein menschlicher Lehrer.
 
 ## 2. Lizenzumfang
 
@@ -86,13 +86,13 @@ Ohne Abonnement können Sie:
 - Ihre Daten exportieren,
 - Ihr Konto löschen.
 
-Zusätzlich enthält jedes Konto genau eine Einführungssitzung mit dem Tutor: das Kennenlerngespräch im Onboarding. Nach dem Ende dieser Sitzung erfordert jede weitere Sitzung ein Abonnement.
+Zusätzlich enthält jedes Konto genau eine abgeschlossene Einführungssitzung mit dem Tutor: das Kennenlerngespräch im Onboarding. Sobald Sie sie abgeschlossen haben, erfordert jede weitere Sitzung ein Abonnement.
 
 Der Zugriff auf Ihre eigenen Daten wird nie eingeschränkt: weder durch das Abonnement noch durch die unten beschriebene Nutzungsgrenze.
 
 ### Was Eduvia Pro erfordert
 
-- Live-Gesprächssitzungen mit dem Tutor: freie Gespräche und alle 204 Szenarien,
+- Live-Gesprächssitzungen mit dem Tutor: freie Gespräche und alle 202 Szenarien,
 - die Wortschatz-Übungsmodi (Ihre Wortliste selbst ist kostenlos; das Üben damit erfordert Pro),
 - die Übersetzung von Äußerungen,
 - den Reader.
@@ -110,7 +110,7 @@ Die kostenlose Testphase gibt es nur beim Jahrestarif; der Monatstarif hat keine
 
 ### Unbegrenzte Praxis und faire Nutzung
 
-Pro beinhaltet unbegrenztes Sprechtraining mit dem Tutor im Rahmen einer fairen Nutzung: Wir zählen weder Sitzungen noch Minuten oder Nachrichten; allein zum Schutz vor automatisierter oder missbräuchlicher Nutzung besteht eine monatliche Nutzungsgrenze, die beim üblichen täglichen Lernen nicht erreicht wird. Die Grenze erneuert sich monatlich ab dem Tag Ihrer Zahlung, auch bei einem Jahresabonnement. Sollten Sie sie erreichen, zeigt Ihnen die App das genaue Datum der Erneuerung an. Der Zugriff auf Ihre eigenen Daten, also Gesprächsverlauf, Zusammenfassungen und Wortschatz, wird zu keinem Zeitpunkt eingeschränkt.
+Pro beinhaltet unbegrenztes Sprechtraining mit dem Tutor im Rahmen einer fairen Nutzung: Wir zählen weder Sitzungen noch Minuten oder Nachrichten; allein zum Schutz vor automatisierter oder missbräuchlicher Nutzung besteht eine monatliche Nutzungsgrenze, die beim üblichen täglichen Lernen nicht erreicht wird. Die Grenze erneuert sich monatlich ab dem Tag Ihrer Zahlung, auch bei einem Jahresabonnement. Sollten Sie sie erreichen, zeigt Ihnen die App das genaue Datum der Erneuerung an. Aus technischen Stabilitätsgründen ist eine einzelne Live-Sitzung in ihrer Länge begrenzt (derzeit etwa 50 Minuten); die nächste Sitzung können Sie sofort starten. Der Zugriff auf Ihre eigenen Daten, also Gesprächsverlauf, Zusammenfassungen und Wortschatz, wird zu keinem Zeitpunkt eingeschränkt.
 
 ### Zahlung, Verlängerung, Kündigung
 
@@ -155,13 +155,13 @@ Ebenfalls wichtig:
 
 ## 12. Geistiges Eigentum und Open-Source-Komponenten
 
-Der Lizenzgeber ist Inhaber der Rechte an Code und Design der App, den 204 Szenarien, den Lerntexten, den Prompts und der Marke Eduvia, jeweils geschützt durch die anwendbaren Gesetze zum geistigen Eigentum. Sie erhalten eine beschränkte, nicht ausschließliche, nicht übertragbare Lizenz zur Nutzung der App nach diesen Bedingungen.
+Der Lizenzgeber ist Inhaber der Rechte an Code und Design der App, den 202 Szenarien, den Lerntexten, den Prompts und der Marke Eduvia, jeweils geschützt durch die anwendbaren Gesetze zum geistigen Eigentum. Sie erhalten eine beschränkte, nicht ausschließliche, nicht übertragbare Lizenz zur Nutzung der App nach diesen Bedingungen.
 
 In der App genannte Prüfungsnamen sind Marken ihrer jeweiligen Inhaber (Abschnitt 3) und werden Ihnen nicht lizenziert.
 
 Sie dürfen die App und ihre Inhalte nicht kopieren, verändern oder abgeleitete Werke daraus erstellen, keine Inhalte, Prompts oder KI-Ausgaben extrahieren oder scrapen, keine Schutzrechtsvermerke entfernen und die Marke Eduvia nicht ohne vorherige schriftliche Erlaubnis nutzen.
 
-Die App und der Dienst enthalten Open-Source-Komponenten, darunter die Sprachsynthese Piper auf unseren Servern und die Spracherkennungsaktivierung auf dem Gerät. Die Liste der Komponenten und Lizenzen finden Sie unter <https://geteduvia.com/third-party-notices>. Nichts in diesen Bedingungen beschränkt Rechte, die Ihnen diese Open-Source-Lizenzen einräumen.
+Die App und der Dienst enthalten Open-Source-Komponenten, darunter die Sprachsynthese Piper auf unseren Servern und die Sprachaktivitätserkennung (Voice Activity Detection) auf dem Gerät. Die Liste der Komponenten und Lizenzen finden Sie unter <https://geteduvia.com/third-party-notices>. Nichts in diesen Bedingungen beschränkt Rechte, die Ihnen diese Open-Source-Lizenzen einräumen.
 
 ## 13. Beschaffenheit des Dienstes und Ihre gesetzlichen Rechte
 
@@ -172,6 +172,8 @@ Die App wird in dem Zustand bereitgestellt, in dem sie sich befindet, und soweit
 - dass die Nutzung der App zum Bestehen einer Prüfung oder zum Erreichen eines Sprachniveaus führt.
 
 Ihre gesetzlichen Rechte als Verbraucher, einschließlich der gesetzlichen Gewährleistungsrechte, bleiben von diesem Abschnitt unberührt.
+
+Entspricht die App einer anwendbaren Gewährleistung nicht, können Sie Apple benachrichtigen; Apple erstattet Ihnen dann den (etwaigen) Kaufpreis der App. Soweit gesetzlich zulässig, trifft Apple darüber hinaus keine Gewährleistungspflicht für die App.
 
 ## 14. Haftung
 
@@ -253,6 +255,6 @@ Bei Fragen zu App-Store-Käufen wenden Sie sich an den [Apple Support](https://s
 
 ## 27. Änderungsprotokoll
 
-**Version 1.0 ([YYYY-MM-DD])**: Erstveröffentlichung.
+**Version 1.0 (2026-08-26)**: Erstveröffentlichung.
 
-© 2026 Eduvia. Alle Rechte vorbehalten.
+© 2026 Oleh Herasymenko. Alle Rechte vorbehalten.
