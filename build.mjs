@@ -64,13 +64,18 @@ function extractTitle(md) {
   return m ? m[1].trim() : 'Eduvia';
 }
 
-function layout({ lang, title, description, body, langSwitch, canonicalPath }) {
+function layout({ lang, title, description, body, langSwitch, canonicalPath, depth = 0 }) {
+  // Relative links so the site works both at the apex domain and under a
+  // project-page prefix (0g3ra.github.io/eduvia-web/) before DNS is switched.
+  const prefix = '../'.repeat(depth);
+  const home = prefix || './';
+  const u = (sitePath) => prefix + sitePath.replace(/^\//, '');
   const switchHtml = langSwitch
     ? `<nav class="lang" aria-label="Language">${langSwitch.links
-        .map((l) => `<a href="${l.href}"${l.label.slice(0, 2).toUpperCase() === langSwitch.current ? ' aria-current="page"' : ''}>${l.label}</a>`)
+        .map((l) => `<a href="${u(l.href)}"${l.label.slice(0, 2).toUpperCase() === langSwitch.current ? ' aria-current="page"' : ''}>${l.label}</a>`)
         .join('')}</nav>`
     : '';
-  const impressumLabel = lang === 'de' ? 'Impressum' : 'Impressum';
+  const impressumLabel = 'Impressum';
   const privacyLabel = lang === 'de' ? 'Datenschutz' : 'Privacy';
   const termsLabel = lang === 'de' ? 'Nutzungsbedingungen' : 'Terms';
   return `<!doctype html>
@@ -82,11 +87,11 @@ function layout({ lang, title, description, body, langSwitch, canonicalPath }) {
 <meta name="description" content="${description}">
 <link rel="canonical" href="${SITE}${canonicalPath}">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563eb'/%3E%3Ctext x='50' y='71' font-size='62' font-family='Georgia,serif' fill='white' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="${prefix}style.css">
 </head>
 <body>
 <header class="site-header">
-<a class="wordmark" href="/">Eduvia</a>
+<a class="wordmark" href="${home}">Eduvia</a>
 ${switchHtml}
 </header>
 <main class="doc">
@@ -94,10 +99,10 @@ ${body}
 </main>
 <footer class="site-footer">
 <nav aria-label="Legal">
-<a href="/privacy/">${privacyLabel}</a>
-<a href="/terms/">${termsLabel}</a>
-<a href="/impressum/">${impressumLabel}</a>
-<a href="/third-party-notices/">Third-Party Notices</a>
+<a href="${u('/privacy/')}">${privacyLabel}</a>
+<a href="${u('/terms/')}">${termsLabel}</a>
+<a href="${u('/impressum/')}">${impressumLabel}</a>
+<a href="${u('/third-party-notices/')}">Third-Party Notices</a>
 </nav>
 <p>&copy; 2026 Eduvia</p>
 </footer>
@@ -113,10 +118,10 @@ function landing() {
 <p class="tagline">Practice speaking German with an AI voice tutor.<br>
 <span lang="de">Gesprochenes Deutsch üben, mit einem KI-Sprachtutor.</span></p>
 <ul class="doc-list">
-<li><a href="/privacy/">Privacy Policy</a> · <a href="/privacy/de/" lang="de">Datenschutzerklärung</a></li>
-<li><a href="/terms/">Terms of Use</a> · <a href="/terms/de/" lang="de">Nutzungsbedingungen</a></li>
-<li><a href="/impressum/" lang="de">Impressum</a></li>
-<li><a href="/third-party-notices/">Third-Party Notices</a></li>
+<li><a href="privacy/">Privacy Policy</a> · <a href="privacy/de/" lang="de">Datenschutzerklärung</a></li>
+<li><a href="terms/">Terms of Use</a> · <a href="terms/de/" lang="de">Nutzungsbedingungen</a></li>
+<li><a href="impressum/" lang="de">Impressum</a></li>
+<li><a href="third-party-notices/">Third-Party Notices</a></li>
 </ul>
 </section>`;
   return layout({
@@ -144,6 +149,7 @@ async function main() {
       body,
       langSwitch: page.switch,
       canonicalPath,
+      depth: page.out.split('/').length - 1,
     });
     const outPath = path.join(DIST, page.out);
     await mkdir(path.dirname(outPath), { recursive: true });
