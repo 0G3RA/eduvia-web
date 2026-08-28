@@ -118,6 +118,7 @@ Pro beinhaltet unbegrenztes Sprechtraining mit dem Tutor im Rahmen einer fairen 
 - Die Zahlung wird bei Kaufbestätigung über Ihre Apple-ID abgerechnet.
 - Abonnements verlängern sich automatisch, wenn sie nicht mindestens 24 Stunden vor Ende des laufenden Zeitraums gekündigt werden. Verwalten und kündigen Sie in den iOS-Einstellungen → Abonnements.
 - Nach der Kündigung bleibt der Pro-Zugang bis zum Ende des bezahlten Zeitraums bestehen.
+- Ein Abonnement ist mit dem Eduvia-Konto verknüpft, auf dem es aktiviert wurde, und schaltet nur dieses Konto frei. Solange dieses Konto besteht, kann das Abonnement nicht auf ein anderes Konto übertragen werden; nach der Löschung Ihres Kontos können Sie es über "Käufe wiederherstellen" auf einem neuen Konto aktivieren.
 - Wenn Sie die App neu installieren oder ein neues Konto anlegen, nutzen Sie "Käufe wiederherstellen" in der App, um ein aktives Abonnement wiederherzustellen.
 - Apple ist weder für die App noch für Ansprüche im Zusammenhang mit ihr verantwortlich.
 

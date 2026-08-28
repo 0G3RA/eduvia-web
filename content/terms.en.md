@@ -118,6 +118,7 @@ Pro gives you unlimited practice with the tutor: we do not count your sessions, 
 - Payment is charged to your Apple ID at confirmation of purchase.
 - Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. Manage and cancel in iOS Settings → Subscriptions.
 - After cancellation, access to Pro continues until the end of the paid period.
+- A subscription is linked to the Eduvia account it was activated on and unlocks only that account. It cannot be moved to another account while that account exists; after you delete your account, you can activate it on a new account with Restore Purchases.
 - If you reinstall the App or create a new account, use Restore Purchases in the App to restore an active subscription.
 - Apple is not responsible for the App or for any claims related to it.
 
