@@ -112,7 +112,7 @@ Der Zugriff auf Ihre eigenen Daten wird nie eingeschränkt: weder durch das Abon
 Die App bietet zwei automatisch verlängerbare Abonnements in einer Abonnementgruppe an, abgerechnet über Ihren Store: über Apple In-App-Kauf im App Store und über Google Play Billing bei Google Play.
 
 - **Eduvia Pro Monatlich**: 9,99 EUR pro Monat, ohne kostenlose Testphase.
-- **Eduvia Pro Jährlich**: 89,99 EUR pro Jahr, mit 3-tägiger kostenloser Testphase für neue Abonnenten.
+- **Eduvia Pro Jährlich**: 89,99 EUR pro Jahr, mit 7-tägiger kostenloser Testphase für neue Abonnenten.
 
 Die angezeigten Preise sind Gesamtpreise einschließlich etwaiger Umsatzsteuer. Das sind die Preise für Deutschland; Ihr Store zeigt und berechnet den Preis für Ihr Land und Ihre Währung mit der dort anwendbaren Steuer. Beide Tarife liegen in derselben Abonnementgruppe, sodass Sie zwischen ihnen wechseln können; den Wechsel wickelt Ihr Store ab.
 

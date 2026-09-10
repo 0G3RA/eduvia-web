@@ -112,7 +112,7 @@ Viewing your own data is never limited: not by the subscription and not by the f
 The App offers two auto-renewable subscription plans in a single subscription group, billed through your store: Apple In-App Purchase on the App Store, Google Play Billing on Google Play.
 
 - **Eduvia Pro Monthly**: 9.99 EUR per month, without a free trial.
-- **Eduvia Pro Yearly**: 89.99 EUR per year, with a 3-day free trial for new subscribers.
+- **Eduvia Pro Yearly**: 89.99 EUR per year, with a 7-day free trial for new subscribers.
 
 The prices shown are the total price you pay, including any value added tax. These are the prices for Germany; your store shows and charges the price for your country and currency, with the tax applicable there. Both plans are in the same subscription group, so you can switch between them; the switch is handled by your store.
 
