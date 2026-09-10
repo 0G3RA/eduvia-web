@@ -1,6 +1,6 @@
 # Datenschutzerklärung
 
-Gültig ab: 2026-08-26 · Version 1.0
+Gültig ab: 2026-09-10 · Version 1.1
 
 Diese Datenschutzerklärung ("Erklärung") beschreibt, wie Oleh Herasymenko ("wir", "uns", "unser") Ihre personenbezogenen Daten verarbeitet und schützt, wenn Sie die mobile Anwendung Eduvia (die "App") nutzen.
 
@@ -35,7 +35,7 @@ Website: <https://geteduvia.com>
 - **Verarbeitung**: alles, was mit personenbezogenen Daten geschieht: Erheben, Speichern, Verwenden, Offenlegen oder Löschen.
 - **Verantwortlicher**: Oleh Herasymenko, der über Zwecke und Mittel der Verarbeitung entscheidet.
 - **Sie, Nutzer**: jede Person, die die App nutzt.
-- **App**: die mobile Anwendung Eduvia aus dem App Store.
+- **App**: die mobile Anwendung Eduvia aus dem App Store und aus Google Play.
 - **KI-Tutor ("Thorsten")**: der automatische Sprachtutor der App. Er führt Gesprächsübungen auf Deutsch und erzeugt Rückmeldungen mit Googles Gemini-Modellen. Thorsten ist Software, kein Mensch.
 - **Übungssitzung**: eine gesprochene Übung mit dem KI-Tutor: ein freies Gespräch oder eines der Rollenspiel-Szenarien.
 - **Sprachdaten**: die Audioaufnahme Ihrer Sprache während einer Übungssitzung.
@@ -105,7 +105,9 @@ Wir fragen Sie nicht nach sensiblen Daten, und die App hat dafür keine Felder. 
 
 Wir verarbeiten solche Informationen **nur, um das Gespräch zu führen und Ihnen die Sprache beizubringen**. Nie für Profiling. Nie für Werbung. Nie zur Weitergabe an Dritte.
 
-Rechtsgrundlage ist Ihre ausdrückliche Einwilligung nach Art. 9 Abs. 2 lit. a DSGVO, die Sie erteilen, indem Sie sich entscheiden, diese Informationen im Gespräch zu teilen.
+Rechtsgrundlage ist Ihre ausdrückliche Einwilligung nach Art. 9 Abs. 2 lit. a DSGVO. Wir fragen Sie nicht nach diesen Informationen, und die App hat kein Feld dafür; wir sagen Ihnen hier und in der App deutlich, dass alles, was Sie sagen, Teil des gespeicherten Transkripts wird und Teil der Tutor-Erinnerung werden kann. Es dennoch zu sagen, ist Ihre eigene bewusste Handlung, und auf diese Handlung stützen wir uns. Sie können sie jederzeit widerrufen, indem Sie Ihr Konto löschen, womit alle Gespräche mit gelöscht werden; vorher können Sie Ihre Daten exportieren.
+
+Wenn Sie sich darauf nicht verlassen möchten, liegt die praktische Kontrolle bei Ihnen und kostet Sie nichts: Sprechen Sie diese Themen nicht an. Der Tutor funktioniert ohne sie genauso.
 
 Sie können jederzeit eine Kopie aller Ihrer Daten erhalten und Ihr Konto löschen; damit werden alle Gespräche gelöscht. Ein einzelnes Gespräch kann nicht separat gelöscht werden: Transkripte werden gespeichert, solange Ihr Konto besteht. Wenn Sie etwas Gesagtes entfernen möchten, steht Ihnen die Kontolöschung zur Verfügung, die alle Gespräche zusammen mit dem Konto löscht.
 
@@ -119,7 +121,7 @@ Die Protokolle unseres Load Balancers enthalten IP-Adressen. Rechtsgrundlage: un
 
 ### 3.7 Verarbeitung auf Ihrem Gerät
 
-- Die Sprachaktivitätserkennung (Voice Activity Detection) läuft vollständig auf Ihrem Telefon. Ein kleines neuronales Modell (Silero VAD, über die Bibliothek FluidAudio) erkennt nur, wann Sie zu sprechen beginnen und aufhören. Es erkennt keine Wörter und sendet nichts.
+- Die Sprachaktivitätserkennung (Voice Activity Detection) läuft vollständig auf Ihrem Telefon. Ein kleines neuronales Modell (Silero VAD) erkennt nur, wann Sie zu sprechen beginnen und aufhören. Es erkennt keine Wörter und sendet nichts. Unter iOS läuft es über die Bibliothek FluidAudio, unter Android über ONNX Runtime; in beiden Fällen bleibt es auf dem Gerät.
 - Erinnerungen werden lokal auf Ihrem Telefon geplant (Abschnitt 6).
 
 ### 3.8 Kinder und Jugendliche
@@ -167,20 +169,23 @@ Wir setzen die folgenden Anbieter ein, um die App zu betreiben.
 
 | Anbieter | Rolle | Was er erhält | Standort und Garantien |
 | --- | --- | --- | --- |
-| Google: Firebase Authentication | Anmeldung | Nutzerkennung, E-Mail, Anmeldemethode und Zeitpunkt | Globale (US-)Infrastruktur; Google Cloud DPA, SCC, EU-US Data Privacy Framework |
+| Google: Firebase Authentication und Google Sign-In | Anmeldung, auf beiden Plattformen | Nutzerkennung, E-Mail, Anmeldemethode und Zeitpunkt | Globale (US-)Infrastruktur; Google Cloud DPA, SCC, EU-US Data Privacy Framework |
 | Google: Cloud Firestore | Hauptdatenbank | Alle Konto- und Lerndaten | Frankfurt (europe-west3), EU |
 | Google: Vertex AI (Gemini) | Sprachverstehen, Tutor-Antworten, Sitzungsauswertung | Audio Ihrer Äußerungen sowie der in Abschnitt 4 genannte Kontext | Globaler Endpunkt: Verarbeitung kann außerhalb der EU stattfinden; DPA, SCC, DPF; kein Modelltraining |
 | Google: Firebase Analytics | Produktanalyse | App-Ereignisse, nur mit Ihrer Einwilligung (Abschnitt 7) | DPA, SCC, DPF |
 | Google: Firebase Crashlytics | Absturzberichte | Absturz- und Fehlerberichte: Stacktraces, Gerätemodell, OS- und App-Version, Breadcrumb-Ereignisse und technische Kontextschlüssel (Abschnitt 7); dazu technische Basisdaten bei jedem App-Start (eine Firebase-Installationskennung und Sitzungsereignisse) | DPA, SCC, DPF |
 | Hetzner Online GmbH | Hosting unserer API und der Sprachsynthese | Datenverkehr während der Übertragung sowie die technischen Protokolle aus Abschnitt 3.6 (IP-Adressen und möglicherweise kurze Gesprächsausschnitte), 7 Tage aufbewahrt; keine Datenbank mit Ihren Daten | Deutschland, EU; Auftragsverarbeitungsvertrag (AV-Vertrag) |
-| RevenueCat, Inc. | Abonnementverwaltung | Die von uns erzeugte interne Kundenkennung (rcAppUserId), die von Apple gemeldete Kauf- und Verlängerungshistorie sowie technische Standarddaten, die das SDK mit jeder Anfrage sendet (Gerätemodell und Herstellerkennung (IDFV), Storefront-Land, App-Version, IP-Adresse) | USA; SCC |
-| Apple Inc. | App Store und In-App-Kauf | Zahlungsdaten (wir sehen sie nie) | Nach Apples eigenen Bedingungen |
+| RevenueCat, Inc. | Abonnementverwaltung | Die von uns erzeugte interne Kundenkennung (rcAppUserId), die vom jeweiligen Store gemeldete Kauf- und Verlängerungshistorie sowie technische Standarddaten, die das SDK mit jeder Anfrage sendet (Gerätemodell, Store-Land, App-Version, IP-Adresse und unter iOS die Herstellerkennung (IDFV)). Eine Werbekennung wird auf keiner der beiden Plattformen übermittelt (Abschnitt 7) | USA; SCC |
+| Apple Inc. | "Mit Apple anmelden", auf beiden Plattformen; App Store und In-App-Kauf, für Käufe unter iOS | Bei der Anmeldung: dass und wann Sie sich authentifiziert haben, Ihre Apple-ID sowie die E-Mail-Adresse oder Apple-Weiterleitungsadresse, die Sie an uns freigeben. Bei Käufen: Zahlungsdaten (wir sehen sie nie) | USA; nach Apples eigenen Bedingungen |
+| Google (Google Play) | Google Play Store und Google Play Billing, für Käufe unter Android | Zahlungsdaten (wir sehen sie nie) | Nach Googles eigenen Bedingungen |
 
 Wir verkaufen Ihre personenbezogenen Daten nicht. Wir geben Ihre Daten nie an Prüfungsanbieter, Sprachschulen oder Behörden weiter.
 
 ## 6. Erinnerungen: lokal statt Push
 
-Alle Erinnerungen (die tägliche Erinnerung, Streaks, Wochenfortschritt, fällige Wörter) werden von der App **auf Ihrem Telefon** über das iOS-Mitteilungssystem geplant. Dahinter steht keine Push-Infrastruktur: Kein Geräte-Token wird an unsere Server gesendet, und keine Mitteilung kommt von außen. Erinnerungen funktionieren auch offline. Die iOS-Mitteilungserlaubnis steuern Sie jederzeit in den iOS-Einstellungen.
+Alle Erinnerungen (die tägliche Erinnerung, Streaks, Wochenfortschritt, fällige Wörter) werden von der App **auf Ihrem Telefon** über das Mitteilungssystem Ihres Telefons geplant. Dahinter steht keine Push-Infrastruktur: Die App enthält keine Push-Messaging-Komponente, es wird nie ein Geräte-Token erzeugt oder an unsere Server gesendet, und keine Mitteilung kommt von außen. Erinnerungen funktionieren auch offline.
+
+Die Mitteilungserlaubnis steuern Sie jederzeit in den Einstellungen Ihres Telefons: unter iOS in Einstellungen → Eduvia → Mitteilungen, unter Android in Einstellungen → Apps → Eduvia → Benachrichtigungen.
 
 ## 7. Analyse und Absturzberichte
 
@@ -198,7 +203,7 @@ Das sind zwei verschiedene Dinge mit zwei verschiedenen Regeln.
   - niemals Ihre Gespräche, Ihre Stimme oder Ihren Namen.
 - Wenn Sie zustimmen, werden Analyse-Ereignisse mit Ihrer Nutzerkennung verknüpft, damit Ihre Nutzung über Ihre Geräte hinweg nur einmal zählt; mit dem Widerruf endet das.
 - Ihre Entscheidung wird mit Datum gespeichert und mit Ihrem Konto abgeglichen, sodass sie eine Neuinstallation der App übersteht.
-- Werbesignale sind deaktiviert: keine Werbekennungen (IDFA), keine Werbepersonalisierung, kein App-übergreifendes Tracking und keine Tracking-Abfragen. Wir verfolgen Sie nicht.
+- Werbesignale sind deaktiviert: keine Werbekennungen (unter iOS die IDFA, unter Android die Advertising ID), keine Werbepersonalisierung, kein App-übergreifendes Tracking und keine Tracking-Abfragen. Unter Android entfernt die App die Berechtigungen für die Werbekennung, die ihre Drittanbieter-Bibliotheken sonst hinzufügen würden, aktiv; die Kennung steht der App damit gar nicht zur Verfügung. Wir verfolgen Sie nicht.
 - Die Aufbewahrung der Analysedaten bei Google ist auf 2 Monate eingestellt.
 
 ### Firebase Crashlytics: standardmäßig an, abschaltbar
@@ -213,11 +218,11 @@ Das sind zwei verschiedene Dinge mit zwei verschiedenen Regeln.
 ## 8. Rechtsgrundlagen im Überblick
 
 - **Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)**: alles, was nötig ist, um den von Ihnen gewünschten Dienst zu erbringen: Übungssitzungen einschließlich der Verarbeitung Ihrer Sprachdaten, Transkripte, Tutor-Gedächtnis, Rückmeldungen und Auswertungen, Wortschatz und Fortschritt, Personalisierung, Abonnementverwaltung sowie Export und Löschung in der App. Die Sprachverarbeitung ist für einen Sprachtutor technisch notwendig, und jede Aufnahme geschieht innerhalb einer Sitzung, die Sie gestartet haben.
-- **Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, §25 Abs. 1 TDDDG)**: Firebase Analytics. **Ausdrückliche Einwilligung (Art. 9 Abs. 2 lit. a DSGVO)**: sensible Informationen, die Sie im Gespräch teilen möchten (Abschnitt 3.5).
+- **Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, §25 Abs. 1 TDDDG)**: Firebase Analytics, eine eigene Entscheidung auf einem eigenen Bildschirm. **Ausdrückliche Einwilligung (Art. 9 Abs. 2 lit. a DSGVO)**: sensible Informationen, die Sie im Gespräch teilen, in dem in Abschnitt 3.5 beschriebenen Sinn (es gibt dafür keinen eigenen Bildschirm; wir sagen Ihnen, was passiert, und Sie entscheiden, was Sie sagen).
 - **Berechtigte Interessen (Art. 6 Abs. 1 lit. f DSGVO)**: Absturzberichte (mit Ihrem Widerspruchsrecht), Sicherheit und Missbrauchsschutz, Server-Protokolle und interne KI-Nutzungsdaten zur Kostenkontrolle.
 - **Rechtliche Verpflichtung (Art. 6 Abs. 1 lit. c DSGVO)**: soweit Gesetze eine Verarbeitung verlangen.
 
-So widerrufen oder widersprechen Sie: Analyse über den Schalter in Ihrem Profil; Absturzberichte im Profil unter Datenschutz; Mitteilungen und Mikrofon in den iOS-Einstellungen (ohne Mikrofon funktionieren die Sprachfunktionen nicht mehr, alles andere weiter); sensible Themen, indem Sie sie nicht ansprechen oder Ihr Konto löschen.
+So widerrufen oder widersprechen Sie: Analyse über den Schalter in Ihrem Profil; Absturzberichte im Profil unter Datenschutz; Mitteilungen und Mikrofon in den Einstellungen Ihres Telefons (ohne Mikrofon funktionieren die Sprachfunktionen nicht mehr, alles andere weiter); sensible Themen, indem Sie sie nicht ansprechen oder Ihr Konto löschen.
 
 ## 9. Wo Ihre Daten liegen und wie lange
 
@@ -238,7 +243,9 @@ Ihre Kontodaten werden in Google Cloud Firestore in Frankfurt (Deutschland, EU) 
 
 ### Konto löschen
 
-Sie können Ihr Konto direkt in der App löschen: Öffnen Sie Ihr **Profil** und scrollen Sie zum Bereich **Danger Zone** ganz unten.
+Sie können Ihr Konto direkt in der App löschen: Öffnen Sie Ihr **Profil** und scrollen Sie zum Bereich **Gefahrenzone** ganz unten.
+
+Sie können die Löschung auch **ohne die App** verlangen, etwa wenn Sie sie bereits deinstalliert haben: Schreiben Sie an <thevaltorna@gmail.com> von der E-Mail-Adresse, die Ihr Konto nutzt. Die vollständige Anleitung steht auf einer eigenen Seite: [Ihr Eduvia-Konto löschen](https://geteduvia.com/delete-account/de/). Wir schließen eine solche Anfrage innerhalb von 30 Tagen ab und bestätigen sie per E-Mail; gelöscht werden dieselben Daten wie bei der Löschung in der App.
 
 Was passiert, in dieser Reihenfolge:
 
@@ -250,7 +257,7 @@ Schlägt ein Schritt fehl, zeigt die App einen Fehler und bittet Sie, es erneut 
 
 Ehrliche Details, die Sie kennen sollten:
 
-- **Ihr Abonnement wird nicht automatisch gekündigt.** Kündigen Sie es separat in den iOS-Einstellungen → Abonnements; sonst bucht Apple weiter ab.
+- **Ihr Abonnement wird nicht automatisch gekündigt.** Kündigen Sie es separat in dem Store, in dem Sie es gekauft haben, sonst wird weiter abgebucht: unter iOS in Einstellungen → Ihr Name → Abonnements, unter Android in der Google-Play-App → Zahlungen und Abos → Abos.
 - **Eine technische Markierung bleibt 48 Stunden** nach der Löschung bestehen. Sie enthält Ihre Nutzerkennung, Ihre RevenueCat-Kundenkennung und einen Vermerk, ob die Löschung bei RevenueCat noch abgeschlossen werden muss. Sie existiert, damit eine noch laufende Anfrage die Daten eines gelöschten Kontos nicht neu anlegen kann und damit ein neuer Versuch die Löschung bei RevenueCat abschließen kann. Nach 48 Stunden verliert sie ihre Wirkung.
 - **Sicherungen leeren sich innerhalb von 7 Tagen.** Wenn Sie Ihr Konto löschen, verschwinden Ihre Daten sofort aus den Produktivsystemen. Kopien in technischen Sicherungen der Datenbank verschwinden automatisch innerhalb von 7 Tagen. Wir stellen gelöschte Konten nicht aus Sicherungen wieder her.
 - **Protokollausschnitte verschwinden ebenfalls innerhalb von 7 Tagen** (Abschnitt 3.6).
@@ -321,6 +328,8 @@ E-Mail: <thevaltorna@gmail.com>
 Website: <https://geteduvia.com>
 
 ## 18. Änderungsprotokoll
+
+**Version 1.1 (2026-09-10)**: Android-Release. Die Erklärung beschreibt nun beide Plattformen: Google ist als Empfänger der Zahlungsdaten für Käufe bei Google Play benannt, die RevenueCat-Zeile nennt, was das SDK auf welcher Plattform sendet, die Sprachaktivitätserkennung nennt die jeweils genutzte Bibliothek, Mitteilungen und Berechtigungswege sind für beide Plattformen beschrieben, und der Abschnitt zu Werbekennungen hält fest, dass die Android-App sie entfernt. Es werden keine neuen Datenkategorien erhoben, und keine Rechtsgrundlage hat sich geändert.
 
 **Version 1.0 (2026-08-26)**: Erstveröffentlichung.
 

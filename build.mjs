@@ -46,6 +46,23 @@ const pages = [
     switch: { current: 'DE', links: [{ label: 'English', href: '/terms/' }, { label: 'Deutsch', href: '/terms/de/' }] },
   },
   {
+    // Google Play requires a URL where a user can request account deletion WITHOUT installing the
+    // app, alongside the in-app path. The Data safety form has a field for it and the listing
+    // cannot be submitted without one, so this route is a release blocker rather than a nicety.
+    src: 'delete-account.en.md',
+    out: 'delete-account/index.html',
+    lang: 'en',
+    description: 'How to delete your Eduvia account and everything stored with it, in the app or by email.',
+    switch: { current: 'EN', links: [{ label: 'English', href: '/delete-account/' }, { label: 'Deutsch', href: '/delete-account/de/' }] },
+  },
+  {
+    src: 'delete-account.de.md',
+    out: 'delete-account/de/index.html',
+    lang: 'de',
+    description: 'So löschen Sie Ihr Eduvia-Konto und alle damit gespeicherten Daten, in der App oder per E-Mail.',
+    switch: { current: 'DE', links: [{ label: 'English', href: '/delete-account/' }, { label: 'Deutsch', href: '/delete-account/de/' }] },
+  },
+  {
     src: 'impressum.md',
     out: 'impressum/index.html',
     lang: 'de',
@@ -120,6 +137,7 @@ function landing() {
 <ul class="doc-list">
 <li><a href="privacy/">Privacy Policy</a> · <a href="privacy/de/" lang="de">Datenschutzerklärung</a></li>
 <li><a href="terms/">Terms of Use</a> · <a href="terms/de/" lang="de">Nutzungsbedingungen</a></li>
+<li><a href="delete-account/">Delete your account</a> · <a href="delete-account/de/" lang="de">Konto löschen</a></li>
 <li><a href="impressum/" lang="de">Impressum</a></li>
 <li><a href="third-party-notices/">Third-Party Notices</a></li>
 </ul>

@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Effective Date: 2026-08-26 · Version 1.0
+Effective Date: 2026-09-10 · Version 1.1
 
 This Privacy Policy ("Policy") explains how Oleh Herasymenko ("we", "us", "our") collects, uses and protects your personal information when you use the mobile application Eduvia (the "App").
 
@@ -35,7 +35,7 @@ Website: <https://geteduvia.com>
 - **Processing**: anything done with personal data: collecting, storing, using, disclosing or deleting it.
 - **Controller**: Oleh Herasymenko, who decides why and how personal data is processed.
 - **You, User**: any person who uses the App.
-- **App**: the mobile application Eduvia, available on the App Store.
+- **App**: the mobile application Eduvia, available on the App Store and on Google Play.
 - **AI Tutor ("Thorsten")**: the automated voice tutor in the App. It runs conversation practice in German and generates feedback using Google's Gemini models. Thorsten is software, not a human.
 - **Practice Session**: a spoken exercise with the AI Tutor: a free conversation or one of the role-play scenarios.
 - **Voice Data**: the audio of your speech captured during a Practice Session.
@@ -105,7 +105,9 @@ We do not ask you for sensitive data, and the App has no fields for it. But Eduv
 
 We process such information **only to hold the conversation and teach you the language**. Never for profiling. Never for advertising. Never to pass on to anyone.
 
-The legal basis is your explicit consent under Art. 9(2)(a) GDPR, which you give by choosing to share this information in the conversation.
+The legal basis is your explicit consent under Art. 9(2)(a) GDPR. We do not ask you for this information and the App has no field for it; we tell you plainly, here and in the App, that anything you choose to say becomes part of the stored Transcript and may become part of Tutor Memory. Saying it anyway is your own deliberate act, and that act is the consent we rely on. You can withdraw it at any time by deleting your account, which erases every conversation with it, and you can export your data first.
+
+If you would rather not rely on that, the practical control is in your hands and costs you nothing: do not raise these topics. The tutor works exactly the same without them.
 
 You can get a copy of all your data at any time, and you can delete your account, which erases all conversations with it. A single conversation cannot be deleted separately: transcripts are stored for as long as your account exists. If you want to remove something you said, the available option is deleting your account, which erases all conversations together with it.
 
@@ -119,7 +121,7 @@ The logs of our load balancer contain IP addresses. Legal basis: our legitimate 
 
 ### 3.7 Processing on your device
 
-- Voice activity detection runs entirely on your phone. A small neural model (Silero VAD, via the FluidAudio library) only decides when you start and stop speaking. It does not recognize words and sends nothing anywhere.
+- Voice activity detection runs entirely on your phone. A small neural model (Silero VAD) only decides when you start and stop speaking. It does not recognize words and sends nothing anywhere. On iOS it runs through the FluidAudio library, on Android through ONNX Runtime; in both cases it stays on the device.
 - Reminders are scheduled locally on your phone (Section 6).
 
 ### 3.8 Children
@@ -167,20 +169,23 @@ We use the following providers to run the App.
 
 | Provider | Role | What it receives | Location and safeguards |
 | --- | --- | --- | --- |
-| Google: Firebase Authentication | Sign-in | User ID, email, sign-in method and time | Global (US) infrastructure; Google Cloud DPA, SCCs, EU-US Data Privacy Framework |
+| Google: Firebase Authentication and Google Sign-In | Sign-in, on both platforms | User ID, email, sign-in method and time | Global (US) infrastructure; Google Cloud DPA, SCCs, EU-US Data Privacy Framework |
 | Google: Cloud Firestore | Main database | All account and learning data | Frankfurt (europe-west3), EU |
 | Google: Vertex AI (Gemini) | Speech understanding, tutor replies, session analysis | Audio of your utterances plus the context listed in Section 4 | Global endpoint: processing may occur outside the EU; DPA, SCCs, DPF; no model training |
 | Google: Firebase Analytics | Product analytics | App events, only if you consent (Section 7) | DPA, SCCs, DPF |
 | Google: Firebase Crashlytics | Crash reports | Crash and non-fatal error reports: stack traces, device model, OS and App version, breadcrumb events and technical context keys (Section 7); plus basic service data at each App launch (a Firebase installation identifier and session events) | DPA, SCCs, DPF |
 | Hetzner Online GmbH | Hosting of our API and voice synthesis | Traffic in transit, plus the technical logs of Section 3.6 (IP addresses and possibly short conversation excerpts), kept 7 days; no database of your data | Germany, EU; data processing agreement (AV-Vertrag) |
-| RevenueCat, Inc. | Subscription management | The internal customer ID we create (rcAppUserId), the purchase and renewal history reported by Apple, and standard technical data its SDK sends with each request (device model and vendor identifier (IDFV), storefront country, app version, IP address) | USA; SCCs |
-| Apple Inc. | App Store and In-App Purchase | Payment data (we never see it) | Under Apple's own terms |
+| RevenueCat, Inc. | Subscription management | The internal customer ID we create (rcAppUserId), the purchase and renewal history reported by the store you bought from, and standard technical data its SDK sends with each request (device model, store country, app version, IP address, and on iOS the vendor identifier (IDFV)). No advertising identifier is sent on either platform (Section 7) | USA; SCCs |
+| Apple Inc. | Sign in with Apple, on both platforms; App Store and In-App Purchase, for purchases made on iOS | For sign-in: that you authenticated and when, your Apple ID, and the email address or Apple relay address you choose to release to us. For purchases: payment data (we never see it) | USA; under Apple's own terms |
+| Google (Google Play) | Google Play Store and Google Play Billing, for purchases made on Android | Payment data (we never see it) | Under Google's own terms |
 
 We do not sell your personal data. We never share your data with examination organizations, language schools, or government authorities.
 
 ## 6. Notifications: local, not push
 
-All reminders (the daily reminder, streaks, weekly progress, words due for review) are scheduled **on your phone** by the App, using the iOS notification system. There is no push infrastructure behind them: no device token is sent to our servers, and no notification arrives from outside. Reminders work even offline. You control the iOS notification permission at any time in iOS Settings.
+All reminders (the daily reminder, streaks, weekly progress, words due for review) are scheduled **on your phone** by the App, using your phone's own notification system. There is no push infrastructure behind them: the App contains no push messaging component, no device token is ever created or sent to our servers, and no notification arrives from outside. Reminders work even offline.
+
+You control the notification permission at any time in your phone's settings: on iOS in Settings → Eduvia → Notifications, on Android in Settings → Apps → Eduvia → Notifications.
 
 ## 7. Analytics and crash reports
 
@@ -198,7 +203,7 @@ These are two different things with two different rules.
   - never your conversations, voice or name.
 - If you agree, analytics events are linked to your user ID, so your usage counts once across your devices; withdrawing consent stops this.
 - Your decision is stored with its date and synced to your account, so it survives reinstalling the App.
-- Advertising signals are disabled: no advertising identifiers (IDFA), no ad personalization, no cross-app tracking, and no tracking prompts. We do not track you.
+- Advertising signals are disabled: no advertising identifiers (the IDFA on iOS, the Advertising ID on Android), no ad personalization, no cross-app tracking, and no tracking prompts. On Android the App actively removes the advertising-identifier permissions that its third-party libraries would otherwise add, so the identifier is not available to the App at all. We do not track you.
 - Analytics retention at Google is set to 2 months.
 
 ### Firebase Crashlytics: on by default, and you can turn it off
@@ -213,11 +218,11 @@ These are two different things with two different rules.
 ## 8. Legal bases at a glance
 
 - **Contract (Art. 6(1)(b) GDPR)**: everything needed to provide the service you asked for: Practice Sessions including the processing of your Voice Data, Transcripts, Tutor Memory, feedback and analysis, vocabulary and progress, personalization, subscription management, and the in-app export and deletion. Voice processing is technically necessary for a voice tutor, and every recording happens inside a session you started.
-- **Consent (Art. 6(1)(a) GDPR, §25(1) TDDDG)**: Firebase Analytics. **Explicit consent (Art. 9(2)(a) GDPR)**: sensitive information you choose to share in conversation (Section 3.5).
+- **Consent (Art. 6(1)(a) GDPR, §25(1) TDDDG)**: Firebase Analytics, which is a separate decision you make on its own screen. **Explicit consent (Art. 9(2)(a) GDPR)**: sensitive information you choose to share in conversation, in the sense described in Section 3.5 (there is no separate screen for it; we tell you what happens and you decide what to say).
 - **Legitimate interests (Art. 6(1)(f) GDPR)**: crash reports (with your right to object), security and abuse protection, server logs, and internal AI usage records for cost control.
 - **Legal obligation (Art. 6(1)(c) GDPR)**: where the law requires processing.
 
-How to withdraw or object: analytics with the switch in your Profile; crash reports under Profile → Privacy; notifications and the microphone in iOS Settings (without the microphone, voice features stop working and everything else keeps working); sensitive topics by not raising them, or by deleting your account.
+How to withdraw or object: analytics with the switch in your Profile; crash reports under Profile → Privacy; notifications and the microphone in your phone's settings (without the microphone, voice features stop working and everything else keeps working); sensitive topics by not raising them, or by deleting your account.
 
 ## 9. Where your data lives and for how long
 
@@ -238,7 +243,9 @@ Your account data is stored in Google Cloud Firestore in Frankfurt, Germany (EU)
 
 ### Deleting your account
 
-You can delete your account directly in the App: open your **Profile** and scroll to the **Danger Zone** section at the bottom.
+You can delete your account directly in the App: open your **Profile** and scroll to the **Danger zone** section at the bottom.
+
+You can also request deletion **without the App**, for example if you have already uninstalled it: write to <thevaltorna@gmail.com> from the email address your account uses. The full instructions are on a page of their own: [Deleting your Eduvia account](https://geteduvia.com/delete-account). We complete such a request within 30 days and confirm it by email; the same data is erased as when you delete the account in the App.
 
 What happens, in this order:
 
@@ -250,7 +257,7 @@ If a step fails, the App shows an error and asks you to try again. Partial delet
 
 Honest details you should know:
 
-- **Your subscription is not cancelled automatically.** Cancel it separately in iOS Settings → Subscriptions; otherwise Apple keeps billing you.
+- **Your subscription is not cancelled automatically.** Cancel it separately in the store you bought it from, otherwise billing continues: on iOS in Settings → your name → Subscriptions, on Android in the Google Play app → Payments and subscriptions → Subscriptions.
 - **A technical marker remains for 48 hours** after deletion. It contains your user ID, your RevenueCat customer ID, and a flag whether the RevenueCat deletion still has to complete. It exists so that a request still in flight cannot recreate data of a deleted account, and so a retry can finish the RevenueCat deletion. After 48 hours it stops working.
 - **Backups clear within 7 days.** When you delete your account, your data disappears from the live systems immediately. Copies in technical database backups disappear automatically within 7 days. We do not restore deleted accounts from backups.
 - **Log excerpts clear within 7 days** too (Section 3.6).
@@ -321,6 +328,8 @@ Email: <thevaltorna@gmail.com>
 Website: <https://geteduvia.com>
 
 ## 18. Changelog
+
+**Version 1.1 (2026-09-10)**: Android release. The Policy now describes both platforms: Google is named as the recipient of payment data for purchases made on Google Play, the RevenueCat row states what its SDK sends on each platform, the on-device voice activity detection names the library used on each platform, notifications and permission paths are described for both, and the section on advertising identifiers states that the Android build removes them. No new category of data is collected and no legal basis has changed.
 
 **Version 1.0 (2026-08-26)**: Initial release.
 

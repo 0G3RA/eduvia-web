@@ -1,14 +1,20 @@
 # Nutzungsbedingungen (EULA)
 
-Gültig ab: 2026-08-26 · Version 1.0
+Gültig ab: 2026-09-10 · Version 1.1
 
-Diese Endnutzer-Lizenzvereinbarung ("Vereinbarung", "Bedingungen") ist ein rechtsverbindlicher Vertrag zwischen Ihnen und Oleh Herasymenko, Röntgenstraße 5, 88048 Friedrichshafen, Deutschland ("Lizenzgeber", "wir", "uns"), über die Nutzung der mobilen Anwendung Eduvia (die "App") aus dem App Store.
+Diese Endnutzer-Lizenzvereinbarung ("Vereinbarung", "Bedingungen") ist ein rechtsverbindlicher Vertrag zwischen Ihnen und Oleh Herasymenko, Röntgenstraße 5, 88048 Friedrichshafen, Deutschland ("Lizenzgeber", "wir", "uns"), über die Nutzung der mobilen Anwendung Eduvia (die "App") aus dem App Store und aus Google Play.
 
 Mit dem Herunterladen, Installieren oder Nutzen der App stimmen Sie diesen Bedingungen zu. Wenn Sie nicht einverstanden sind, nutzen Sie die App nicht.
 
 **Mindestalter:** Sie müssen mindestens 16 Jahre alt sein, um die App zu nutzen. Mit der Nutzung bestätigen Sie, dass Sie diese Voraussetzung erfüllen.
 
-**WICHTIG:** Diese Vereinbarung bezieht die von Apple, Inc. veröffentlichte Standard-Endnutzer-Lizenzvereinbarung für lizenzierte Anwendungen ein ([Apple Standard EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)). Die Bedingungen dieser Vereinbarung sind nicht weniger streng als die Bedingungen der Apple-Standard-EULA.
+**Es kommt darauf an, aus welchem Store Sie die App bezogen haben.** In diesen Bedingungen bezeichnet "Ihr Store" den Store, aus dem Sie die App bezogen haben: den App Store oder Google Play. Gilt ein Abschnitt nur für einen der beiden, steht das in seiner Überschrift oder in seinen ersten Worten.
+
+**WICHTIG (nur App Store):** Haben Sie die App aus dem App Store bezogen, gelten für Sie die mit "Nur App Store" gekennzeichneten Abschnitte zusätzlich zum übrigen Text dieser Bedingungen. Diese Bedingungen schützen Sie nicht weniger als die von Apple, Inc. veröffentlichte Standard-Endnutzer-Lizenzvereinbarung für lizenzierte Anwendungen ([Apple Standard EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)). Soweit diese Bedingungen Ihnen in irgendeiner Hinsicht weniger Rechte einräumen als die Apple-Standard-EULA, geht die Apple-Standard-EULA insoweit vor.
+
+**Nur App Store, Klarstellung:** Sie und der Lizenzgeber sind sich einig, dass diese Vereinbarung ausschließlich zwischen Ihnen und dem Lizenzgeber geschlossen wird und nicht mit Apple, und dass allein der Lizenzgeber und nicht Apple für die App und ihre Inhalte verantwortlich ist.
+
+**Nur Google Play:** Haben Sie die App aus Google Play bezogen, gilt Apples EULA für Sie nicht; Ihre Nutzung der App unterliegt zusätzlich den Google-Play-Nutzungsbedingungen.
 
 ## 1. Was Eduvia ist
 
@@ -31,9 +37,13 @@ Eduvia ist ein Werkzeug für Gesprächspraxis, keine Prüfungsvorbereitungssoftw
 
 ## 2. Lizenzumfang
 
-Die Ihnen für die App gewährte Lizenz ist beschränkt auf eine nicht übertragbare Lizenz zur Nutzung der App auf Apple-Geräten, die Sie besitzen oder kontrollieren, im Rahmen der Nutzungsregeln der Apple Media Services Terms and Conditions.
+Sie erhalten eine beschränkte, einfache (nicht ausschließliche), nicht übertragbare Lizenz zur Nutzung der App auf Geräten, die in Ihrem Eigentum stehen oder die Sie kontrollieren, für Ihr eigenes Sprachtraining. Sie dürfen die App nicht verbreiten oder über ein Netzwerk verfügbar machen, wo sie von mehreren Geräten gleichzeitig genutzt werden könnte.
 
-Diese Lizenz erlaubt nicht die Nutzung der App auf Apple-Geräten, die Sie nicht besitzen oder kontrollieren. Außer im Rahmen der Nutzungsregeln dürfen Sie die App nicht über ein Netzwerk verbreiten oder verfügbar machen, wo sie von mehreren Geräten gleichzeitig genutzt werden könnte.
+**Nur App Store:** Haben Sie die App aus dem App Store bezogen, ist diese Lizenz zusätzlich auf Apple-Geräte beschränkt, die Sie besitzen oder kontrollieren, im Rahmen der Nutzungsregeln der Apple Media Services Terms and Conditions; die Nutzung auf einem Apple-Gerät, das Sie nicht besitzen oder kontrollieren, ist nicht erlaubt. Diese Lizenz kann auch von anderen mit Ihnen verbundenen Accounts über Familienfreigabe oder Volumenlizenzen genutzt werden.
+
+Bei der Nutzung der App müssen Sie die anwendbaren Bedingungen Dritter einhalten, einschließlich der Bedingungen Ihres Mobilfunkvertrags.
+
+**Nur Google Play:** Haben Sie die App aus Google Play bezogen, unterliegt Ihre Nutzung zusätzlich den Google-Play-Nutzungsbedingungen.
 
 ## 3. Ein unabhängiges Werkzeug: keine Verbindung zu Prüfungsanbietern, keine Erfolgsgarantie
 
@@ -99,46 +109,52 @@ Der Zugriff auf Ihre eigenen Daten wird nie eingeschränkt: weder durch das Abon
 
 ### Tarife und Preise
 
-Die App bietet zwei automatisch verlängerbare Abonnements über Apple In-App-Kauf an, in einer Abonnementgruppe:
+Die App bietet zwei automatisch verlängerbare Abonnements in einer Abonnementgruppe an, abgerechnet über Ihren Store: über Apple In-App-Kauf im App Store und über Google Play Billing bei Google Play.
 
 - **Eduvia Pro Monatlich**: 9,99 EUR pro Monat, ohne kostenlose Testphase.
 - **Eduvia Pro Jährlich**: 89,99 EUR pro Jahr, mit 3-tägiger kostenloser Testphase für neue Abonnenten.
 
-Das sind die Basispreise für Deutschland; der App Store zeigt und berechnet den Preis für Ihr Land und Ihre Währung. Beide Tarife liegen in derselben Abonnementgruppe, sodass Sie zwischen ihnen wechseln können; den Wechsel wickelt Apple ab.
+Alle Preise verstehen sich inklusive Mehrwertsteuer. Das sind die Preise für Deutschland; Ihr Store zeigt und berechnet den Preis für Ihr Land und Ihre Währung einschließlich der dort anwendbaren Mehrwertsteuer. Beide Tarife liegen in derselben Abonnementgruppe, sodass Sie zwischen ihnen wechseln können; den Wechsel wickelt Ihr Store ab.
 
-Die kostenlose Testphase gibt es nur beim Jahrestarif; der Monatstarif hat keine Testphase. Ob Sie für die Testphase infrage kommen, bestimmt Apple anhand Ihrer Apple-ID. Die Testphase geht in ein kostenpflichtiges Abonnement über, wenn Sie nicht mindestens 24 Stunden vor ihrem Ende kündigen. Während der Testphase wird nichts berechnet.
+Die kostenlose Testphase gibt es nur beim Jahrestarif; der Monatstarif hat keine Testphase. Ob Sie für die Testphase infrage kommen, bestimmt Ihr Store anhand Ihrer Apple-ID oder Ihres Google-Kontos. Die Testphase geht in ein kostenpflichtiges Abonnement über, wenn Sie nicht mindestens 24 Stunden vor ihrem Ende kündigen. Während der Testphase wird nichts berechnet.
+
+Ein Abonnement kann nicht von einem Store in den anderen übertragen werden. Es schaltet jedoch das Eduvia-Konto frei, auf dem es aktiviert wurde: Wenn Sie Eduvia auf einem iPhone und auf einem Android-Telefon nutzen, deckt ein Abonnement beide ab; abgerechnet wird es weiterhin über den Store, in dem Sie es gekauft haben.
 
 ### Unbegrenzte Praxis und faire Nutzung
 
-Pro beinhaltet unbegrenztes Sprechtraining mit dem Tutor im Rahmen einer fairen Nutzung: Wir zählen weder Sitzungen noch Minuten oder Nachrichten; allein zum Schutz vor automatisierter oder missbräuchlicher Nutzung besteht eine monatliche Nutzungsgrenze, die beim üblichen täglichen Lernen nicht erreicht wird. Die Grenze erneuert sich monatlich ab dem Tag Ihrer Zahlung, auch bei einem Jahresabonnement. Sollten Sie sie erreichen, zeigt Ihnen die App das genaue Datum der Erneuerung an. Aus technischen Stabilitätsgründen ist eine einzelne Live-Sitzung in ihrer Länge begrenzt (derzeit etwa 50 Minuten); die nächste Sitzung können Sie sofort starten. Der Zugriff auf Ihre eigenen Daten, also Gesprächsverlauf, Zusammenfassungen und Wortschatz, wird zu keinem Zeitpunkt eingeschränkt.
+Pro ist nicht durch die Anzahl der Sitzungen, durch Minuten oder durch Nachrichten begrenzt: Nichts davon wird gezählt. Zum Schutz vor automatisierter oder missbräuchlicher Nutzung besteht stattdessen ein monatliches Nutzungsbudget, das sich nach dem Rechenaufwand Ihrer Sitzungen bemisst und nicht nach deren Anzahl. Beim üblichen täglichen Lernen wird es nicht erreicht. Die App zeigt Ihnen Ihr aktuelles Budget im Abo-Bereich und, falls Sie es erreichen, das genaue Datum der Erneuerung. Das Budget erneuert sich monatlich ab dem Tag Ihrer Zahlung, auch bei einem Jahresabonnement. Aus technischen Stabilitätsgründen ist eine einzelne Live-Sitzung in ihrer Länge begrenzt (derzeit etwa 50 Minuten); die nächste Sitzung können Sie sofort starten. Der Zugriff auf Ihre eigenen Daten, also Gesprächsverlauf, Zusammenfassungen und Wortschatz, wird zu keinem Zeitpunkt eingeschränkt.
 
 ### Zahlung, Verlängerung, Kündigung
 
-- Zahlungen wickelt Apple In-App-Kauf ab. Der Abonnementstatus wird über RevenueCat verwaltet (siehe Datenschutzerklärung).
-- Die Zahlung wird bei Kaufbestätigung über Ihre Apple-ID abgerechnet.
-- Abonnements verlängern sich automatisch, wenn sie nicht mindestens 24 Stunden vor Ende des laufenden Zeitraums gekündigt werden. Verwalten und kündigen Sie in den iOS-Einstellungen → Abonnements.
+- Zahlungen wickelt Ihr Store ab: Apple In-App-Kauf im App Store, Google Play Billing bei Google Play. Der Abonnementstatus wird über RevenueCat verwaltet (siehe Datenschutzerklärung).
+- Die Zahlung wird bei Kaufbestätigung über Ihre Apple-ID oder Ihr Google-Play-Konto abgerechnet.
+- Abonnements verlängern sich automatisch, wenn sie nicht mindestens 24 Stunden vor Ende des laufenden Zeitraums gekündigt werden. Verwalten und kündigen Sie unter iOS in Einstellungen → Ihr Name → Abonnements und unter Android in der Google-Play-App → Zahlungen und Abos → Abos.
 - Nach der Kündigung bleibt der Pro-Zugang bis zum Ende des bezahlten Zeitraums bestehen.
 - Ein Abonnement ist mit dem Eduvia-Konto verknüpft, auf dem es aktiviert wurde, und schaltet nur dieses Konto frei. Solange dieses Konto besteht, kann das Abonnement nicht auf ein anderes Konto übertragen werden; nach der Löschung Ihres Kontos können Sie es über "Käufe wiederherstellen" auf einem neuen Konto aktivieren.
-- Wenn Sie die App neu installieren oder ein neues Konto anlegen, nutzen Sie "Käufe wiederherstellen" in der App, um ein aktives Abonnement wiederherzustellen.
-- Apple ist weder für die App noch für Ansprüche im Zusammenhang mit ihr verantwortlich.
+- Wenn Sie die App neu installieren oder ein neues Konto anlegen, nutzen Sie "Käufe wiederherstellen" in der App, um ein aktives Abonnement wiederherzustellen. "Käufe wiederherstellen" wirkt innerhalb des Stores, in dem das Abonnement gekauft wurde.
+- Wir können die Abonnementpreise für künftige Abrechnungszeiträume ändern. Ihr Store informiert Sie vorab und holt, soweit erforderlich, Ihre Zustimmung ein; stimmen Sie nicht zu, endet das Abonnement zum Ende des laufenden Zeitraums.
 
 ## 9. Erstattungen
 
-Alle Käufe werden über Apple abgewickelt. Erstattungen bearbeitet Apple nach Apples Erstattungsrichtlinien; der Lizenzgeber kann Erstattungen nicht direkt vornehmen. Eine Erstattung beantragen Sie unter [reportaproblem.apple.com](https://reportaproblem.apple.com).
+Käufe wickelt Ihr Store ab, nicht wir, und Erstattungen richten sich nach den Richtlinien dieses Stores.
 
-**Verbraucher in der EU:** Ihnen kann ein gesetzliches Widerrufsrecht zustehen. Da alle Käufe über Apple laufen, richten Sie Widerrufe über den obigen Link an Apple.
+**App Store.** Erstattungen bearbeitet Apple nach Apples Erstattungsrichtlinien; der Lizenzgeber kann sie nicht direkt vornehmen. Eine Erstattung beantragen Sie unter [reportaproblem.apple.com](https://reportaproblem.apple.com).
+
+**Google Play.** Eine Erstattung beantragen Sie in der Google-Play-App oder unter [play.google.com](https://play.google.com/store/account/subscriptions). Über Erstattungen entscheidet Google nach seinen eigenen Richtlinien. Verweist Google Sie an uns, schreiben Sie an <thevaltorna@gmail.com>; wir wickeln die Erstattung dann über die Google Play Console ab.
+
+**Verbraucher in der EU und im EWR, Widerrufsrecht.** Ihnen steht bei einem Kauf digitaler Inhalte ein gesetzliches Widerrufsrecht von 14 Tagen zu, vorbehaltlich der gesetzlichen Ausnahmen. Die Zahlung zieht Ihr Store ein, und je nach Store und Land ist Verkäufer des Abonnements entweder der Store-Betreiber oder der Lizenzgeber. Damit Sie in keinem Fall ohne Adresse dastehen: Richten Sie Ihren Widerruf entweder auf dem oben genannten Weg an den Store oder an uns unter <thevaltorna@gmail.com>, ganz wie Sie möchten. Ein an uns gerichteter Widerruf ist wirksam; ist der Store der Verkäufer, leiten wir ihn weiter und unterstützen Ihr Anliegen.
 
 ## 10. Beendigung
 
-**Durch Sie:** Sie können diese Vereinbarung jederzeit beenden, indem Sie Ihr Konto in der App löschen (in Ihrem Profil, im Bereich "Danger Zone" ganz unten) und die App deinstallieren.
+**Durch Sie:** Sie können diese Vereinbarung jederzeit beenden, indem Sie Ihr Konto in der App löschen (in Ihrem Profil, im Bereich "Gefahrenzone" ganz unten) und die App deinstallieren.
 
-**Durch den Lizenzgeber:** Der Lizenzgeber kann Ihren Zugang mit angemessener Ankündigung sperren oder kündigen, wenn Sie gegen diese Bedingungen oder die App-Store-Bedingungen verstoßen. Bei schwerwiegenden Verstößen, Betrug, Missbrauch oder wenn das Gesetz es verlangt, kann die Beendigung sofort erfolgen.
+**Durch den Lizenzgeber:** Der Lizenzgeber kann Ihren Zugang mit angemessener Ankündigung sperren oder kündigen, wenn Sie gegen diese Bedingungen oder die Bedingungen Ihres Stores verstoßen. Bei schwerwiegenden Verstößen, Betrug, Missbrauch oder wenn das Gesetz es verlangt, kann die Beendigung sofort erfolgen.
 
-Mit der Beendigung endet Ihre Lizenz zur Nutzung der App. Die Abschnitte 3, 4, 12, 13, 14, 19 und 24 gelten über die Beendigung hinaus.
+Mit der Beendigung endet Ihre Lizenz zur Nutzung der App. Die Abschnitte 3, 4, 12, 13, 14, 16, 17, 18, 19, 20, 22 und 24 gelten über die Beendigung hinaus.
 
 ## 11. Kontolöschung
 
-Sie können Ihr Konto in der App löschen: Öffnen Sie Ihr Profil und scrollen Sie zum Bereich "Danger Zone" ganz unten.
+Sie können Ihr Konto in der App löschen: Öffnen Sie Ihr Profil und scrollen Sie zum Bereich "Gefahrenzone" ganz unten.
 
 Die Löschung läuft in dieser Reihenfolge ab:
 
@@ -150,7 +166,7 @@ Schlägt ein Schritt fehl, zeigt die App einen Fehler und bittet Sie, es erneut 
 
 Ebenfalls wichtig:
 
-- **Ihr Abonnement wird nicht automatisch gekündigt.** Kündigen Sie es separat in den iOS-Einstellungen → Abonnements; sonst bucht Apple weiter ab.
+- **Ihr Abonnement wird nicht automatisch gekündigt.** Kündigen Sie es separat in Ihrem Store, sonst wird weiter abgebucht: unter iOS in Einstellungen → Ihr Name → Abonnements, unter Android in der Google-Play-App → Zahlungen und Abos → Abos.
 - Eine technische Löschmarkierung bleibt 48 Stunden bestehen, Datenbank-Sicherungen leeren sich innerhalb von 7 Tagen, und wir stellen gelöschte Konten nicht aus Sicherungen wieder her. Einzelheiten stehen in der [Datenschutzerklärung](https://geteduvia.com/privacy).
 - Nach der Löschung können Sie ein neues Konto anlegen; ein aktives Abonnement lässt sich über "Käufe wiederherstellen" zurückholen. Gelöschte Lerndaten können nicht wiederhergestellt werden.
 
@@ -174,7 +190,7 @@ Die App wird in dem Zustand bereitgestellt, in dem sie sich befindet, und soweit
 
 Ihre gesetzlichen Rechte als Verbraucher, einschließlich der gesetzlichen Gewährleistungsrechte, bleiben von diesem Abschnitt unberührt.
 
-Entspricht die App einer anwendbaren Gewährleistung nicht, können Sie Apple benachrichtigen; Apple erstattet Ihnen dann den (etwaigen) Kaufpreis der App. Soweit gesetzlich zulässig, trifft Apple darüber hinaus keine Gewährleistungspflicht für die App.
+**Nur App Store:** Entspricht die App einer anwendbaren Gewährleistung nicht, können Sie Apple benachrichtigen; Apple erstattet Ihnen dann den (etwaigen) Kaufpreis der App. Soweit gesetzlich zulässig, trifft Apple darüber hinaus keine Gewährleistungspflicht für die App. Alle sonstigen Ansprüche, Verluste, Haftungen, Schäden, Kosten oder Aufwendungen, die auf eine Nichterfüllung einer Gewährleistung zurückzuführen sind, liegen allein in der Verantwortung des Lizenzgebers.
 
 ## 14. Haftung
 
@@ -191,25 +207,27 @@ Im Übrigen ist die Haftung für einfache Fahrlässigkeit ausgeschlossen. Zwinge
 
 ## 15. Wartung und Support
 
-Für Wartung und Support der App ist allein der Lizenzgeber verantwortlich, nicht Apple. Apple trifft keinerlei Verpflichtung, Wartungs- oder Supportleistungen für die App zu erbringen.
+Für Wartung und Support der App ist allein der Lizenzgeber verantwortlich, nicht Ihr Store. Insbesondere trifft Apple keinerlei Verpflichtung, Wartungs- oder Supportleistungen für die App zu erbringen.
 
 Support erreichen Sie unter: <thevaltorna@gmail.com>
 
 ## 16. Produktansprüche
 
-Für Ansprüche im Zusammenhang mit der App ist der Lizenzgeber verantwortlich, nicht Apple. Das gilt insbesondere für Produkthaftungsansprüche, Ansprüche wegen Nichteinhaltung gesetzlicher oder regulatorischer Anforderungen und Ansprüche aus dem Verbraucherschutzrecht.
+Für Ansprüche im Zusammenhang mit der App ist der Lizenzgeber verantwortlich, nicht Ihr Store. Das gilt insbesondere für Produkthaftungsansprüche, Ansprüche wegen Nichteinhaltung gesetzlicher oder regulatorischer Anforderungen und Ansprüche aus dem Verbraucherschutzrecht, und es gilt insbesondere im Verhältnis zu Apple.
 
 ## 17. Verletzung von Rechten des geistigen Eigentums
 
-Behauptet ein Dritter, die App verletze Rechte des geistigen Eigentums, ist allein der Lizenzgeber, nicht Apple, für Untersuchung, Verteidigung, Beilegung und Erfüllung solcher Ansprüche verantwortlich.
+Behauptet ein Dritter, die App verletze Rechte des geistigen Eigentums, ist allein der Lizenzgeber und nicht Ihr Store, für Untersuchung, Verteidigung, Beilegung und Erfüllung solcher Ansprüche verantwortlich; das gilt insbesondere im Verhältnis zu Apple.
 
 ## 18. Exportkontrolle und Rechtstreue
 
 Sie sichern zu, dass Sie sich nicht in einem Land befinden, das einem Embargo der US-Regierung unterliegt oder von der US-Regierung als terrorunterstützendes Land eingestuft wurde, und dass Sie auf keiner Liste der US-Regierung mit verbotenen oder beschränkten Parteien stehen.
 
-## 19. Drittbegünstigter
+## 19. Drittbegünstigter (nur App Store)
 
-Apple und die Tochtergesellschaften von Apple sind Drittbegünstigte dieser Vereinbarung. Mit Ihrer Zustimmung zu dieser Vereinbarung hat Apple das Recht, diese Vereinbarung als Drittbegünstigter Ihnen gegenüber durchzusetzen.
+Haben Sie die App aus dem App Store bezogen, sind Apple und die Tochtergesellschaften von Apple Drittbegünstigte dieser Vereinbarung; mit Ihrer Zustimmung zu dieser Vereinbarung hat Apple das Recht, diese Vereinbarung als Drittbegünstigter Ihnen gegenüber durchzusetzen.
+
+Haben Sie die App aus Google Play bezogen, gilt dieser Abschnitt nicht.
 
 ## 20. Anwendbares Recht und Streitbeilegung
 
@@ -222,6 +240,8 @@ Die Plattform der Europäischen Kommission zur Online-Streitbeilegung (OS-Plattf
 ## 21. Änderungen dieser Bedingungen
 
 Wir können diese Bedingungen ändern. Über wesentliche Änderungen informieren wir Sie vorab in der App und geben Ihnen die Möglichkeit, die Änderungen zu prüfen, bevor sie wirksam werden. Sind Sie nicht einverstanden, können Sie die Vereinbarung beenden, indem Sie Ihr Konto löschen, bevor die Änderungen wirksam werden. Schweigen allein gilt nicht als Zustimmung zu wesentlichen Änderungen.
+
+Stimmen Sie einer wesentlichen Änderung weder zu noch löschen Sie Ihr Konto, können wir diese Vereinbarung zum Ende Ihres laufenden Abrechnungszeitraums beenden; Ihr Pro-Zugang bleibt bis dahin bestehen, und es wird nichts weiter berechnet.
 
 Bei kleineren Änderungen, etwa Klarstellungen, redaktionellen Korrekturen oder gesetzlich erforderlichen Anpassungen, veröffentlichen wir die aktualisierte Fassung mit neuem Gültigkeitsdatum.
 
@@ -252,9 +272,11 @@ Deutschland
 E-Mail: <thevaltorna@gmail.com>
 Website: <https://geteduvia.com>
 
-Bei Fragen zu App-Store-Käufen wenden Sie sich an den [Apple Support](https://support.apple.com).
+Bei Fragen zu einem Kauf wenden Sie sich für den App Store an den [Apple Support](https://support.apple.com) und für Google Play an den [Google-Play-Support](https://support.google.com/googleplay).
 
 ## 27. Änderungsprotokoll
+
+**Version 1.1 (2026-09-10)**: Android-Release. Diese Bedingungen gelten nun für den App Store und für Google Play. Die Apple-spezifischen Klauseln (Apples EULA, die Nutzungsregeln für Apple-Geräte, Apples Gewährleistungsabhilfe und Apples Recht als Drittbegünstigter) gelten ausdrücklich nur für Nutzerinnen und Nutzer aus dem App Store und nicht für Google Play; Kauf, Kündigung und Erstattung sind für jeden Store getrennt beschrieben.
 
 **Version 1.0 (2026-08-26)**: Erstveröffentlichung.
 
