@@ -27,7 +27,7 @@ Website: <https://geteduvia.com>
 - **Analytics are off** until you switch them on. **Crash reports are on** by default, and you can switch them off.
 - **Reminders are local.** They are scheduled on your phone. Nothing is sent from our servers, and there are no push tokens.
 - We **never sell** your data, and we **never share it** with examination organizations, language schools or authorities.
-- You can **export everything** as a JSON file and **delete your account** directly in the App.
+- You can **export your data** as a JSON file and **delete your account** directly in the App.
 
 ## 1. The words we use
 
@@ -173,11 +173,13 @@ We use the following providers to run the App.
 | Google: Cloud Firestore | Main database | All account and learning data | Frankfurt (europe-west3), EU |
 | Google: Vertex AI (Gemini) | Speech understanding, tutor replies, session analysis | Audio of your utterances plus the context listed in Section 4 | Global endpoint: processing may occur outside the EU; DPA, SCCs, DPF; no model training |
 | Google: Firebase Analytics | Product analytics | App events, only if you consent (Section 7) | DPA, SCCs, DPF |
-| Google: Firebase Crashlytics | Crash reports | Crash and non-fatal error reports: stack traces, device model, OS and App version, breadcrumb events and technical context keys (Section 7); plus basic service data at each App launch (a Firebase installation identifier and session events) | DPA, SCCs, DPF |
+| Google: Firebase Crashlytics | Crash reports | Crash and non-fatal error reports: stack traces, device model, OS and App version, breadcrumb events and technical context keys (Section 7); plus, at each App launch, a Firebase installation identifier that the Firebase SDKs create to identify this installation. Turning crash reports off stops the reports; the installation identifier may still be created by the Firebase SDKs | DPA, SCCs, DPF |
 | Hetzner Online GmbH | Hosting of our API and voice synthesis | Traffic in transit, plus the technical logs of Section 3.6 (IP addresses and possibly short conversation excerpts), kept 7 days; no database of your data | Germany, EU; data processing agreement (AV-Vertrag) |
 | RevenueCat, Inc. | Subscription management | The internal customer ID we create (rcAppUserId), the purchase and renewal history reported by the store you bought from, and standard technical data its SDK sends with each request (device model, store country, app version, IP address, and on iOS the vendor identifier (IDFV)). No advertising identifier is sent on either platform (Section 7) | USA; SCCs |
 | Apple Inc. | Sign in with Apple, on both platforms; App Store and In-App Purchase, for purchases made on iOS | For sign-in: that you authenticated and when, your Apple ID, and the email address or Apple relay address you choose to release to us. For purchases: payment data (we never see it) | USA; under Apple's own terms |
 | Google (Google Play) | Google Play Store and Google Play Billing, for purchases made on Android | Payment data (we never see it) | Under Google's own terms |
+
+Transfers outside the EU and EEA rely on the European Commission's Standard Contractual Clauses and, where applicable, our providers' certification under the EU-US Data Privacy Framework. You can obtain a copy of the safeguards that apply to a given transfer by writing to <thevaltorna@gmail.com>.
 
 We do not sell your personal data. We never share your data with examination organizations, language schools, or government authorities.
 
@@ -196,11 +198,12 @@ These are two different things with two different rules.
 - **Off by default.** Nothing is collected until you actively agree.
 - You decide during onboarding, and you can change your mind at any time with the switch in your Profile.
 - Legal basis: your consent (Art. 6(1)(a) GDPR and §25(1) TDDDG).
-- If you agree, analytics covers exactly what the consent screen says:
+- If you agree, Firebase Analytics collects:
   - which screens you open and how often,
   - when a session starts and finishes,
   - what you do in the App, for example starting a session, saving a word or opening the subscription page,
-  - never your conversations, voice or name.
+  - never your conversations, voice or name,
+  - and, automatically, the technical data that every Firebase Analytics installation sends: an app-instance identifier, your device model, operating system and App version, the App language, and the approximate country Google derives from your IP address.
 - If you agree, analytics events are linked to your user ID, so your usage counts once across your devices; withdrawing consent stops this.
 - Your decision is stored with its date and synced to your account, so it survives reinstalling the App.
 - Advertising signals are disabled: no advertising identifiers (the IDFA on iOS, the Advertising ID on Android), no ad personalization, no cross-app tracking, and no tracking prompts. On Android the App actively removes the advertising-identifier permissions that its third-party libraries would otherwise add, so the identifier is not available to the App at all. We do not track you.
@@ -209,7 +212,7 @@ These are two different things with two different rules.
 ### Firebase Crashlytics: on by default, and you can turn it off
 
 - Purpose: keeping the service working. A crash report tells us what broke.
-- **On by default.** Legal basis: our legitimate interest in a stable and secure service (Art. 6(1)(f) GDPR).
+- **On by default.** Legal basis: our legitimate interest in a stable and secure service (Art. 6(1)(f) GDPR). The local storage that crash reporting needs on your device we treat as strictly necessary for keeping the App working (§25(2) no. 2 TDDDG); the reports themselves rest on that legitimate interest, and you can object at any time with the switch below.
 - **You can object at any time**: switch crash reports off under Profile → Privacy.
 - A report contains the crash stack trace, your device model, the OS and App versions, breadcrumb events, and technical context keys such as the active screen, the session mode, the app language, the state of permissions and your current level estimate. The App also reports non-fatal errors with the same technical context. Reports are linked to your user ID so we can investigate problems you tell us about.
 - Your decision is stored with its date and synced to your account.
@@ -266,7 +269,7 @@ After deletion you can create a new account, and an active subscription can be r
 
 ### Exporting your data
 
-You can download everything we store about you directly in the App, from your Profile. The export is a JSON file: a structured copy of your stored data, plus your sign-in record (email, name, avatar, sign-in providers, and the dates your account was created and last signed in).
+You can download your stored data directly in the App, from your Profile. The export is a JSON file: a structured copy of your stored data, plus your sign-in record (email, name, avatar, sign-in providers, and the dates your account was created and last signed in).
 
 The export does not include, and the App tells you this when you export:
 
@@ -277,6 +280,8 @@ The export does not include, and the App tells you this when you export:
 - copies held by RevenueCat,
 - the internal customer identifier we create for RevenueCat,
 - internal service records about usage and costs.
+
+The last two items are still your personal data. If you want them, write to us and we will send them to you: your right of access under Art. 15 GDPR covers them, even though they are not part of the in-app export file.
 
 ## 11. Your rights
 

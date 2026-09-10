@@ -196,11 +196,12 @@ Das sind zwei verschiedene Dinge mit zwei verschiedenen Regeln.
 - **Standardmäßig aus.** Es wird nichts erhoben, bis Sie aktiv zustimmen.
 - Sie entscheiden im Onboarding und können Ihre Meinung jederzeit mit dem Schalter in Ihrem Profil ändern.
 - Rechtsgrundlage: Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO und §25 Abs. 1 TDDDG).
-- Wenn Sie zustimmen, umfasst die Analyse genau das, was der Einwilligungsbildschirm sagt:
+- Wenn Sie zustimmen, erhebt Firebase Analytics:
   - welche Bildschirme Sie öffnen und wie oft,
   - wann eine Sitzung beginnt und endet,
   - was Sie in der App tun, zum Beispiel eine Sitzung starten, ein Wort speichern oder die Abo-Seite öffnen,
-  - niemals Ihre Gespräche, Ihre Stimme oder Ihren Namen.
+  - niemals Ihre Gespräche, Ihre Stimme oder Ihren Namen,
+  - und automatisch die technischen Daten, die jede Firebase-Analytics-Installation sendet: eine App-Instanz-Kennung, Ihr Gerätemodell, Betriebssystem und App-Version, die App-Sprache sowie das ungefähre Land, das Google aus Ihrer IP-Adresse ableitet.
 - Wenn Sie zustimmen, werden Analyse-Ereignisse mit Ihrer Nutzerkennung verknüpft, damit Ihre Nutzung über Ihre Geräte hinweg nur einmal zählt; mit dem Widerruf endet das.
 - Ihre Entscheidung wird mit Datum gespeichert und mit Ihrem Konto abgeglichen, sodass sie eine Neuinstallation der App übersteht.
 - Werbesignale sind deaktiviert: keine Werbekennungen (unter iOS die IDFA, unter Android die Advertising ID), keine Werbepersonalisierung, kein App-übergreifendes Tracking und keine Tracking-Abfragen. Unter Android entfernt die App die Berechtigungen für die Werbekennung, die ihre Drittanbieter-Bibliotheken sonst hinzufügen würden, aktiv; die Kennung steht der App damit gar nicht zur Verfügung. Wir verfolgen Sie nicht.
@@ -209,7 +210,7 @@ Das sind zwei verschiedene Dinge mit zwei verschiedenen Regeln.
 ### Firebase Crashlytics: standardmäßig an, abschaltbar
 
 - Zweck: den Dienst am Laufen halten. Ein Absturzbericht zeigt uns, was kaputtgegangen ist.
-- **Standardmäßig an.** Rechtsgrundlage: unser berechtigtes Interesse an einem stabilen und sicheren Dienst (Art. 6 Abs. 1 lit. f DSGVO).
+- **Standardmäßig an.** Rechtsgrundlage: unser berechtigtes Interesse an einem stabilen und sicheren Dienst (Art. 6 Abs. 1 lit. f DSGVO). Die lokale Speicherung, die die Absturzberichterstattung auf Ihrem Gerät benötigt, behandeln wir als unbedingt erforderlich für den Betrieb der App (§ 25 Abs. 2 Nr. 2 TDDDG); die Berichte selbst stützen sich auf dieses berechtigte Interesse, und Sie können jederzeit mit dem Schalter unten widersprechen.
 - **Sie können jederzeit widersprechen**: Schalten Sie die Absturzberichte in Ihrem Profil unter Datenschutz aus.
 - Ein Bericht enthält den Absturz-Stacktrace, Ihr Gerätemodell, die OS- und App-Version, Breadcrumb-Ereignisse sowie technische Kontextschlüssel wie den aktiven Bildschirm, den Sitzungsmodus, die App-Sprache, den Stand der Berechtigungen und Ihre aktuelle Niveau-Einschätzung. Die App meldet auch behebbare Fehler (non-fatal) mit demselben technischen Kontext. Berichte sind mit Ihrer Nutzerkennung verknüpft, damit wir von Ihnen gemeldete Probleme untersuchen können.
 - Ihre Entscheidung wird mit Datum gespeichert und mit Ihrem Konto abgeglichen.
