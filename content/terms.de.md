@@ -39,7 +39,7 @@ Eduvia ist ein Werkzeug für Gesprächspraxis, keine Prüfungsvorbereitungssoftw
 
 Sie erhalten eine beschränkte, einfache (nicht ausschließliche), nicht übertragbare Lizenz zur Nutzung der App auf Geräten, die in Ihrem Eigentum stehen oder die Sie kontrollieren, für Ihr eigenes Sprachtraining. Sie dürfen die App nicht verbreiten oder über ein Netzwerk verfügbar machen, wo sie von mehreren Geräten gleichzeitig genutzt werden könnte.
 
-**Nur App Store:** Haben Sie die App aus dem App Store bezogen, ist diese Lizenz zusätzlich auf Apple-Geräte beschränkt, die Sie besitzen oder kontrollieren, im Rahmen der Nutzungsregeln der Apple Media Services Terms and Conditions; die Nutzung auf einem Apple-Gerät, das Sie nicht besitzen oder kontrollieren, ist nicht erlaubt. Diese Lizenz kann auch von anderen mit Ihnen verbundenen Accounts über Familienfreigabe oder Volumenlizenzen genutzt werden.
+**Nur App Store:** Haben Sie die App aus dem App Store bezogen, ist diese Lizenz zusätzlich auf Apple-Geräte beschränkt, die in Ihrem Eigentum stehen oder die Sie kontrollieren, im Rahmen der Nutzungsregeln der Apple Media Services Terms and Conditions; die Nutzung auf einem Apple-Gerät, das nicht in Ihrem Eigentum steht und das Sie nicht kontrollieren, ist nicht erlaubt. Diese Lizenz kann auch von anderen mit Ihnen verbundenen Accounts über Familienfreigabe oder Volumenlizenzen genutzt werden.
 
 Bei der Nutzung der App müssen Sie die anwendbaren Bedingungen Dritter einhalten, einschließlich der Bedingungen Ihres Mobilfunkvertrags.
 
@@ -57,7 +57,7 @@ Sie können eine Prüfung als Ihr persönliches Lernziel festlegen. Das steuert 
 
 Das Verstehen Ihrer Sprache durch den Tutor sowie seine Antworten, Korrekturen, Übersetzungen, Zusammenfassungen und Niveau-Einschätzungen werden von einem KI-Modell (Google Gemini) erzeugt und können Fehler enthalten. KI-Rückmeldungen sind automatisiert und ungefähr; sie sind nicht gleichwertig mit der Bewertung durch eine qualifizierte menschliche Prüferin oder einen Prüfer. Für Ihre eigenen Entscheidungen bleiben Sie selbst verantwortlich, auch dafür, ob und wann Sie sich zu einer echten Prüfung anmelden.
 
-Einzelheiten der Sprachverarbeitung, einschließlich der genauen Angaben, welche Daten wohin übertragen werden, stehen in der [Datenschutzerklärung](https://geteduvia.com/privacy). Das Mikrofon ist nur während einer von Ihnen gestarteten Übungssitzung aktiv; die App hört nicht im Hintergrund mit.
+Einzelheiten der Sprachverarbeitung, einschließlich der genauen Angaben, welche Daten wohin übertragen werden, stehen in der [Datenschutzerklärung](https://geteduvia.com/privacy/de/). Das Mikrofon ist nur während einer von Ihnen gestarteten Übungssitzung aktiv; die App hört nicht im Hintergrund mit.
 
 ## 5. Kein medizinischer Dienst, kein Notfalldienst
 
@@ -167,7 +167,7 @@ Schlägt ein Schritt fehl, zeigt die App einen Fehler und bittet Sie, es erneut 
 Ebenfalls wichtig:
 
 - **Ihr Abonnement wird nicht automatisch gekündigt.** Kündigen Sie es separat in Ihrem Store, sonst wird weiter abgebucht: unter iOS in Einstellungen → Ihr Name → Abonnements, unter Android in der Google-Play-App → Zahlungen und Abos → Abos.
-- Eine technische Löschmarkierung bleibt 48 Stunden bestehen, Datenbank-Sicherungen leeren sich innerhalb von 7 Tagen, und wir stellen gelöschte Konten nicht aus Sicherungen wieder her. Einzelheiten stehen in der [Datenschutzerklärung](https://geteduvia.com/privacy).
+- Eine technische Löschmarkierung bleibt 48 Stunden bestehen, Datenbank-Sicherungen leeren sich innerhalb von 7 Tagen, und wir stellen gelöschte Konten nicht aus Sicherungen wieder her. Einzelheiten stehen in der [Datenschutzerklärung](https://geteduvia.com/privacy/de/).
 - Nach der Löschung können Sie ein neues Konto anlegen; ein aktives Abonnement lässt sich über "Käufe wiederherstellen" zurückholen. Gelöschte Lerndaten können nicht wiederhergestellt werden.
 
 ## 12. Geistiges Eigentum und Open-Source-Komponenten
@@ -251,7 +251,7 @@ Sollte eine Bestimmung dieser Bedingungen unwirksam sein oder werden, bleiben di
 
 ## 23. Gesamte Vereinbarung
 
-Diese Bedingungen bilden zusammen mit der [Datenschutzerklärung](https://geteduvia.com/privacy) die gesamte Vereinbarung zwischen Ihnen und dem Lizenzgeber über die App.
+Diese Bedingungen bilden zusammen mit der [Datenschutzerklärung](https://geteduvia.com/privacy/de/) die gesamte Vereinbarung zwischen Ihnen und dem Lizenzgeber über die App.
 
 ## 24. Freistellung
 

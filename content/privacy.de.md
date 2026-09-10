@@ -47,7 +47,7 @@ Website: <https://geteduvia.com>
 
 Eduvia ist eine App zum Üben von gesprochenem Deutsch mit einem KI-Sprachtutor. Sie bietet freie Gespräche, 202 Rollenspiel-Szenarien von A1 bis C1, Korrekturen im laufenden Gespräch, eine Auswertung nach jeder Sitzung in Ihrer Sprache, ein langfristiges Tutor-Gedächtnis, einen Wortschatztrainer mit Intervallwiederholung, Fortschrittsstatistiken, kurze Lesetexte und die Übersetzung jeder Tutor-Äußerung. Oberfläche und Inhalte sind in zehn Sprachen verfügbar.
 
-Eduvia ist ein unabhängiges Übungswerkzeug. Die App enthält keine Prüfungssimulationen und ist mit keinem Prüfungsanbieter verbunden. Einzelheiten stehen in den [Nutzungsbedingungen](https://geteduvia.com/terms).
+Eduvia ist ein unabhängiges Übungswerkzeug. Die App enthält keine Prüfungssimulationen und ist mit keinem Prüfungsanbieter verbunden. Einzelheiten stehen in den [Nutzungsbedingungen](https://geteduvia.com/terms/de/).
 
 ## 3. Welche Daten wir erheben
 
@@ -105,7 +105,7 @@ Wir fragen Sie nicht nach sensiblen Daten, und die App hat dafür keine Felder. 
 
 Wir verarbeiten solche Informationen **nur, um das Gespräch zu führen und Ihnen die Sprache beizubringen**. Nie für Profiling. Nie für Werbung. Nie zur Weitergabe an Dritte.
 
-Rechtsgrundlage ist Ihre ausdrückliche Einwilligung nach Art. 9 Abs. 2 lit. a DSGVO. Wir fragen Sie nicht nach diesen Informationen, und die App hat kein Feld dafür; wir sagen Ihnen hier und in der App deutlich, dass alles, was Sie sagen, Teil des gespeicherten Transkripts wird und Teil der Tutor-Erinnerung werden kann. Es dennoch zu sagen, ist Ihre eigene bewusste Handlung, und auf diese Handlung stützen wir uns. Sie können sie jederzeit widerrufen, indem Sie Ihr Konto löschen, womit alle Gespräche mit gelöscht werden; vorher können Sie Ihre Daten exportieren.
+Rechtsgrundlage ist Ihre ausdrückliche Einwilligung nach Art. 9 Abs. 2 lit. a DSGVO. Wir fragen Sie nicht nach diesen Informationen, und die App hat kein Feld dafür; wir sagen Ihnen hier und in der App deutlich, dass alles, was Sie sagen, Teil des gespeicherten Transkripts wird und Teil des Tutor-Gedächtnisses werden kann. Es dennoch zu sagen, ist Ihre eigene bewusste Handlung, und diese Handlung ist die Einwilligung, auf die wir uns stützen. Sie können diese Einwilligung jederzeit widerrufen, indem Sie Ihr Konto löschen, womit alle Gespräche mit gelöscht werden; vorher können Sie Ihre Daten exportieren.
 
 Wenn Sie sich darauf nicht verlassen möchten, liegt die praktische Kontrolle bei Ihnen und kostet Sie nichts: Sprechen Sie diese Themen nicht an. Der Tutor funktioniert ohne sie genauso.
 
