@@ -237,6 +237,7 @@ Your account data is stored in Google Cloud Firestore in Frankfurt, Germany (EU)
 | Database backups (point-in-time recovery and daily snapshots) | Up to 7 days; we do not restore deleted accounts from backups |
 | Server logs (IP addresses, technical events, possibly short conversation excerpts) | 7 days, including after account deletion |
 | Technical deletion marker after account deletion | 48 hours |
+| A deletion request sent through the web form (the address and your note) | 60 days at most, then deleted automatically |
 | AI usage records (internal cost control) | While your account exists; deleted with the account |
 | Subscription records | While your account exists; your RevenueCat record is deleted when you delete the account |
 | Analytics data (only if you consented) | 2 months at Google |
@@ -248,7 +249,9 @@ Your account data is stored in Google Cloud Firestore in Frankfurt, Germany (EU)
 
 You can delete your account directly in the App: open your **Profile** and scroll to the **Danger zone** section at the bottom.
 
-You can also request deletion **without the App**, for example if you have already uninstalled it: write to <thevaltorna@gmail.com> from the email address your account uses. The full instructions are on a page of their own: [Deleting your Eduvia account](https://geteduvia.com/delete-account). We complete such a request within 30 days and confirm it by email; the same data is erased as when you delete the account in the App.
+You can also request deletion **without the App**, for example if you have already uninstalled it: write to <thevaltorna@gmail.com> from the email address your account uses. The full instructions, and a form, are on a page of their own: [Deleting your Eduvia account](https://geteduvia.com/delete-account). We complete such a request within 30 days and confirm it by email; the same data is erased as when you delete the account in the App.
+
+What that form stores, and nothing else: the address you type and the note you optionally add, so that we can reply to you and find the account. **We do not store your IP address**, and the form never tells anyone whether an address has an account here, because a deletion form that answered that question would be a way to find out who uses Eduvia. A request is kept for at most 60 days and is deleted after that whether or not it was acted on. **Submitting the form does not delete anything by itself**: we confirm with you first, because anyone can type someone else's address into a public form.
 
 What happens, in this order:
 

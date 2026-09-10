@@ -237,6 +237,7 @@ Ihre Kontodaten werden in Google Cloud Firestore in Frankfurt (Deutschland, EU) 
 | Datenbank-Sicherungen (Point-in-time Recovery und tägliche Snapshots) | Bis zu 7 Tage; wir stellen gelöschte Konten nicht aus Sicherungen wieder her |
 | Server-Protokolle (IP-Adressen, technische Ereignisse, möglicherweise kurze Gesprächsausschnitte) | 7 Tage, auch nach einer Kontolöschung |
 | Technische Löschmarkierung nach der Kontolöschung | 48 Stunden |
+| Über das Web-Formular gesendete Löschanfrage (die Adresse und Ihre Notiz) | höchstens 60 Tage, danach automatisch gelöscht |
 | KI-Nutzungsdaten (interne Kostenkontrolle) | Solange Ihr Konto besteht; werden mit dem Konto gelöscht |
 | Abonnementdaten | Solange Ihr Konto besteht; Ihr RevenueCat-Eintrag wird bei der Kontolöschung gelöscht |
 | Analysedaten (nur mit Ihrer Einwilligung) | 2 Monate bei Google |
@@ -248,7 +249,9 @@ Ihre Kontodaten werden in Google Cloud Firestore in Frankfurt (Deutschland, EU) 
 
 Sie können Ihr Konto direkt in der App löschen: Öffnen Sie Ihr **Profil** und scrollen Sie zum Bereich **Gefahrenzone** ganz unten.
 
-Sie können die Löschung auch **ohne die App** verlangen, etwa wenn Sie sie bereits deinstalliert haben: Schreiben Sie an <thevaltorna@gmail.com> von der E-Mail-Adresse, die Ihr Konto nutzt. Die vollständige Anleitung steht auf einer eigenen Seite: [Ihr Eduvia-Konto löschen](https://geteduvia.com/delete-account/de/). Wir schließen eine solche Anfrage innerhalb von 30 Tagen ab und bestätigen sie per E-Mail; gelöscht werden dieselben Daten wie bei der Löschung in der App.
+Sie können die Löschung auch **ohne die App** verlangen, etwa wenn Sie sie bereits deinstalliert haben: Schreiben Sie an <thevaltorna@gmail.com> von der E-Mail-Adresse, die Ihr Konto nutzt. Die vollständige Anleitung und ein Formular stehen auf einer eigenen Seite: [Ihr Eduvia-Konto löschen](https://geteduvia.com/delete-account/de/). Wir schließen eine solche Anfrage innerhalb von 30 Tagen ab und bestätigen sie per E-Mail; gelöscht werden dieselben Daten wie bei der Löschung in der App.
+
+Was dieses Formular speichert, und sonst nichts: die Adresse, die Sie eingeben, und die Notiz, die Sie optional hinzufügen, damit wir Ihnen antworten und das Konto finden können. **Ihre IP-Adresse speichern wir nicht**, und das Formular verrät niemandem, ob zu einer Adresse ein Konto besteht, denn ein Löschformular, das diese Frage beantwortet, wäre ein Weg herauszufinden, wer Eduvia nutzt. Eine Anfrage wird höchstens 60 Tage aufbewahrt und danach gelöscht, ob sie bearbeitet wurde oder nicht. **Das Absenden des Formulars löscht für sich genommen nichts**: Wir bestätigen die Anfrage zuerst mit Ihnen, weil jede Person die Adresse einer anderen in ein öffentliches Formular eintragen kann.
 
 Was passiert, in dieser Reihenfolge:
 

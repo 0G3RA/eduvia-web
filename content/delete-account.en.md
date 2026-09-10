@@ -20,6 +20,51 @@ Send an email to <thevaltorna@gmail.com> **from the email address your Eduvia ac
 
 We use the sending address to confirm that the request comes from the account holder. If we cannot match it to an account, we will ask you one question to identify it, and nothing else. We complete the deletion within 30 days and confirm it by email; in practice it takes a few days.
 
+## Send a deletion request
+
+Use this form, or simply email us. Both reach the same place. We reply to the address you give, confirm that it is yours, and delete the account within 30 days of the request; in practice it takes a few days.
+
+
+<form id="deletion-form" novalidate>
+  <p>
+    <label for="deletion-email"><strong>The email address your Eduvia account uses</strong></label><br>
+    <input id="deletion-email" name="email" type="email" autocomplete="email" required
+           placeholder="you@example.com" style="width:100%;max-width:28rem;padding:.5rem;font:inherit">
+  </p>
+  <p>
+    <label for="deletion-note">Anything that helps us find the account (optional)</label><br>
+    <textarea id="deletion-note" name="note" rows="3" maxlength="500"
+              style="width:100%;max-width:28rem;padding:.5rem;font:inherit"></textarea>
+  </p>
+  <p><button type="submit" style="padding:.6rem 1.2rem;font:inherit">Send the request</button></p>
+  <p id="deletion-result" role="status" hidden></p>
+</form>
+
+<script>
+(function () {
+  var form = document.getElementById("deletion-form");
+  if (!form) return;
+  var out = document.getElementById("deletion-result");
+  var button = form.querySelector("button");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var field = document.getElementById("deletion-email");
+    var email = field.value.trim();
+    if (!email) { field.focus(); return; }
+    button.disabled = true;
+    fetch("https://api.geteduvia.com/public/account-deletion", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ email: email, note: document.getElementById("deletion-note").value })
+    }).then(show, show);
+    function show() {
+      out.hidden = false;
+      out.textContent = "Request received. Before we delete anything we confirm the request with the address it names, so please watch for our email. If you do not hear from us, write to thevaltorna@gmail.com.";
+    }
+  });
+})();
+</script>
+
 ## What is deleted
 
 Everything we hold about you: your account and sign-in record, your profile and settings, every conversation transcript, the tutor's memory of you, your vocabulary, your progress and level history, your subscription record with us, and your customer record at RevenueCat.
