@@ -114,7 +114,7 @@ The App offers two auto-renewable subscription plans in a single subscription gr
 - **Eduvia Pro Monthly**: 9.99 EUR per month, without a free trial.
 - **Eduvia Pro Yearly**: 89.99 EUR per year, with a 3-day free trial for new subscribers.
 
-All prices include VAT. These are the prices for Germany; your store shows and charges the price for your country and currency, including the VAT applicable there. Both plans are in the same subscription group, so you can switch between them; the switch is handled by your store.
+The prices shown are the total price you pay, including any value added tax. These are the prices for Germany; your store shows and charges the price for your country and currency, with the tax applicable there. Both plans are in the same subscription group, so you can switch between them; the switch is handled by your store.
 
 The free trial exists only on the yearly plan; the monthly plan has no trial. Whether you are eligible for the trial is determined by your store, based on your Apple ID or your Google account. The trial converts into a paid subscription unless you cancel at least 24 hours before it ends. You are not charged during the trial.
 

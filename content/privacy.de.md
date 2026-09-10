@@ -27,7 +27,7 @@ Website: <https://geteduvia.com>
 - **Analyse ist aus**, bis Sie sie einschalten. **Absturzberichte sind an** und können ausgeschaltet werden.
 - **Erinnerungen sind lokal.** Sie werden auf Ihrem Telefon geplant. Nichts wird von unseren Servern gesendet, und es gibt keine Push-Token.
 - Wir **verkaufen Ihre Daten nie** und geben sie **nie an Prüfungsanbieter, Sprachschulen oder Behörden** weiter.
-- Sie können **alles als JSON-Datei exportieren** und **Ihr Konto direkt in der App löschen**.
+- Sie können **Ihre Daten als JSON-Datei exportieren** und **Ihr Konto direkt in der App löschen**.
 
 ## 1. Begriffe
 
@@ -173,11 +173,13 @@ Wir setzen die folgenden Anbieter ein, um die App zu betreiben.
 | Google: Cloud Firestore | Hauptdatenbank | Alle Konto- und Lerndaten | Frankfurt (europe-west3), EU |
 | Google: Vertex AI (Gemini) | Sprachverstehen, Tutor-Antworten, Sitzungsauswertung | Audio Ihrer Äußerungen sowie der in Abschnitt 4 genannte Kontext | Globaler Endpunkt: Verarbeitung kann außerhalb der EU stattfinden; DPA, SCC, DPF; kein Modelltraining |
 | Google: Firebase Analytics | Produktanalyse | App-Ereignisse, nur mit Ihrer Einwilligung (Abschnitt 7) | DPA, SCC, DPF |
-| Google: Firebase Crashlytics | Absturzberichte | Absturz- und Fehlerberichte: Stacktraces, Gerätemodell, OS- und App-Version, Breadcrumb-Ereignisse und technische Kontextschlüssel (Abschnitt 7); dazu technische Basisdaten bei jedem App-Start (eine Firebase-Installationskennung und Sitzungsereignisse) | DPA, SCC, DPF |
+| Google: Firebase Crashlytics | Absturzberichte | Absturz- und Fehlerberichte: Stacktraces, Gerätemodell, OS- und App-Version, Breadcrumb-Ereignisse und technische Kontextschlüssel (Abschnitt 7); dazu bei jedem App-Start eine Firebase-Installationskennung, die die Firebase-SDKs zur Identifizierung dieser Installation erzeugen. Das Abschalten der Absturzberichte beendet die Berichte; die Installationskennung kann von den Firebase-SDKs weiterhin erzeugt werden | DPA, SCC, DPF |
 | Hetzner Online GmbH | Hosting unserer API und der Sprachsynthese | Datenverkehr während der Übertragung sowie die technischen Protokolle aus Abschnitt 3.6 (IP-Adressen und möglicherweise kurze Gesprächsausschnitte), 7 Tage aufbewahrt; keine Datenbank mit Ihren Daten | Deutschland, EU; Auftragsverarbeitungsvertrag (AV-Vertrag) |
 | RevenueCat, Inc. | Abonnementverwaltung | Die von uns erzeugte interne Kundenkennung (rcAppUserId), die vom jeweiligen Store gemeldete Kauf- und Verlängerungshistorie sowie technische Standarddaten, die das SDK mit jeder Anfrage sendet (Gerätemodell, Store-Land, App-Version, IP-Adresse und unter iOS die Herstellerkennung (IDFV)). Eine Werbekennung wird auf keiner der beiden Plattformen übermittelt (Abschnitt 7) | USA; SCC |
 | Apple Inc. | "Mit Apple anmelden", auf beiden Plattformen; App Store und In-App-Kauf, für Käufe unter iOS | Bei der Anmeldung: dass und wann Sie sich authentifiziert haben, Ihre Apple-ID sowie die E-Mail-Adresse oder Apple-Weiterleitungsadresse, die Sie an uns freigeben. Bei Käufen: Zahlungsdaten (wir sehen sie nie) | USA; nach Apples eigenen Bedingungen |
 | Google (Google Play) | Google Play Store und Google Play Billing, für Käufe unter Android | Zahlungsdaten (wir sehen sie nie) | Nach Googles eigenen Bedingungen |
+
+Übermittlungen außerhalb der EU und des EWR stützen sich auf die Standardvertragsklauseln der Europäischen Kommission und, soweit anwendbar, auf die Zertifizierung unserer Anbieter nach dem EU-US Data Privacy Framework. Eine Kopie der Garantien, die für eine bestimmte Übermittlung gelten, erhalten Sie unter <thevaltorna@gmail.com>.
 
 Wir verkaufen Ihre personenbezogenen Daten nicht. Wir geben Ihre Daten nie an Prüfungsanbieter, Sprachschulen oder Behörden weiter.
 
@@ -267,7 +269,7 @@ Nach der Löschung können Sie ein neues Konto anlegen; ein aktives Abonnement l
 
 ### Daten exportieren
 
-Sie können alles, was wir über Sie speichern, direkt in der App herunterladen, aus Ihrem Profil. Der Export ist eine JSON-Datei: eine strukturierte Kopie Ihrer gespeicherten Daten plus Ihr Anmeldeeintrag (E-Mail, Name, Profilbild, Anmeldeanbieter sowie Erstellungs- und letztes Anmeldedatum des Kontos).
+Sie können Ihre gespeicherten Daten direkt in der App herunterladen, aus Ihrem Profil. Der Export ist eine JSON-Datei: eine strukturierte Kopie Ihrer gespeicherten Daten plus Ihr Anmeldeeintrag (E-Mail, Name, Profilbild, Anmeldeanbieter sowie Erstellungs- und letztes Anmeldedatum des Kontos).
 
 Der Export enthält nicht, und die App weist Sie beim Export darauf hin:
 
@@ -278,6 +280,8 @@ Der Export enthält nicht, und die App weist Sie beim Export darauf hin:
 - Kopien bei RevenueCat,
 - die von uns erzeugte interne Kundenkennung für RevenueCat,
 - interne Betriebsdaten über Nutzung und Kosten.
+
+Die letzten beiden Punkte sind weiterhin Ihre personenbezogenen Daten. Wenn Sie sie haben möchten, schreiben Sie uns, und wir senden sie Ihnen zu: Ihr Auskunftsrecht nach Art. 15 DSGVO umfasst sie, auch wenn sie nicht Teil der Exportdatei in der App sind.
 
 ## 11. Ihre Rechte
 

@@ -114,7 +114,7 @@ Die App bietet zwei automatisch verlängerbare Abonnements in einer Abonnementgr
 - **Eduvia Pro Monatlich**: 9,99 EUR pro Monat, ohne kostenlose Testphase.
 - **Eduvia Pro Jährlich**: 89,99 EUR pro Jahr, mit 3-tägiger kostenloser Testphase für neue Abonnenten.
 
-Alle Preise verstehen sich inklusive Mehrwertsteuer. Das sind die Preise für Deutschland; Ihr Store zeigt und berechnet den Preis für Ihr Land und Ihre Währung einschließlich der dort anwendbaren Mehrwertsteuer. Beide Tarife liegen in derselben Abonnementgruppe, sodass Sie zwischen ihnen wechseln können; den Wechsel wickelt Ihr Store ab.
+Die angezeigten Preise sind Gesamtpreise einschließlich etwaiger Umsatzsteuer. Das sind die Preise für Deutschland; Ihr Store zeigt und berechnet den Preis für Ihr Land und Ihre Währung mit der dort anwendbaren Steuer. Beide Tarife liegen in derselben Abonnementgruppe, sodass Sie zwischen ihnen wechseln können; den Wechsel wickelt Ihr Store ab.
 
 Die kostenlose Testphase gibt es nur beim Jahrestarif; der Monatstarif hat keine Testphase. Ob Sie für die Testphase infrage kommen, bestimmt Ihr Store anhand Ihrer Apple-ID oder Ihres Google-Kontos. Die Testphase geht in ein kostenpflichtiges Abonnement über, wenn Sie nicht mindestens 24 Stunden vor ihrem Ende kündigen. Während der Testphase wird nichts berechnet.
 
