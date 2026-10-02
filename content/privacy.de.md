@@ -1,6 +1,6 @@
 # Datenschutzerklärung
 
-Gültig ab: 2026-09-10 · Version 1.1
+Gültig ab: 2026-10-03 · Version 1.2
 
 Diese Datenschutzerklärung ("Erklärung") beschreibt, wie Oleh Herasymenko ("wir", "uns", "unser") Ihre personenbezogenen Daten verarbeitet und schützt, wenn Sie die mobile Anwendung Eduvia (die "App") nutzen.
 
@@ -20,10 +20,10 @@ Website: <https://geteduvia.com>
 ## Das Wichtigste in Kürze
 
 - Eduvia ist eine App für Sprechtraining mit einem KI-Sprachtutor. Damit sie funktioniert, muss sie Ihre Stimme verarbeiten und sich merken, worüber Sie sprechen.
-- **Ihre Stimme wird nie gespeichert.** Audio geht an Googles Gemini-KI, damit der Tutor Sie versteht, und verschwindet nach der Verarbeitung. Gespeichert werden nur Text-Transkripte.
+- **Wir speichern Ihre Stimme nie.** Audio geht an Googles Gemini-KI, damit der Tutor Sie versteht. Wir schreiben es nie in Dateien oder in unsere Datenbank; bei Google kann es bis zu 24 Stunden in einem Zwischenspeicher liegen (Abschnitt 4). Gespeichert werden nur Text-Transkripte.
 - **Gespräche werden als Text gespeichert**, solange Ihr Konto besteht. Ein einzelnes Gespräch können Sie nicht löschen, aber Sie können jederzeit Ihr ganzes Konto in der App löschen, und alles wird mit ihm gelöscht.
 - **Der Tutor merkt sich Sie.** Nach jedem freien Gespräch speichert die KI kurze persönliche Fakten, die Sie erzählt haben (zum Beispiel über Ihre Arbeit oder Familie), damit das nächste Gespräch natürlich weitergehen kann.
-- **Ihre Daten liegen in Frankfurt (Deutschland, EU).** Das Verstehen Ihrer Sprache durch Googles Gemini-Modell kann derzeit außerhalb der EU stattfinden, weil Google dieses Modell noch in keiner EU-Region anbietet. Wir stellen um, sobald es so weit ist.
+- **Ihre Daten liegen in Frankfurt (Deutschland, EU).** Auch das Verstehen Ihrer Sprache durch Googles Gemini-Modell findet in der EU statt. Google trainiert damit keine Modelle.
 - **Analyse ist aus**, bis Sie sie einschalten. **Absturzberichte sind an** und können ausgeschaltet werden.
 - **Erinnerungen sind lokal.** Sie werden auf Ihrem Telefon geplant. Nichts wird von unseren Servern gesendet, und es gibt keine Push-Token.
 - Wir **verkaufen Ihre Daten nie** und geben sie **nie an Prüfungsanbieter, Sprachschulen oder Behörden** weiter.
@@ -88,6 +88,8 @@ Wichtig zu wissen:
 - Sitzungsdaten: Modus, Szenario, Dauer, Zeitpunkt und Anzahl der Äußerungen.
 - Die Auswertung nach der Sitzung: eine Zusammenfassung in Ihrer Muttersprache, Fehler nach Kategorien, eine Genauigkeitsquote, die Redeanteile von Ihnen und dem Tutor, neue Wörter, eine CEFR-Niveau-Einschätzung und die erreichten Szenario-Ziele.
 - Der "eingefrorene" Sitzungs-Prompt: der genaue Kontext, der für diese Sitzung an das KI-Modell gesendet wurde.
+- Eine kurze Zusammenfassung älterer Gesprächsrunden, die die KI während der Sitzung erstellt, damit der Kontext kurz bleibt (Abschnitt 4).
+- Die Entscheidung, ob wir Sie nach dieser Sitzung um eine Bewertung im App Store oder bei Google Play bitten dürfen: ob die Sitzung dafür in Frage kam, die Gründe dafür oder dagegen, die Art der Sitzung (Einstufungsgespräch oder reguläre Sitzung), ob Sie zu diesem Zeitpunkt ein Abonnement hatten, und der Zeitpunkt.
 - Ihre wiederkehrenden Schwachstellen: Fehlerkategorien, ihre Häufigkeit, die betroffenen Sitzungen, der Trend und wie oft wir sie Ihnen gezeigt haben.
 - Ihr Wortschatz: jedes gespeicherte Wort mit Übersetzung, Status, Wortart, Genus und Artikel, Aussprache, dem ersten Satz, in dem es vorkam, samt Übersetzung, der Herkunftssitzung und den Daten der Intervallwiederholung (Wiederholungen, Leichtigkeit, Intervall, Aussetzer und nächster Wiederholungstermin).
 - Ihr Fortschritt: CEFR-Niveau mit Verlauf, Sitzungszähler, Streaks, Statistiken je Szenario und eine Schätzung der Zeit bis zum nächsten Niveau.
@@ -105,7 +107,7 @@ Wir fragen Sie nicht nach sensiblen Daten, und die App hat dafür keine Felder. 
 
 Wir verarbeiten solche Informationen **nur, um das Gespräch zu führen und Ihnen die Sprache beizubringen**. Nie für Profiling. Nie für Werbung. Nie zur Weitergabe an Dritte.
 
-Rechtsgrundlage ist Ihre ausdrückliche Einwilligung nach Art. 9 Abs. 2 lit. a DSGVO. Wir fragen Sie nicht nach diesen Informationen, und die App hat kein Feld dafür; wir sagen Ihnen hier und in der App deutlich, dass alles, was Sie sagen, Teil des gespeicherten Transkripts wird und Teil des Tutor-Gedächtnisses werden kann. Es dennoch zu sagen, ist Ihre eigene bewusste Handlung, und diese Handlung ist die Einwilligung, auf die wir uns stützen. Sie können diese Einwilligung jederzeit widerrufen, indem Sie Ihr Konto löschen, womit alle Gespräche mit gelöscht werden; vorher können Sie Ihre Daten exportieren.
+Rechtsgrundlage ist Ihre ausdrückliche Einwilligung nach Art. 9 Abs. 2 lit. a DSGVO. Wir fragen Sie nicht nach diesen Informationen, und die App hat kein Feld dafür. Mit dem nächsten App-Update (Version 1.0.3) führen wir dafür einen eigenen Schritt in der App ein: Er erklärt, dass Gespräche als Text gespeichert werden und dass sensible Themen, wenn Sie sie ansprechen, Teil des Transkripts und des Tutor-Gedächtnisses werden; Sie bestätigen das aktiv, und wir speichern den Zeitpunkt Ihrer Bestätigung. Bis dahin gilt, was hier steht: Wir sagen Ihnen hier deutlich, dass alles, was Sie sagen, Teil des gespeicherten Transkripts wird und Teil des Tutor-Gedächtnisses werden kann, und Sie entscheiden, was Sie sagen. Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie Ihr Konto löschen, womit alle Gespräche mit gelöscht werden; vorher können Sie Ihre Daten exportieren.
 
 Wenn Sie sich darauf nicht verlassen möchten, liegt die praktische Kontrolle bei Ihnen und kostet Sie nichts: Sprechen Sie diese Themen nicht an. Der Tutor funktioniert ohne sie genauso.
 
@@ -117,7 +119,7 @@ Praktischer Rat: Sagen Sie nichts, was nicht gespeichert werden soll.
 
 Unsere Server führen technische Protokolle, um Fehler zu finden und den Dienst zu schützen. Neben dem Zeitpunkt der Anfrage, der Art des Vorgangs, Fehlercodes, Ihrer Nutzerkennung, Sitzungskennungen und technischen Nutzungswerten können darin **kurze Ausschnitte Ihres Gesprächs mit dem Tutor** enthalten sein. Wir nutzen die Protokolle nicht, um Sie zu analysieren oder ein Profil zu erstellen: Sie dienen nur der Diagnose. Protokolle werden automatisch innerhalb von 7 Tagen gelöscht, auch nach einer Kontolöschung.
 
-Die Protokolle unseres Load Balancers enthalten IP-Adressen. Rechtsgrundlage: unser berechtigtes Interesse an Sicherheit und Diagnose (Art. 6 Abs. 1 lit. f DSGVO).
+Unsere eigenen Server speichern und protokollieren keine IP-Adressen. Der vorgeschaltete Load Balancer unseres Hosting-Anbieters Hetzner kann IP-Adressen in seinen technischen Protokollen für kurze Zeit nach dessen Standardeinstellungen verarbeiten. Rechtsgrundlage: unser berechtigtes Interesse an Sicherheit und Diagnose (Art. 6 Abs. 1 lit. f DSGVO).
 
 ### 3.7 Verarbeitung auf Ihrem Gerät
 
@@ -127,6 +129,18 @@ Die Protokolle unseres Load Balancers enthalten IP-Adressen. Rechtsgrundlage: un
 ### 3.8 Kinder und Jugendliche
 
 Eduvia ist für Personen ab 16 Jahren bestimmt. Wir erheben wissentlich keine Daten von Kindern unter 16 Jahren. Erfahren wir davon, löschen wir diese Daten umgehend.
+
+### 3.9 Website geteduvia.com
+
+Diese Website (mit der Datenschutzerklärung, den Nutzungsbedingungen, dem Impressum, dem Löschformular und dem Kontaktformular) liegt bei GitHub Pages, einem Dienst von GitHub, Inc. in den USA. Wenn Sie die Website aufrufen, protokolliert GitHub Ihre IP-Adresse aus Sicherheitsgründen. Dafür ist GitHub selbst verantwortlich, nicht wir; es gilt das [GitHub General Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement), und GitHub ist nach dem EU-US Data Privacy Framework zertifiziert.
+
+Die Website setzt keine Cookies, lädt keine externen Schriftarten und enthält keine Analyse- oder Tracking-Werkzeuge. Nur wenn Sie das Löschformular oder das Kontaktformular absenden, gehen Daten an unseren eigenen Server (Abschnitte 10 und 3.10).
+
+### 3.10 Kontaktformular
+
+Auf der Seite [Kontakt](https://geteduvia.com/contact/de/) können Sie uns eine Nachricht schreiben, als zweiten Weg neben der E-Mail. Was das Formular speichert, und sonst nichts: Ihren Namen, falls Sie einen angeben, Ihre E-Mail-Adresse, Ihre Nachricht und den Zeitpunkt des Absendens. Wir verwenden diese Angaben nur, um Ihre Anfrage zu beantworten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, wenn Ihre Anfrage Ihr Konto, Ihr Abonnement oder sonst einen Vertrag mit uns betrifft, und im Übrigen unser berechtigtes Interesse, Anfragen an uns zu beantworten (Art. 6 Abs. 1 lit. f DSGVO).
+
+Die Nachricht liegt in unserer Datenbank in Frankfurt (Abschnitt 9) und wird **nach 60 Tagen automatisch gelöscht**, ob wir sie beantwortet haben oder nicht. **Unser Server speichert Ihre IP-Adresse dabei nicht.** Er hält sie nur im Arbeitsspeicher, um zu viele Nachrichten von derselben Quelle abzuweisen, und vergisst sie spätestens etwa eine Stunde, nachdem Sie das Formular zuletzt abgesendet haben. Was Sie eingeben, schreiben wir nicht in unsere Server-Protokolle. Ganz ohne IP-Adresse geht es technisch aber nicht: Der Load Balancer unseres Hosting-Anbieters verarbeitet IP-Adressen in seinen technischen Protokollen (Abschnitt 3.6), und GitHub Pages, wo diese Website mit dem Formular liegt, protokolliert IP-Adressen nach seinen eigenen Regeln (Abschnitt 3.9). Das Formular setzt keine Cookies und enthält kein Tracking. Ein für Menschen unsichtbares Feld hält automatisierte Spam-Einsendungen ab; eine Einsendung, in der dieses Feld ausgefüllt ist, wird nicht gespeichert.
 
 ## 4. Was wir an Google Gemini senden
 
@@ -142,6 +156,8 @@ Der KI-Tutor arbeitet mit Googles Gemini-Modellen. Für jede Übungssitzung enth
 - **das Audio jeder Äußerung, die Sie sprechen**,
 - Ihre letzten Äußerungen in der Sitzung.
 
+Wird ein Gespräch länger, fasst ein eigener Gemini-Aufruf die älteren Gesprächsrunden zu einer kurzen Zusammenfassung zusammen, damit der Kontext kurz bleibt. Diese Anfrage enthält die älteren Runden des Gesprächs als Text; die Zusammenfassung wird mit der Sitzung gespeichert (Abschnitt 3.3).
+
 Außerhalb einer laufenden Sitzung nutzen wir Gemini außerdem für:
 
 - Text, den Sie von der App übersetzen lassen,
@@ -155,11 +171,19 @@ Außerhalb einer laufenden Sitzung nutzen wir Gemini außerdem für:
 
 ### Wo diese Verarbeitung stattfindet
 
-Ihre Kontodaten werden in Google Cloud Firestore in der Region Frankfurt (Deutschland, EU) gespeichert. Unsere API und die Sprachsynthese laufen auf Hetzner-Servern in Deutschland. Für das Verstehen von Sprache und die Erzeugung der Tutor-Antworten nutzen wir Googles Gemini-Modell über Vertex AI: Dieses Modell ist derzeit in keiner EU-Region verfügbar, deshalb können diese Anfragen (das laufende Gespräch ebenso wie die Auswertung und die übrigen oben genannten Aufrufe) auf Google-Infrastruktur außerhalb der EU verarbeitet werden. Diese Verarbeitung ist durch das Google Cloud Data Processing Addendum, die EU-Standardvertragsklauseln (SCC) und Googles Zertifizierung nach dem EU-US Data Privacy Framework abgesichert. Google verwendet Ihre Daten nicht zum Training seiner Modelle und speichert sie nach der Verarbeitung nicht. Sobald das Modell in einer europäischen Region verfügbar ist, stellen wir die Verarbeitung auf die EU um.
+Ihre Kontodaten werden in Google Cloud Firestore in der Region Frankfurt (Deutschland, EU) gespeichert. Unsere API und die Sprachsynthese laufen auf Hetzner-Servern in Deutschland. Für das Verstehen von Sprache und die Erzeugung der Tutor-Antworten nutzen wir Googles Gemini-Modell über Vertex AI. Seit dem 22. September 2026 werden alle diese Anfragen (das laufende Gespräch ebenso wie die Auswertung und die übrigen oben genannten Aufrufe) in der EU-Region von Google Cloud verarbeitet. Grundlage ist das Google Cloud Data Processing Addendum, mit dem Google als unser Auftragsverarbeiter tätig ist. Google verwendet Ihre Daten nicht zum Training seiner Modelle.
+
+### Was Google mit den Anfragen tut
+
+Google speichert den Inhalt einer Anfrage nicht dauerhaft, hält ihn aber kurzzeitig vor. Das sollen Sie wissen:
+
+- **Zwischenspeicher bis zu 24 Stunden.** Google hält Anfragedaten bis zu 24 Stunden in einem Zwischenspeicher im Arbeitsspeicher, der nur unserem Projekt zugeordnet und von anderen Google-Kunden getrennt ist. Das macht die Antworten des Tutors schneller und günstiger.
+- **Missbrauchskontrolle bis zu 90 Tage.** Wenn Googles automatische Sicherheitsfilter eine Anfrage als möglichen Missbrauch einstufen, kann Google diese Anfrage bis zu 90 Tage protokollieren, um den Missbrauch zu prüfen, ebenfalls in der EU-Region.
+- **Nie für Training.** Weder der Zwischenspeicher noch diese Protokolle werden zum Training von Modellen verwendet.
 
 ### Was mit Ihrer Stimme passiert
 
-Ihr Audio geht als Teil der Anfrage an Gemini und verschwindet nach der Verarbeitung. Es wird nie in Dateien geschrieben, nie in der Datenbank gespeichert und von Google nach der Erzeugung der Antwort nicht aufbewahrt. Gespeichert wird nur das Text-Transkript.
+Ihr Audio geht als Teil der Anfrage an Gemini. Wir schreiben es nie in Dateien und speichern es nie in unserer Datenbank. Bei Google gilt für das Audio dasselbe wie für jede andere Anfrage: Es kann bis zu 24 Stunden im Zwischenspeicher liegen und, falls die Sicherheitsfilter anschlagen, bis zu 90 Tage zur Missbrauchskontrolle protokolliert werden; nie für Training. Bei uns gespeichert wird nur das Text-Transkript.
 
 Wir erstellen keine Stimmprofile und nutzen Ihre Stimme nicht, um Sie zu identifizieren. Ihre Stimme wird nur verarbeitet, um zu verstehen, was Sie gesagt haben.
 
@@ -171,13 +195,14 @@ Wir setzen die folgenden Anbieter ein, um die App zu betreiben.
 | --- | --- | --- | --- |
 | Google: Firebase Authentication und Google Sign-In | Anmeldung, auf beiden Plattformen | Nutzerkennung, E-Mail, Anmeldemethode und Zeitpunkt | Globale (US-)Infrastruktur; Google Cloud DPA, SCC, EU-US Data Privacy Framework |
 | Google: Cloud Firestore | Hauptdatenbank | Alle Konto- und Lerndaten | Frankfurt (europe-west3), EU |
-| Google: Vertex AI (Gemini) | Sprachverstehen, Tutor-Antworten, Sitzungsauswertung | Audio Ihrer Äußerungen sowie der in Abschnitt 4 genannte Kontext | Globaler Endpunkt: Verarbeitung kann außerhalb der EU stattfinden; DPA, SCC, DPF; kein Modelltraining |
+| Google: Vertex AI (Gemini) | Sprachverstehen, Tutor-Antworten, Sitzungsauswertung | Audio Ihrer Äußerungen sowie der in Abschnitt 4 genannte Kontext | EU-Region; Google Cloud DPA; kein Modelltraining; Zwischenspeicher bis 24 Stunden, Missbrauchsprotokoll bis 90 Tage nur bei Treffer der Sicherheitsfilter (Abschnitt 4) |
 | Google: Firebase Analytics | Produktanalyse | App-Ereignisse, nur mit Ihrer Einwilligung (Abschnitt 7) | DPA, SCC, DPF |
 | Google: Firebase Crashlytics | Absturzberichte | Absturz- und Fehlerberichte: Stacktraces, Gerätemodell, OS- und App-Version, Breadcrumb-Ereignisse und technische Kontextschlüssel (Abschnitt 7); dazu bei jedem App-Start eine Firebase-Installationskennung, die die Firebase-SDKs zur Identifizierung dieser Installation erzeugen. Das Abschalten der Absturzberichte beendet die Berichte; die Installationskennung kann von den Firebase-SDKs weiterhin erzeugt werden | DPA, SCC, DPF |
 | Hetzner Online GmbH | Hosting unserer API und der Sprachsynthese | Datenverkehr während der Übertragung sowie die technischen Protokolle aus Abschnitt 3.6 (IP-Adressen und möglicherweise kurze Gesprächsausschnitte), 7 Tage aufbewahrt; keine Datenbank mit Ihren Daten | Deutschland, EU; Auftragsverarbeitungsvertrag (AV-Vertrag) |
 | RevenueCat, Inc. | Abonnementverwaltung | Die von uns erzeugte interne Kundenkennung (rcAppUserId), die vom jeweiligen Store gemeldete Kauf- und Verlängerungshistorie sowie technische Standarddaten, die das SDK mit jeder Anfrage sendet (Gerätemodell, Store-Land, App-Version, IP-Adresse und unter iOS die Herstellerkennung (IDFV)). Eine Werbekennung wird auf keiner der beiden Plattformen übermittelt (Abschnitt 7) | USA; SCC |
 | Apple Inc. | "Mit Apple anmelden", auf beiden Plattformen; App Store und In-App-Kauf, für Käufe unter iOS | Bei der Anmeldung: dass und wann Sie sich authentifiziert haben, Ihre Apple-ID sowie die E-Mail-Adresse oder Apple-Weiterleitungsadresse, die Sie an uns freigeben. Bei Käufen: Zahlungsdaten (wir sehen sie nie) | USA; nach Apples eigenen Bedingungen |
 | Google (Google Play) | Google Play Store und Google Play Billing, für Käufe unter Android | Zahlungsdaten (wir sehen sie nie) | Nach Googles eigenen Bedingungen |
+| GitHub, Inc. (GitHub Pages) | Hosting dieser Website, als eigenständig Verantwortlicher (Abschnitt 3.9) | IP-Adressen der Website-Besucher | USA; GitHub Privacy Statement, EU-US Data Privacy Framework |
 
 Übermittlungen außerhalb der EU und des EWR stützen sich auf die Standardvertragsklauseln der Europäischen Kommission und, soweit anwendbar, auf die Zertifizierung unserer Anbieter nach dem EU-US Data Privacy Framework. Eine Kopie der Garantien, die für eine bestimmte Übermittlung gelten, erhalten Sie unter <thevaltorna@gmail.com>.
 
@@ -221,7 +246,7 @@ Das sind zwei verschiedene Dinge mit zwei verschiedenen Regeln.
 ## 8. Rechtsgrundlagen im Überblick
 
 - **Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)**: alles, was nötig ist, um den von Ihnen gewünschten Dienst zu erbringen: Übungssitzungen einschließlich der Verarbeitung Ihrer Sprachdaten, Transkripte, Tutor-Gedächtnis, Rückmeldungen und Auswertungen, Wortschatz und Fortschritt, Personalisierung, Abonnementverwaltung sowie Export und Löschung in der App. Die Sprachverarbeitung ist für einen Sprachtutor technisch notwendig, und jede Aufnahme geschieht innerhalb einer Sitzung, die Sie gestartet haben.
-- **Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, §25 Abs. 1 TDDDG)**: Firebase Analytics, eine eigene Entscheidung auf einem eigenen Bildschirm. **Ausdrückliche Einwilligung (Art. 9 Abs. 2 lit. a DSGVO)**: sensible Informationen, die Sie im Gespräch teilen, in dem in Abschnitt 3.5 beschriebenen Sinn (es gibt dafür keinen eigenen Bildschirm; wir sagen Ihnen, was passiert, und Sie entscheiden, was Sie sagen).
+- **Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, §25 Abs. 1 TDDDG)**: Firebase Analytics, eine eigene Entscheidung auf einem eigenen Bildschirm. **Ausdrückliche Einwilligung (Art. 9 Abs. 2 lit. a DSGVO)**: sensible Informationen, die Sie im Gespräch teilen, in dem in Abschnitt 3.5 beschriebenen Sinn (einen eigenen Schritt dafür führen wir mit dem App-Update 1.0.3 ein; bis dahin sagen wir Ihnen, was passiert, und Sie entscheiden, was Sie sagen).
 - **Berechtigte Interessen (Art. 6 Abs. 1 lit. f DSGVO)**: Absturzberichte (mit Ihrem Widerspruchsrecht), Sicherheit und Missbrauchsschutz, Server-Protokolle und interne KI-Nutzungsdaten zur Kostenkontrolle.
 - **Rechtliche Verpflichtung (Art. 6 Abs. 1 lit. c DSGVO)**: soweit Gesetze eine Verarbeitung verlangen.
 
@@ -229,7 +254,7 @@ So widerrufen oder widersprechen Sie: Analyse über den Schalter in Ihrem Profil
 
 ## 9. Wo Ihre Daten liegen und wie lange
 
-Ihre Kontodaten werden in Google Cloud Firestore in Frankfurt (Deutschland, EU) gespeichert. Auf unseren eigenen Servern liegt keine Datenbank mit Ihren Daten. Die einzigen personenbezogenen Daten, die dort ruhen, sind die technischen Protokolle aus Abschnitt 3.6, die sich innerhalb von 7 Tagen selbst löschen.
+Ihre Kontodaten werden in Google Cloud Firestore in Frankfurt (Deutschland, EU) gespeichert. Auf unseren eigenen Servern liegt keine Datenbank mit Ihren Daten. Die einzigen personenbezogenen Daten, die dort ruhen, sind die technischen Protokolle aus Abschnitt 3.6, die sich innerhalb von 7 Tagen selbst löschen. Die Anfragen an Googles Gemini-Modell werden in der EU-Region von Google Cloud verarbeitet (Abschnitt 4).
 
 | Daten | Wie lange |
 | --- | --- |
@@ -238,8 +263,11 @@ Ihre Kontodaten werden in Google Cloud Firestore in Frankfurt (Deutschland, EU) 
 | Server-Protokolle (IP-Adressen, technische Ereignisse, möglicherweise kurze Gesprächsausschnitte) | 7 Tage, auch nach einer Kontolöschung |
 | Technische Löschmarkierung nach der Kontolöschung | 48 Stunden |
 | Über das Web-Formular gesendete Löschanfrage (die Adresse und Ihre Notiz) | höchstens 60 Tage, danach automatisch gelöscht |
+| Über das Kontaktformular gesendete Nachricht (Name, falls angegeben, E-Mail-Adresse, Nachricht, Zeitpunkt) | 60 Tage, danach automatisch gelöscht |
 | KI-Nutzungsdaten (interne Kostenkontrolle) | Solange Ihr Konto besteht; werden mit dem Konto gelöscht |
 | Abonnementdaten | Solange Ihr Konto besteht; Ihr RevenueCat-Eintrag wird bei der Kontolöschung gelöscht |
+| Anfragen an Gemini im Zwischenspeicher bei Google | Bis zu 24 Stunden |
+| Anfragen an Gemini, die Googles Sicherheitsfilter als möglichen Missbrauch einstufen | Bis zu 90 Tage bei Google |
 | Analysedaten (nur mit Ihrer Einwilligung) | 2 Monate bei Google |
 | Absturzberichte | 90 Tage bei Google |
 
@@ -251,7 +279,7 @@ Sie können Ihr Konto direkt in der App löschen: Öffnen Sie Ihr **Profil** und
 
 Sie können die Löschung auch **ohne die App** verlangen, etwa wenn Sie sie bereits deinstalliert haben: Schreiben Sie an <thevaltorna@gmail.com> von der E-Mail-Adresse, die Ihr Konto nutzt. Die vollständige Anleitung und ein Formular stehen auf einer eigenen Seite: [Ihr Eduvia-Konto löschen](https://geteduvia.com/delete-account/de/). Wir schließen eine solche Anfrage innerhalb von 30 Tagen ab und bestätigen sie per E-Mail; gelöscht werden dieselben Daten wie bei der Löschung in der App.
 
-Was dieses Formular speichert, und sonst nichts: die Adresse, die Sie eingeben, und die Notiz, die Sie optional hinzufügen, damit wir Ihnen antworten und das Konto finden können. **Ihre IP-Adresse speichern wir nicht**, und das Formular verrät niemandem, ob zu einer Adresse ein Konto besteht, denn ein Löschformular, das diese Frage beantwortet, wäre ein Weg herauszufinden, wer Eduvia nutzt. Eine Anfrage wird höchstens 60 Tage aufbewahrt und danach gelöscht, ob sie bearbeitet wurde oder nicht. **Das Absenden des Formulars löscht für sich genommen nichts**: Wir bestätigen die Anfrage zuerst mit Ihnen, weil jede Person die Adresse einer anderen in ein öffentliches Formular eintragen kann.
+Was dieses Formular speichert, und sonst nichts: die Adresse, die Sie eingeben, und die Notiz, die Sie optional hinzufügen, damit wir Ihnen antworten und das Konto finden können. **Unser Server speichert Ihre IP-Adresse dabei nicht.** Ganz ohne IP-Adresse geht es technisch aber nicht: Der Load Balancer unseres Hosting-Anbieters verarbeitet IP-Adressen in seinen technischen Protokollen (Abschnitt 3.6), und GitHub Pages, wo diese Website liegt, protokolliert IP-Adressen nach seinen eigenen Regeln (Abschnitt 3.9). Das Formular verrät niemandem, ob zu einer Adresse ein Konto besteht, denn ein Löschformular, das diese Frage beantwortet, wäre ein Weg herauszufinden, wer Eduvia nutzt. Eine Anfrage wird höchstens 60 Tage aufbewahrt und danach gelöscht, ob sie bearbeitet wurde oder nicht. **Das Absenden des Formulars löscht für sich genommen nichts**: Wir bestätigen die Anfrage zuerst mit Ihnen, weil jede Person die Adresse einer anderen in ein öffentliches Formular eintragen kann.
 
 Was passiert, in dieser Reihenfolge:
 
@@ -267,6 +295,7 @@ Ehrliche Details, die Sie kennen sollten:
 - **Eine technische Markierung bleibt 48 Stunden** nach der Löschung bestehen. Sie enthält Ihre Nutzerkennung, Ihre RevenueCat-Kundenkennung und einen Vermerk, ob die Löschung bei RevenueCat noch abgeschlossen werden muss. Sie existiert, damit eine noch laufende Anfrage die Daten eines gelöschten Kontos nicht neu anlegen kann und damit ein neuer Versuch die Löschung bei RevenueCat abschließen kann. Nach 48 Stunden verliert sie ihre Wirkung.
 - **Sicherungen leeren sich innerhalb von 7 Tagen.** Wenn Sie Ihr Konto löschen, verschwinden Ihre Daten sofort aus den Produktivsystemen. Kopien in technischen Sicherungen der Datenbank verschwinden automatisch innerhalb von 7 Tagen. Wir stellen gelöschte Konten nicht aus Sicherungen wieder her.
 - **Protokollausschnitte verschwinden ebenfalls innerhalb von 7 Tagen** (Abschnitt 3.6).
+- **Analyse- und Absturzdaten bei Google laufen aus.** Daten, die bereits an Firebase Analytics oder Firebase Crashlytics gesendet wurden, werden nicht einzeln gelöscht, sondern verschwinden mit Ablauf ihrer Aufbewahrungsfrist: Analysedaten nach 2 Monaten, Absturzberichte nach 90 Tagen (Abschnitt 7).
 
 Nach der Löschung können Sie ein neues Konto anlegen; ein aktives Abonnement lässt sich über "Käufe wiederherstellen" zurückholen. Gelöschte Lerndaten können nicht wiederhergestellt werden.
 
@@ -314,6 +343,12 @@ Die App nutzt KI, um Ihre Sprache zu erkennen, Sie zu korrigieren, Sitzungen aus
 - Der Zugriff auf Produktivsysteme ist beschränkt.
 - Server-Protokolle werden knapp gehalten und löschen sich nach 7 Tagen selbst.
 
+### Wer Ihre Gespräche sieht
+
+Kein Mensch liest Ihre Gespräche routinemäßig. Einsicht in Transkripte hat nur der Verantwortliche selbst, also eine einzige Person, und nur, wenn es nötig ist: um eine Supportanfrage von Ihnen zu bearbeiten, einen Fehler zu untersuchen oder die Qualität des Tutors zu prüfen. Dabei wird ein Gespräch über seine Sitzungskennung aufgerufen, nicht über Ihren Namen. Keine dritte Person liest Ihre Gespräche.
+
+Für die Entwicklung der App nutzen wir Entwicklungswerkzeuge, darunter KI-Programmierassistenten. Sie erhalten den Quellcode der App. Seit dem 3. Oktober 2026 geben wir ihnen keine Inhalte Ihrer Gespräche und keine Server-Protokolle mit personenbezogenen Daten mehr; zur Fehleranalyse erhalten sie höchstens anonymisierte Auszüge ohne Kennungen. Davor haben wir solche Werkzeuge in Einzelfällen zur Fehleranalyse auch mit Transkripten und Protokollen eingesetzt; diese Praxis ist beendet.
+
 ## 14. Datenpannen
 
 Wenn eine Verletzung des Schutzes personenbezogener Daten voraussichtlich ein Risiko für Ihre Rechte und Freiheiten mit sich bringt, melden wir sie der Aufsichtsbehörde innerhalb von 72 Stunden, nachdem wir davon erfahren haben. Ist das Risiko für Sie hoch, informieren wir auch Sie direkt und unverzüglich: per E-Mail an Ihre Kontoadresse oder mit einem deutlichen Hinweis in der App.
@@ -336,6 +371,8 @@ E-Mail: <thevaltorna@gmail.com>
 Website: <https://geteduvia.com>
 
 ## 18. Änderungsprotokoll
+
+**Version 1.2 (2026-10-03)**: Aktualisierung nach unserer Datenschutz-Folgenabschätzung. Googles Gemini-Modell läuft seit dem 22. September 2026 in der EU-Region; die Aussagen über eine mögliche Verarbeitung außerhalb der EU sind entfernt. Die Erklärung beschreibt nun genau, was Google mit Anfragen tut (Zwischenspeicher bis 24 Stunden, Missbrauchsprotokoll bis 90 Tage nur bei Treffer der Sicherheitsfilter, nie Training), statt zu sagen, Google speichere nichts. Neu beschrieben sind außerdem: die Zusammenfassung älterer Gesprächsrunden durch einen eigenen Gemini-Aufruf, die gespeicherte Entscheidung, ob wir Sie um eine Store-Bewertung bitten dürfen, wer Ihre Gespräche einsehen kann, die Website bei GitHub Pages, die IP-Adressen beim Löschformular, das Auslaufen von Analyse- und Absturzdaten nach einer Kontolöschung und der Einwilligungsschritt für sensible Themen, den das App-Update 1.0.3 einführt. Diese Verarbeitungen bestanden bereits; sie sind jetzt vollständig beschrieben. Keine Rechtsgrundlage hat sich geändert. Neu hinzugekommen ist das Kontaktformular auf geteduvia.com/contact, der zweite Kontaktweg des Impressums neben der E-Mail (Abschnitt 3.10).
 
 **Version 1.1 (2026-09-10)**: Android-Release. Die Erklärung beschreibt nun beide Plattformen: Google ist als Empfänger der Zahlungsdaten für Käufe bei Google Play benannt, die RevenueCat-Zeile nennt, was das SDK auf welcher Plattform sendet, die Sprachaktivitätserkennung nennt die jeweils genutzte Bibliothek, Mitteilungen und Berechtigungswege sind für beide Plattformen beschrieben, und der Abschnitt zu Werbekennungen hält fest, dass die Android-App sie entfernt. Es werden keine neuen Datenkategorien erhoben, und keine Rechtsgrundlage hat sich geändert.
 

@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Effective Date: 2026-09-10 · Version 1.1
+Effective Date: 2026-10-03 · Version 1.2
 
 This Privacy Policy ("Policy") explains how Oleh Herasymenko ("we", "us", "our") collects, uses and protects your personal information when you use the mobile application Eduvia (the "App").
 
@@ -20,10 +20,10 @@ Website: <https://geteduvia.com>
 ## The short version
 
 - Eduvia is a speaking practice app with an AI voice tutor. To work, it must process your voice and remember what you talk about.
-- **Your voice is never stored.** Audio goes to Google's Gemini AI so the tutor can understand you, and it disappears after processing. Only text transcripts are saved.
+- **We never store your voice.** Audio goes to Google's Gemini AI so the tutor can understand you. We never write it to files or to our database; at Google it may sit in a cache for up to 24 hours (Section 4). Only text transcripts are saved.
 - **Conversations are saved as text** for as long as your account exists. You cannot delete a single conversation, but you can delete your whole account in the App at any time, and everything is erased with it.
 - **The tutor remembers you.** After each free conversation, the AI saves short personal facts you shared (for example, about your job or family) so the next conversation can continue naturally.
-- **Your data lives in Frankfurt, Germany (EU).** Understanding your speech with Google's Gemini model may currently happen outside the EU, because Google does not yet offer this model in an EU region. We will switch as soon as it does.
+- **Your data lives in Frankfurt, Germany (EU).** Understanding your speech with Google's Gemini model happens in the EU too. Google does not train models on it.
 - **Analytics are off** until you switch them on. **Crash reports are on** by default, and you can switch them off.
 - **Reminders are local.** They are scheduled on your phone. Nothing is sent from our servers, and there are no push tokens.
 - We **never sell** your data, and we **never share it** with examination organizations, language schools or authorities.
@@ -88,6 +88,8 @@ Important things to know:
 - Session details: mode, scenario, duration, when it happened, and the number of utterances.
 - The post-session analysis: a summary in your native language, mistakes grouped by category, an accuracy percentage, how much you and the tutor each spoke, new words, a CEFR level estimate, and which scenario goals you completed.
 - The "frozen" session prompt: the exact context that was sent to the AI model for that session.
+- A short summary of older conversation turns, which the AI writes during the session so the context stays short (Section 4).
+- The decision whether we may ask you for a rating on the App Store or Google Play after this session: whether the session qualified, the reasons for or against, the kind of session (placement conversation or regular session), whether you had a subscription at that moment, and the time.
 - Your recurring weak spots: mistake categories, how often they occur, in which sessions, the trend, and how many times we showed them to you.
 - Your vocabulary: each saved word with its translation, status, part of speech, gender and article, pronunciation, the first sentence you met it in with its translation, the session it came from, and the spaced repetition data (repetitions, ease, interval, lapses, and the next review date).
 - Your progress: CEFR level and its history, session counters, streaks, statistics per scenario, and an estimate of the time to your next level.
@@ -105,7 +107,7 @@ We do not ask you for sensitive data, and the App has no fields for it. But Eduv
 
 We process such information **only to hold the conversation and teach you the language**. Never for profiling. Never for advertising. Never to pass on to anyone.
 
-The legal basis is your explicit consent under Art. 9(2)(a) GDPR. We do not ask you for this information and the App has no field for it; we tell you plainly, here and in the App, that anything you choose to say becomes part of the stored Transcript and may become part of Tutor Memory. Saying it anyway is your own deliberate act, and that act is the consent we rely on. You can withdraw it at any time by deleting your account, which erases every conversation with it, and you can export your data first.
+The legal basis is your explicit consent under Art. 9(2)(a) GDPR. We do not ask you for this information and the App has no field for it. With the next App update (version 1.0.3) we are introducing a step of its own for this in the App: it explains that conversations are stored as text and that sensitive topics, if you raise them, become part of the Transcript and of Tutor Memory; you confirm this actively, and we store the time of your confirmation. Until then, what is written here applies: we tell you plainly, here, that anything you choose to say becomes part of the stored Transcript and may become part of Tutor Memory, and you decide what you say. You can withdraw your consent at any time by deleting your account, which erases every conversation with it, and you can export your data first.
 
 If you would rather not rely on that, the practical control is in your hands and costs you nothing: do not raise these topics. The tutor works exactly the same without them.
 
@@ -117,7 +119,7 @@ Practical advice: do not say things you do not want stored.
 
 Our servers keep technical logs so we can find errors and protect the service. Besides the time of a request, the type of operation, error codes, your user ID, session identifiers and technical usage figures, the logs may contain **short excerpts of your conversation with the tutor**. We do not use logs to study you or build a profile of you: they exist only for diagnostics. Logs are deleted automatically within 7 days, including after account deletion.
 
-The logs of our load balancer contain IP addresses. Legal basis: our legitimate interest in security and diagnostics (Art. 6(1)(f) GDPR).
+Our own servers neither store nor log IP addresses. The load balancer run by our hosting provider Hetzner in front of our servers may process IP addresses in its technical logs for a short time under its default settings. Legal basis: our legitimate interest in security and diagnostics (Art. 6(1)(f) GDPR).
 
 ### 3.7 Processing on your device
 
@@ -127,6 +129,18 @@ The logs of our load balancer contain IP addresses. Legal basis: our legitimate 
 ### 3.8 Children
 
 Eduvia is intended for users aged 16 and older. We do not knowingly collect data from children under 16. If we learn that we have, we will delete it promptly.
+
+### 3.9 The geteduvia.com website
+
+This website (with the Privacy Policy, the Terms of Use, the Impressum, the deletion form and the contact form) is hosted on GitHub Pages, a service of GitHub, Inc. in the USA. When you visit the website, GitHub logs your IP address for security reasons. GitHub is responsible for this itself, not us; the [GitHub General Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) applies, and GitHub is certified under the EU-US Data Privacy Framework.
+
+The website sets no cookies, loads no external fonts, and contains no analytics or tracking tools. Only when you submit the deletion form or the contact form does data go to our own server (Sections 10 and 3.10).
+
+### 3.10 Contact form
+
+On the [Contact](https://geteduvia.com/contact) page you can send us a message, as a second way to reach us next to email. What that form stores, and nothing else: your name if you give one, your email address, your message and the time you sent it. We use these only to answer your request. The legal basis is Art. 6(1)(b) GDPR where your request concerns your account, your subscription or another contract with us, and otherwise our legitimate interest in answering requests sent to us (Art. 6(1)(f) GDPR).
+
+The message is kept in our database in Frankfurt (Section 9) and is **deleted automatically after 60 days**, whether or not we have answered it. **Our server does not store your IP address for it.** It holds the address only in memory, to turn away too many messages from the same source, and forgets it at the latest about one hour after you last submitted the form. What you type is not written to our server logs. Technically, though, there is no way around IP addresses entirely: the load balancer of our hosting provider processes IP addresses in its technical logs (Section 3.6), and GitHub Pages, where this website and the form are hosted, logs IP addresses under its own rules (Section 3.9). The form sets no cookies and contains no tracking. A field invisible to people keeps automated spam out; a submission with that field filled in is not stored.
 
 ## 4. What we send to Google Gemini
 
@@ -142,6 +156,8 @@ The AI Tutor is powered by Google's Gemini models. For each Practice Session, th
 - **the audio of each utterance you speak**,
 - your recent utterances in the session.
 
+When a conversation gets longer, a separate Gemini call condenses the older turns into a short summary so the context stays short. This request contains the older turns of the conversation as text; the summary is stored with the session (Section 3.3).
+
 Outside of a live session, we also use Gemini for:
 
 - text you ask the App to translate,
@@ -155,11 +171,19 @@ Outside of a live session, we also use Gemini for:
 
 ### Where this processing happens
 
-Your account data is stored in Google Cloud Firestore in the Frankfurt region (Germany, EU). Our API and voice synthesis run on Hetzner servers in Germany. For understanding speech and generating the tutor's replies we use Google's Gemini model via Vertex AI: this model is not yet available in any EU region, so these requests (the live conversation as well as the analysis and the other calls listed above) may be processed on Google's infrastructure outside the EU. This processing is covered by the Google Cloud Data Processing Addendum, the EU Standard Contractual Clauses (SCCs), and Google's certification under the EU-US Data Privacy Framework. Google does not use your data to train its models and does not keep it after processing. As soon as the model becomes available in a European region, we will switch the processing to the EU.
+Your account data is stored in Google Cloud Firestore in the Frankfurt region (Germany, EU). Our API and voice synthesis run on Hetzner servers in Germany. For understanding speech and generating the tutor's replies we use Google's Gemini model via Vertex AI. Since 22 September 2026, all of these requests (the live conversation as well as the analysis and the other calls listed above) are processed in Google Cloud's EU region. This is governed by the Google Cloud Data Processing Addendum, under which Google acts as our processor. Google does not use your data to train its models.
+
+### What Google does with the requests
+
+Google does not store the content of a request permanently, but it does hold it for a short time. This is what you should know:
+
+- **Cache for up to 24 hours.** Google holds request data for up to 24 hours in an in-memory cache that belongs to our project only and is kept separate from other Google customers. This makes the tutor's replies faster and cheaper.
+- **Abuse monitoring for up to 90 days.** If Google's automated safety filters flag a request as possible abuse, Google may log that request for up to 90 days to review the abuse, also in the EU region.
+- **Never for training.** Neither the cache nor these logs are used to train models.
 
 ### What happens to your voice
 
-Your audio travels to Gemini as part of the request and disappears after processing. It is never written to files, never stored in the database, and not kept by Google after the reply is generated. Only the text Transcript is saved.
+Your audio travels to Gemini as part of the request. We never write it to files and never store it in our database. At Google, the audio is treated like any other request: it may sit in the cache for up to 24 hours and, if the safety filters are triggered, may be logged for abuse monitoring for up to 90 days; never for training. The only thing we store is the text Transcript.
 
 We do not create voiceprints, and we do not use your voice to identify you. Your voice is processed only to understand what you said.
 
@@ -171,13 +195,14 @@ We use the following providers to run the App.
 | --- | --- | --- | --- |
 | Google: Firebase Authentication and Google Sign-In | Sign-in, on both platforms | User ID, email, sign-in method and time | Global (US) infrastructure; Google Cloud DPA, SCCs, EU-US Data Privacy Framework |
 | Google: Cloud Firestore | Main database | All account and learning data | Frankfurt (europe-west3), EU |
-| Google: Vertex AI (Gemini) | Speech understanding, tutor replies, session analysis | Audio of your utterances plus the context listed in Section 4 | Global endpoint: processing may occur outside the EU; DPA, SCCs, DPF; no model training |
+| Google: Vertex AI (Gemini) | Speech understanding, tutor replies, session analysis | Audio of your utterances plus the context listed in Section 4 | EU region; Google Cloud DPA; no model training; cache up to 24 hours, abuse log up to 90 days only if the safety filters are triggered (Section 4) |
 | Google: Firebase Analytics | Product analytics | App events, only if you consent (Section 7) | DPA, SCCs, DPF |
 | Google: Firebase Crashlytics | Crash reports | Crash and non-fatal error reports: stack traces, device model, OS and App version, breadcrumb events and technical context keys (Section 7); plus, at each App launch, a Firebase installation identifier that the Firebase SDKs create to identify this installation. Turning crash reports off stops the reports; the installation identifier may still be created by the Firebase SDKs | DPA, SCCs, DPF |
 | Hetzner Online GmbH | Hosting of our API and voice synthesis | Traffic in transit, plus the technical logs of Section 3.6 (IP addresses and possibly short conversation excerpts), kept 7 days; no database of your data | Germany, EU; data processing agreement (AV-Vertrag) |
 | RevenueCat, Inc. | Subscription management | The internal customer ID we create (rcAppUserId), the purchase and renewal history reported by the store you bought from, and standard technical data its SDK sends with each request (device model, store country, app version, IP address, and on iOS the vendor identifier (IDFV)). No advertising identifier is sent on either platform (Section 7) | USA; SCCs |
 | Apple Inc. | Sign in with Apple, on both platforms; App Store and In-App Purchase, for purchases made on iOS | For sign-in: that you authenticated and when, your Apple ID, and the email address or Apple relay address you choose to release to us. For purchases: payment data (we never see it) | USA; under Apple's own terms |
 | Google (Google Play) | Google Play Store and Google Play Billing, for purchases made on Android | Payment data (we never see it) | Under Google's own terms |
+| GitHub, Inc. (GitHub Pages) | Hosting of this website, as an independent controller (Section 3.9) | IP addresses of website visitors | USA; GitHub Privacy Statement, EU-US Data Privacy Framework |
 
 Transfers outside the EU and EEA rely on the European Commission's Standard Contractual Clauses and, where applicable, our providers' certification under the EU-US Data Privacy Framework. You can obtain a copy of the safeguards that apply to a given transfer by writing to <thevaltorna@gmail.com>.
 
@@ -221,7 +246,7 @@ These are two different things with two different rules.
 ## 8. Legal bases at a glance
 
 - **Contract (Art. 6(1)(b) GDPR)**: everything needed to provide the service you asked for: Practice Sessions including the processing of your Voice Data, Transcripts, Tutor Memory, feedback and analysis, vocabulary and progress, personalization, subscription management, and the in-app export and deletion. Voice processing is technically necessary for a voice tutor, and every recording happens inside a session you started.
-- **Consent (Art. 6(1)(a) GDPR, §25(1) TDDDG)**: Firebase Analytics, which is a separate decision you make on its own screen. **Explicit consent (Art. 9(2)(a) GDPR)**: sensitive information you choose to share in conversation, in the sense described in Section 3.5 (there is no separate screen for it; we tell you what happens and you decide what to say).
+- **Consent (Art. 6(1)(a) GDPR, §25(1) TDDDG)**: Firebase Analytics, which is a separate decision you make on its own screen. **Explicit consent (Art. 9(2)(a) GDPR)**: sensitive information you choose to share in conversation, in the sense described in Section 3.5 (we are introducing a step of its own for it with App update 1.0.3; until then we tell you what happens and you decide what to say).
 - **Legitimate interests (Art. 6(1)(f) GDPR)**: crash reports (with your right to object), security and abuse protection, server logs, and internal AI usage records for cost control.
 - **Legal obligation (Art. 6(1)(c) GDPR)**: where the law requires processing.
 
@@ -229,7 +254,7 @@ How to withdraw or object: analytics with the switch in your Profile; crash repo
 
 ## 9. Where your data lives and for how long
 
-Your account data is stored in Google Cloud Firestore in Frankfurt, Germany (EU). Our own servers hold no database of your data. The only personal data resting on them is the technical logs described in Section 3.6, which delete themselves within 7 days.
+Your account data is stored in Google Cloud Firestore in Frankfurt, Germany (EU). Our own servers hold no database of your data. The only personal data resting on them is the technical logs described in Section 3.6, which delete themselves within 7 days. Requests to Google's Gemini model are processed in Google Cloud's EU region (Section 4).
 
 | Data | How long |
 | --- | --- |
@@ -238,8 +263,11 @@ Your account data is stored in Google Cloud Firestore in Frankfurt, Germany (EU)
 | Server logs (IP addresses, technical events, possibly short conversation excerpts) | 7 days, including after account deletion |
 | Technical deletion marker after account deletion | 48 hours |
 | A deletion request sent through the web form (the address and your note) | 60 days at most, then deleted automatically |
+| A message sent through the contact form (name if given, email address, message, time) | 60 days, then deleted automatically |
 | AI usage records (internal cost control) | While your account exists; deleted with the account |
 | Subscription records | While your account exists; your RevenueCat record is deleted when you delete the account |
+| Requests to Gemini in Google's cache | Up to 24 hours |
+| Requests to Gemini that Google's safety filters flag as possible abuse | Up to 90 days at Google |
 | Analytics data (only if you consented) | 2 months at Google |
 | Crash reports | 90 days at Google |
 
@@ -251,7 +279,7 @@ You can delete your account directly in the App: open your **Profile** and scrol
 
 You can also request deletion **without the App**, for example if you have already uninstalled it: write to <thevaltorna@gmail.com> from the email address your account uses. The full instructions, and a form, are on a page of their own: [Deleting your Eduvia account](https://geteduvia.com/delete-account). We complete such a request within 30 days and confirm it by email; the same data is erased as when you delete the account in the App.
 
-What that form stores, and nothing else: the address you type and the note you optionally add, so that we can reply to you and find the account. **We do not store your IP address**, and the form never tells anyone whether an address has an account here, because a deletion form that answered that question would be a way to find out who uses Eduvia. A request is kept for at most 60 days and is deleted after that whether or not it was acted on. **Submitting the form does not delete anything by itself**: we confirm with you first, because anyone can type someone else's address into a public form.
+What that form stores, and nothing else: the address you type and the note you optionally add, so that we can reply to you and find the account. **Our server does not store your IP address for it.** Technically, though, there is no way around IP addresses entirely: the load balancer of our hosting provider processes IP addresses in its technical logs (Section 3.6), and GitHub Pages, where this website is hosted, logs IP addresses under its own rules (Section 3.9). The form never tells anyone whether an address has an account here, because a deletion form that answered that question would be a way to find out who uses Eduvia. A request is kept for at most 60 days and is deleted after that whether or not it was acted on. **Submitting the form does not delete anything by itself**: we confirm with you first, because anyone can type someone else's address into a public form.
 
 What happens, in this order:
 
@@ -267,6 +295,7 @@ Honest details you should know:
 - **A technical marker remains for 48 hours** after deletion. It contains your user ID, your RevenueCat customer ID, and a flag whether the RevenueCat deletion still has to complete. It exists so that a request still in flight cannot recreate data of a deleted account, and so a retry can finish the RevenueCat deletion. After 48 hours it stops working.
 - **Backups clear within 7 days.** When you delete your account, your data disappears from the live systems immediately. Copies in technical database backups disappear automatically within 7 days. We do not restore deleted accounts from backups.
 - **Log excerpts clear within 7 days** too (Section 3.6).
+- **Analytics and crash data at Google expire.** Data already sent to Firebase Analytics or Firebase Crashlytics is not deleted individually; it disappears when its retention period ends: analytics data after 2 months, crash reports after 90 days (Section 7).
 
 After deletion you can create a new account, and an active subscription can be restored with Restore Purchases. Deleted learning data cannot be recovered.
 
@@ -314,6 +343,12 @@ The App uses AI to recognize your speech, correct you, analyze sessions and esti
 - Access to production systems is restricted.
 - Server logs are kept minimal and delete themselves after 7 days.
 
+### Who sees your conversations
+
+No human reads your conversations as a matter of routine. Only the Controller, a single person, can look at Transcripts, and only when it is needed: to handle a support request from you, to investigate an error, or to check the quality of the tutor. A conversation is then opened by its session identifier, not by your name. No third party reads your conversations.
+
+To develop the App we use development tools, including AI coding assistants. They receive the App's source code. Since 3 October 2026 we no longer give them the content of your conversations or server logs containing personal data; for error analysis they receive at most anonymised excerpts without identifiers. Before that date we did, in individual cases, use such tools for error analysis with transcripts and logs; that practice has ended.
+
 ## 14. Data breaches
 
 If a personal data breach is likely to put your rights and freedoms at risk, we will notify the supervisory authority within 72 hours of becoming aware of it. If the risk to you is high, we will also inform you directly and without undue delay: by email to your account address or with a clear notice in the App.
@@ -336,6 +371,8 @@ Email: <thevaltorna@gmail.com>
 Website: <https://geteduvia.com>
 
 ## 18. Changelog
+
+**Version 1.2 (2026-10-03)**: Update following our data protection impact assessment. Google's Gemini model has run in the EU region since 22 September 2026; the statements about possible processing outside the EU are removed. The Policy now says exactly what Google does with requests (cache up to 24 hours, abuse log up to 90 days only if the safety filters are triggered, never training) instead of saying that Google keeps nothing. Also newly described: the summary of older conversation turns made by a separate Gemini call, the stored decision whether we may ask you for a store rating, who can look at your conversations, the website on GitHub Pages, IP addresses around the deletion form, the expiry of analytics and crash data after account deletion, and the consent step for sensitive topics that App update 1.0.3 introduces. This processing already existed; it is now fully described. No legal basis has changed. New is the contact form at geteduvia.com/contact, the Impressum's second contact channel next to email (Section 3.10).
 
 **Version 1.1 (2026-09-10)**: Android release. The Policy now describes both platforms: Google is named as the recipient of payment data for purchases made on Google Play, the RevenueCat row states what its SDK sends on each platform, the on-device voice activity detection names the library used on each platform, notifications and permission paths are described for both, and the section on advertising identifiers states that the Android build removes them. No new category of data is collected and no legal basis has changed.
 

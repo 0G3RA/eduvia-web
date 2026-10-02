@@ -11,9 +11,14 @@ Deutschland
 
 Kontakt:
 E-Mail: <thevaltorna@gmail.com>
+Kontaktformular: <https://geteduvia.com/contact/de/>
 
 Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:
 Oleh Herasymenko, Röntgenstraße 5, 88048 Friedrichshafen, Deutschland
+
+## Umsatzsteuer
+
+Als Kleinunternehmer im Sinne von § 19 Abs. 1 UStG wird keine Umsatzsteuer berechnet; eine Umsatzsteuer-Identifikationsnummer besteht daher nicht.
 
 ## Verbraucherstreitbeilegung
 
