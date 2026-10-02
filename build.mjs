@@ -1,6 +1,6 @@
 // Static site builder: renders content/*.md into dist/ with a shared layout.
 // Routes mirror the URLs referenced inside the legal documents themselves:
-//   /privacy/  /privacy/de/  /terms/  /terms/de/  /impressum/  /third-party-notices/
+//   /privacy/  /privacy/de/  /terms/  /terms/de/  /impressum/  /third-party-notices/  /contact/  /contact/de/
 import { readFile, writeFile, mkdir, rm, cp } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
@@ -61,6 +61,22 @@ const pages = [
     lang: 'de',
     description: 'So löschen Sie Ihr Eduvia-Konto und alle damit gespeicherten Daten, in der App oder per E-Mail.',
     switch: { current: 'DE', links: [{ label: 'English', href: '/delete-account/' }, { label: 'Deutsch', href: '/delete-account/de/' }] },
+  },
+  {
+    // The Impressum's second fast contact channel next to the email address (§ 5 DDG). Posts to
+    // POST /public/contact on the API; what it stores is in the Privacy Policy, Section 3.10.
+    src: 'contact.en.md',
+    out: 'contact/index.html',
+    lang: 'en',
+    description: 'Contact Eduvia by email or through a short form.',
+    switch: { current: 'EN', links: [{ label: 'English', href: '/contact/' }, { label: 'Deutsch', href: '/contact/de/' }] },
+  },
+  {
+    src: 'contact.de.md',
+    out: 'contact/de/index.html',
+    lang: 'de',
+    description: 'Kontakt zu Eduvia per E-Mail oder über ein kurzes Formular.',
+    switch: { current: 'DE', links: [{ label: 'English', href: '/contact/' }, { label: 'Deutsch', href: '/contact/de/' }] },
   },
   {
     src: 'impressum.md',
@@ -138,6 +154,7 @@ function landing() {
 <li><a href="privacy/">Privacy Policy</a> · <a href="privacy/de/" lang="de">Datenschutzerklärung</a></li>
 <li><a href="terms/">Terms of Use</a> · <a href="terms/de/" lang="de">Nutzungsbedingungen</a></li>
 <li><a href="delete-account/">Delete your account</a> · <a href="delete-account/de/" lang="de">Konto löschen</a></li>
+<li><a href="contact/">Contact</a> · <a href="contact/de/" lang="de">Kontakt</a></li>
 <li><a href="impressum/" lang="de">Impressum</a></li>
 <li><a href="third-party-notices/">Third-Party Notices</a></li>
 </ul>
