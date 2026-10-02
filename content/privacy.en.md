@@ -347,7 +347,7 @@ The App uses AI to recognize your speech, correct you, analyze sessions and esti
 
 No human reads your conversations as a matter of routine. Only the Controller, a single person, can look at Transcripts, and only when it is needed: to handle a support request from you, to investigate an error, or to check the quality of the tutor. A conversation is then opened by its session identifier, not by your name. No third party reads your conversations.
 
-To develop the App we use development tools, including AI coding assistants. They receive the App's source code. Since 3 October 2026 we no longer give them the content of your conversations or server logs containing personal data; for error analysis they receive at most anonymised excerpts without identifiers. Before that date we did, in individual cases, use such tools for error analysis with transcripts and logs; that practice has ended.
+To develop the App we use development tools, including AI coding assistants. They receive the App's source code, but not the content of your conversations and not server logs containing personal data; for error analysis they receive at most anonymised excerpts without identifiers.
 
 ## 14. Data breaches
 

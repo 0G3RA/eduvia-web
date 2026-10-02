@@ -347,7 +347,7 @@ Die App nutzt KI, um Ihre Sprache zu erkennen, Sie zu korrigieren, Sitzungen aus
 
 Kein Mensch liest Ihre Gespräche routinemäßig. Einsicht in Transkripte hat nur der Verantwortliche selbst, also eine einzige Person, und nur, wenn es nötig ist: um eine Supportanfrage von Ihnen zu bearbeiten, einen Fehler zu untersuchen oder die Qualität des Tutors zu prüfen. Dabei wird ein Gespräch über seine Sitzungskennung aufgerufen, nicht über Ihren Namen. Keine dritte Person liest Ihre Gespräche.
 
-Für die Entwicklung der App nutzen wir Entwicklungswerkzeuge, darunter KI-Programmierassistenten. Sie erhalten den Quellcode der App. Seit dem 3. Oktober 2026 geben wir ihnen keine Inhalte Ihrer Gespräche und keine Server-Protokolle mit personenbezogenen Daten mehr; zur Fehleranalyse erhalten sie höchstens anonymisierte Auszüge ohne Kennungen. Davor haben wir solche Werkzeuge in Einzelfällen zur Fehleranalyse auch mit Transkripten und Protokollen eingesetzt; diese Praxis ist beendet.
+Für die Entwicklung der App nutzen wir Entwicklungswerkzeuge, darunter KI-Programmierassistenten. Sie erhalten den Quellcode der App, aber keine Inhalte Ihrer Gespräche und keine Server-Protokolle mit personenbezogenen Daten; zur Fehleranalyse erhalten sie höchstens anonymisierte Auszüge ohne Kennungen.
 
 ## 14. Datenpannen
 
