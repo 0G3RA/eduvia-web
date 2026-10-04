@@ -2,7 +2,14 @@
 
 Angaben gemäß § 5 DDG
 
-Diensteanbieter der App "Eduvia" und der Website geteduvia.com:
+Diensteanbieter der App "Eduvia" und der Website geteduvia.com.
+
+Dieses Impressum gilt auch für unsere Auftritte in den sozialen Medien:
+
+- Instagram: <https://www.instagram.com/thevaltorna/>
+- Threads: <https://www.threads.com/@thevaltorna>
+
+Anbieter:
 
 Oleh Herasymenko
 Röntgenstraße 5
@@ -18,7 +25,7 @@ Oleh Herasymenko, Röntgenstraße 5, 88048 Friedrichshafen, Deutschland
 
 ## Umsatzsteuer
 
-Als Kleinunternehmer im Sinne von § 19 Abs. 1 UStG wird keine Umsatzsteuer berechnet; eine Umsatzsteuer-Identifikationsnummer besteht daher nicht.
+Als Kleinunternehmer im Sinne von § 19 Abs. 1 UStG wird keine Umsatzsteuer berechnet. Die Umsatzsteuer-Identifikationsnummer wird nach Erteilung hier ergänzt.
 
 ## Verbraucherstreitbeilegung
 
