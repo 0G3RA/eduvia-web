@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Effective Date: 2026-10-03 · Version 1.2
+Effective Date: 2026-10-13 · Version 1.3
 
 This Privacy Policy ("Policy") explains how Oleh Herasymenko ("we", "us", "our") collects, uses and protects your personal information when you use the mobile application Eduvia (the "App").
 
@@ -86,6 +86,7 @@ Important things to know:
 
 - The full text Transcript of every conversation: each utterance with its time, plus hints, translations, corrections, rewritten phrases and the rating of each utterance.
 - Session details: mode, scenario, duration, when it happened, and the number of utterances.
+- The notes of our own grammar checker on each of your utterances: which part of the sentence is affected, the kind of mistake and a suggested correction. They are stored with the utterance and used for the post-session analysis.
 - The post-session analysis: a summary in your native language, mistakes grouped by category, an accuracy percentage, how much you and the tutor each spoke, new words, a CEFR level estimate, and which scenario goals you completed.
 - The "frozen" session prompt: the exact context that was sent to the AI model for that session.
 - A short summary of older conversation turns, which the AI writes during the session so the context stays short (Section 4).
@@ -171,7 +172,7 @@ Outside of a live session, we also use Gemini for:
 
 ### Where this processing happens
 
-Your account data is stored in Google Cloud Firestore in the Frankfurt region (Germany, EU). Our API and voice synthesis run on Hetzner servers in Germany. For understanding speech and generating the tutor's replies we use Google's Gemini model via Vertex AI. Since 22 September 2026, all of these requests (the live conversation as well as the analysis and the other calls listed above) are processed in Google Cloud's EU region. This is governed by the Google Cloud Data Processing Addendum, under which Google acts as our processor. Google does not use your data to train its models.
+Your account data is stored in Google Cloud Firestore in the Frankfurt region (Germany, EU). Our API and voice synthesis run on Hetzner servers in Germany. During the conversation, our own grammar checker reviews the text of your German utterances so that the analysis finds your mistakes more reliably. It is a model we trained ourselves, runs on a Hetzner server in Helsinki (Finland, EU), is reachable only through our internal network, and neither stores nor logs your sentences; its notes are stored with your Transcript in Frankfurt (Section 3.3). For understanding speech and generating the tutor's replies we use Google's Gemini model via Vertex AI. Since 22 September 2026, all of these requests (the live conversation as well as the analysis and the other calls listed above) are processed in Google Cloud's EU region. This is governed by the Google Cloud Data Processing Addendum, under which Google acts as our processor. Google does not use your data to train its models.
 
 ### What Google does with the requests
 
@@ -198,7 +199,7 @@ We use the following providers to run the App.
 | Google: Vertex AI (Gemini) | Speech understanding, tutor replies, session analysis | Audio of your utterances plus the context listed in Section 4 | EU region; Google Cloud DPA; no model training; cache up to 24 hours, abuse log up to 90 days only if the safety filters are triggered (Section 4) |
 | Google: Firebase Analytics | Product analytics | App events, only if you consent (Section 7) | DPA, SCCs, DPF |
 | Google: Firebase Crashlytics | Crash reports | Crash and non-fatal error reports: stack traces, device model, OS and App version, breadcrumb events and technical context keys (Section 7); plus, at each App launch, a Firebase installation identifier that the Firebase SDKs create to identify this installation. Turning crash reports off stops the reports; the installation identifier may still be created by the Firebase SDKs | DPA, SCCs, DPF |
-| Hetzner Online GmbH | Hosting of our API and voice synthesis | Traffic in transit, plus the technical logs of Section 3.6 (IP addresses and possibly short conversation excerpts), kept 7 days; no database of your data | Germany, EU; data processing agreement (AV-Vertrag) |
+| Hetzner Online GmbH | Hosting of our API, voice synthesis and our grammar checker | Traffic in transit, plus the technical logs of Section 3.6 (IP addresses and possibly short conversation excerpts), kept 7 days; no database of your data | Germany and Finland, EU; data processing agreement (AV-Vertrag) |
 | RevenueCat, Inc. | Subscription management | The internal customer ID we create (rcAppUserId), the purchase and renewal history reported by the store you bought from, and standard technical data its SDK sends with each request (device model, store country, app version, IP address, and on iOS the vendor identifier (IDFV)). No advertising identifier is sent on either platform (Section 7) | USA; SCCs |
 | Apple Inc. | Sign in with Apple, on both platforms; App Store and In-App Purchase, for purchases made on iOS | For sign-in: that you authenticated and when, your Apple ID, and the email address or Apple relay address you choose to release to us. For purchases: payment data (we never see it) | USA; under Apple's own terms |
 | Google (Google Play) | Google Play Store and Google Play Billing, for purchases made on Android | Payment data (we never see it) | Under Google's own terms |
@@ -339,7 +340,7 @@ The App uses AI to recognize your speech, correct you, analyze sessions and esti
 - All traffic between the App and our servers is encrypted (TLS).
 - The App has no direct access to the database. The database rejects all client requests; everything goes through our API, and every request is checked against your Firebase sign-in token.
 - Data access is isolated per user.
-- Our servers run in ISO 27001 certified Hetzner data centers in Germany; the database runs in Google Cloud's Frankfurt region.
+- Our servers run in ISO 27001 certified Hetzner data centers in Germany and Finland; the database runs in Google Cloud's Frankfurt region.
 - Access to production systems is restricted.
 - Server logs are kept minimal and delete themselves after 7 days.
 
@@ -371,6 +372,8 @@ Email: <thevaltorna@gmail.com>
 Website: <https://geteduvia.com>
 
 ## 18. Changelog
+
+**Version 1.3 (2026-10-13)**: The analysis now also uses our own grammar checker. It reviews the text of your German utterances during the conversation on a Hetzner server in Helsinki (Finland, EU), stores nothing there, and its notes are stored with your Transcript (Sections 3.3, 4 and 5). No new recipient: Hetzner was already our processor. No legal basis has changed.
 
 **Version 1.2 (2026-10-03)**: Update following our data protection impact assessment. Google's Gemini model has run in the EU region since 22 September 2026; the statements about possible processing outside the EU are removed. The Policy now says exactly what Google does with requests (cache up to 24 hours, abuse log up to 90 days only if the safety filters are triggered, never training) instead of saying that Google keeps nothing. Also newly described: the summary of older conversation turns made by a separate Gemini call, the stored decision whether we may ask you for a store rating, who can look at your conversations, the website on GitHub Pages, IP addresses around the deletion form, the expiry of analytics and crash data after account deletion, and the consent step for sensitive topics that App update 1.0.3 introduces. This processing already existed; it is now fully described. No legal basis has changed. New is the contact form at geteduvia.com/contact, the Impressum's second contact channel next to email (Section 3.10).
 

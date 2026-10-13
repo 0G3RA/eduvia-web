@@ -1,6 +1,6 @@
 # Datenschutzerklärung
 
-Gültig ab: 2026-10-03 · Version 1.2
+Gültig ab: 2026-10-13 · Version 1.3
 
 Diese Datenschutzerklärung ("Erklärung") beschreibt, wie Oleh Herasymenko ("wir", "uns", "unser") Ihre personenbezogenen Daten verarbeitet und schützt, wenn Sie die mobile Anwendung Eduvia (die "App") nutzen.
 
@@ -86,6 +86,7 @@ Wichtig zu wissen:
 
 - Das vollständige Text-Transkript jedes Gesprächs: jede Äußerung mit Zeitpunkt, dazu Hinweise, Übersetzungen, Korrekturen, umformulierte Sätze und die Bewertung jeder Äußerung.
 - Sitzungsdaten: Modus, Szenario, Dauer, Zeitpunkt und Anzahl der Äußerungen.
+- Die Hinweise unserer eigenen Grammatikprüfung zu jeder Ihrer Äußerungen: welche Stelle im Satz betroffen ist, die Art des Fehlers und ein Korrekturvorschlag. Sie werden zusammen mit der Äußerung gespeichert und dienen der Auswertung nach der Sitzung.
 - Die Auswertung nach der Sitzung: eine Zusammenfassung in Ihrer Muttersprache, Fehler nach Kategorien, eine Genauigkeitsquote, die Redeanteile von Ihnen und dem Tutor, neue Wörter, eine CEFR-Niveau-Einschätzung und die erreichten Szenario-Ziele.
 - Der "eingefrorene" Sitzungs-Prompt: der genaue Kontext, der für diese Sitzung an das KI-Modell gesendet wurde.
 - Eine kurze Zusammenfassung älterer Gesprächsrunden, die die KI während der Sitzung erstellt, damit der Kontext kurz bleibt (Abschnitt 4).
@@ -171,7 +172,7 @@ Außerhalb einer laufenden Sitzung nutzen wir Gemini außerdem für:
 
 ### Wo diese Verarbeitung stattfindet
 
-Ihre Kontodaten werden in Google Cloud Firestore in der Region Frankfurt (Deutschland, EU) gespeichert. Unsere API und die Sprachsynthese laufen auf Hetzner-Servern in Deutschland. Für das Verstehen von Sprache und die Erzeugung der Tutor-Antworten nutzen wir Googles Gemini-Modell über Vertex AI. Seit dem 22. September 2026 werden alle diese Anfragen (das laufende Gespräch ebenso wie die Auswertung und die übrigen oben genannten Aufrufe) in der EU-Region von Google Cloud verarbeitet. Grundlage ist das Google Cloud Data Processing Addendum, mit dem Google als unser Auftragsverarbeiter tätig ist. Google verwendet Ihre Daten nicht zum Training seiner Modelle.
+Ihre Kontodaten werden in Google Cloud Firestore in der Region Frankfurt (Deutschland, EU) gespeichert. Unsere API und die Sprachsynthese laufen auf Hetzner-Servern in Deutschland. Während des Gesprächs prüft unser eigenes Grammatikprüfprogramm den Text Ihrer deutschen Äußerungen, damit die Auswertung Ihre Fehler zuverlässiger findet. Es ist ein von uns selbst trainiertes Modell, läuft auf einem Hetzner-Server in Helsinki (Finnland, EU), ist nur über unser internes Netz erreichbar und speichert und protokolliert Ihre Sätze nicht; seine Hinweise werden mit Ihrem Transkript in Frankfurt gespeichert (Abschnitt 3.3). Für das Verstehen von Sprache und die Erzeugung der Tutor-Antworten nutzen wir Googles Gemini-Modell über Vertex AI. Seit dem 22. September 2026 werden alle diese Anfragen (das laufende Gespräch ebenso wie die Auswertung und die übrigen oben genannten Aufrufe) in der EU-Region von Google Cloud verarbeitet. Grundlage ist das Google Cloud Data Processing Addendum, mit dem Google als unser Auftragsverarbeiter tätig ist. Google verwendet Ihre Daten nicht zum Training seiner Modelle.
 
 ### Was Google mit den Anfragen tut
 
@@ -198,7 +199,7 @@ Wir setzen die folgenden Anbieter ein, um die App zu betreiben.
 | Google: Vertex AI (Gemini) | Sprachverstehen, Tutor-Antworten, Sitzungsauswertung | Audio Ihrer Äußerungen sowie der in Abschnitt 4 genannte Kontext | EU-Region; Google Cloud DPA; kein Modelltraining; Zwischenspeicher bis 24 Stunden, Missbrauchsprotokoll bis 90 Tage nur bei Treffer der Sicherheitsfilter (Abschnitt 4) |
 | Google: Firebase Analytics | Produktanalyse | App-Ereignisse, nur mit Ihrer Einwilligung (Abschnitt 7) | DPA, SCC, DPF |
 | Google: Firebase Crashlytics | Absturzberichte | Absturz- und Fehlerberichte: Stacktraces, Gerätemodell, OS- und App-Version, Breadcrumb-Ereignisse und technische Kontextschlüssel (Abschnitt 7); dazu bei jedem App-Start eine Firebase-Installationskennung, die die Firebase-SDKs zur Identifizierung dieser Installation erzeugen. Das Abschalten der Absturzberichte beendet die Berichte; die Installationskennung kann von den Firebase-SDKs weiterhin erzeugt werden | DPA, SCC, DPF |
-| Hetzner Online GmbH | Hosting unserer API und der Sprachsynthese | Datenverkehr während der Übertragung sowie die technischen Protokolle aus Abschnitt 3.6 (IP-Adressen und möglicherweise kurze Gesprächsausschnitte), 7 Tage aufbewahrt; keine Datenbank mit Ihren Daten | Deutschland, EU; Auftragsverarbeitungsvertrag (AV-Vertrag) |
+| Hetzner Online GmbH | Hosting unserer API, der Sprachsynthese und unserer Grammatikprüfung | Datenverkehr während der Übertragung sowie die technischen Protokolle aus Abschnitt 3.6 (IP-Adressen und möglicherweise kurze Gesprächsausschnitte), 7 Tage aufbewahrt; keine Datenbank mit Ihren Daten | Deutschland und Finnland, EU; Auftragsverarbeitungsvertrag (AV-Vertrag) |
 | RevenueCat, Inc. | Abonnementverwaltung | Die von uns erzeugte interne Kundenkennung (rcAppUserId), die vom jeweiligen Store gemeldete Kauf- und Verlängerungshistorie sowie technische Standarddaten, die das SDK mit jeder Anfrage sendet (Gerätemodell, Store-Land, App-Version, IP-Adresse und unter iOS die Herstellerkennung (IDFV)). Eine Werbekennung wird auf keiner der beiden Plattformen übermittelt (Abschnitt 7) | USA; SCC |
 | Apple Inc. | "Mit Apple anmelden", auf beiden Plattformen; App Store und In-App-Kauf, für Käufe unter iOS | Bei der Anmeldung: dass und wann Sie sich authentifiziert haben, Ihre Apple-ID sowie die E-Mail-Adresse oder Apple-Weiterleitungsadresse, die Sie an uns freigeben. Bei Käufen: Zahlungsdaten (wir sehen sie nie) | USA; nach Apples eigenen Bedingungen |
 | Google (Google Play) | Google Play Store und Google Play Billing, für Käufe unter Android | Zahlungsdaten (wir sehen sie nie) | Nach Googles eigenen Bedingungen |
@@ -339,7 +340,7 @@ Die App nutzt KI, um Ihre Sprache zu erkennen, Sie zu korrigieren, Sitzungen aus
 - Der gesamte Datenverkehr zwischen der App und unseren Servern ist verschlüsselt (TLS).
 - Die App hat keinen direkten Zugriff auf die Datenbank. Die Datenbank weist alle Client-Anfragen ab; alles läuft über unsere API, und jede Anfrage wird gegen Ihr Firebase-Anmelde-Token geprüft.
 - Der Datenzugriff ist je Nutzer isoliert.
-- Unsere Server laufen in ISO-27001-zertifizierten Hetzner-Rechenzentren in Deutschland; die Datenbank läuft in Googles Region Frankfurt.
+- Unsere Server laufen in ISO-27001-zertifizierten Hetzner-Rechenzentren in Deutschland und Finnland; die Datenbank läuft in Googles Region Frankfurt.
 - Der Zugriff auf Produktivsysteme ist beschränkt.
 - Server-Protokolle werden knapp gehalten und löschen sich nach 7 Tagen selbst.
 
@@ -371,6 +372,8 @@ E-Mail: <thevaltorna@gmail.com>
 Website: <https://geteduvia.com>
 
 ## 18. Änderungsprotokoll
+
+**Version 1.3 (2026-10-13)**: Die Auswertung nutzt zusätzlich unsere eigene Grammatikprüfung. Sie prüft den Text Ihrer deutschen Äußerungen während des Gesprächs auf einem Hetzner-Server in Helsinki (Finnland, EU), speichert dort nichts, und ihre Hinweise werden mit Ihrem Transkript gespeichert (Abschnitte 3.3, 4 und 5). Kein neuer Empfänger: Hetzner war bereits unser Auftragsverarbeiter. Keine Rechtsgrundlage hat sich geändert.
 
 **Version 1.2 (2026-10-03)**: Aktualisierung nach unserer Datenschutz-Folgenabschätzung. Googles Gemini-Modell läuft seit dem 22. September 2026 in der EU-Region; die Aussagen über eine mögliche Verarbeitung außerhalb der EU sind entfernt. Die Erklärung beschreibt nun genau, was Google mit Anfragen tut (Zwischenspeicher bis 24 Stunden, Missbrauchsprotokoll bis 90 Tage nur bei Treffer der Sicherheitsfilter, nie Training), statt zu sagen, Google speichere nichts. Neu beschrieben sind außerdem: die Zusammenfassung älterer Gesprächsrunden durch einen eigenen Gemini-Aufruf, die gespeicherte Entscheidung, ob wir Sie um eine Store-Bewertung bitten dürfen, wer Ihre Gespräche einsehen kann, die Website bei GitHub Pages, die IP-Adressen beim Löschformular, das Auslaufen von Analyse- und Absturzdaten nach einer Kontolöschung und der Einwilligungsschritt für sensible Themen, den das App-Update 1.0.3 einführt. Diese Verarbeitungen bestanden bereits; sie sind jetzt vollständig beschrieben. Keine Rechtsgrundlage hat sich geändert. Neu hinzugekommen ist das Kontaktformular auf geteduvia.com/contact, der zweite Kontaktweg des Impressums neben der E-Mail (Abschnitt 3.10).
 
