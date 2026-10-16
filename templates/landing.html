@@ -1,0 +1,315 @@
+<a class="skip" href="#main">{{nav.skip}}</a>
+{{$.header}}
+<section class="hero" id="top">
+<div class="hero-in wrap" id="main">
+<div class="hero-copy">
+<div class="chip">{{hero.chip}}</div>
+<h1>{{hero.h1}}</h1>
+<p class="hero-lead"><span class="d">{{hero.leadD}}</span><span class="m">{{hero.leadM}}</span></p>
+{{> stores}}
+<p class="hero-note"><span class="d">{{hero.noteD}}</span><span class="m">{{hero.noteM}}</span></p>
+</div>
+<div class="d hero-art-box" role="img" aria-label="{{hero.artLabel}}">{{> hero_art_d}}</div>
+<div class="m hero-art-m" role="img" aria-label="{{conv.altQuick}}">{{> hero_art_m}}</div>
+</div>
+</section>
+
+<section class="sec dark manifesto">
+<div class="wrap">
+<p class="manifesto-p"><span class="d">{{manifesto.d}}</span><span class="m">{{manifesto.m}}</span></p>
+<dl class="stats">
+<div class="stat"><dt>{{stats.s1v}}</dt><dd><span class="d">{{stats.s1d}}</span><span class="m">{{stats.s1m}}</span></dd></div>
+<div class="stat"><dt>{{stats.s2v}}</dt><dd><span class="d">{{stats.s2d}}</span><span class="m">{{stats.s2m}}</span></dd></div>
+<div class="stat"><dt>{{stats.s3v}}</dt><dd><span class="d">{{stats.s3d}}</span><span class="m">{{stats.s3m}}</span></dd></div>
+<div class="stat"><dt>{{stats.s4v}}</dt><dd><span class="d">{{stats.s4d}}</span><span class="m">{{stats.s4m}}</span></dd></div>
+</dl>
+</div>
+</section>
+
+<section class="sec" id="how" style="background:#fff">
+<div class="wrap">
+<div class="eyebrow">{{cycle.eyebrow}}</div>
+<h2 class="h2 h2-l" style="max-width:820px">{{cycle.h2}}</h2>
+<p class="lead" style="max-width:640px;color:#5C5869"><span class="d">{{cycle.leadD}}</span><span class="m">{{cycle.leadM}}</span></p>
+<div class="d cycle-box">{{> cycle_d}}</div>
+<div class="m">{{> cycle_m}}
+<div class="again"><span aria-hidden="true">↻</span>{{cycle.again}}</div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="conversation" style="background:#FDE8CB">
+<div class="wrap">
+<div class="center-d">
+<div class="eyebrow">{{conv.eyebrow}}</div>
+<h2 class="h2 h2-xl" style="max-width:1000px">{{conv.h2}}</h2>
+<p class="lead" style="max-width:700px;color:#4A3F2E"><span class="d">{{conv.leadD}}</span><span class="m">{{conv.leadM}}</span></p>
+</div>
+<div class="d fan-row zoom-box">{{> conv_fan}}</div>
+<div class="m">
+<div class="carousel phones" data-carousel tabindex="0" role="region" aria-label="{{conv.eyebrow}}">
+<figure class="slide pslide"><div class="phone" style="--w:258px"><img src="{{$.shots}}/screen-quick-fix.jpg" alt="{{conv.altQuick}}" width="600" height="1304" loading="lazy"></div><figcaption class="tag">{{hints.h1t}}</figcaption></figure>
+<figure class="slide pslide"><div class="phone" style="--w:258px"><img src="{{$.shots}}/screen-better-phrasing.jpg" alt="{{conv.altBetter}}" width="600" height="1304" loading="lazy"></div><figcaption class="tag">{{hints.h2t}}</figcaption></figure>
+<figure class="slide pslide"><div class="phone" style="--w:258px"><img src="{{$.shots}}/screen-new-word.jpg" alt="{{conv.altWord}}" width="600" height="1304" loading="lazy"></div><figcaption class="tag">{{hints.h3t}}</figcaption></figure>
+</div>
+</div>
+<ul class="feats">
+<li class="feat"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B0A0B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg></span><div><b class="ft">{{feat.f1t}}</b><div class="fd">{{feat.f1d}}</div></div></li>
+<li class="feat"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B0A0B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 8v8M11 5v14"/><rect x="15" y="7" width="2.2" height="10" rx="1"/><rect x="19" y="7" width="2.2" height="10" rx="1"/></svg></span><div><b class="ft">{{feat.f2t}}</b><div class="fd">{{feat.f2d}}</div></div></li>
+<li class="feat"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B0A0B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M7 11h6M15 11h2M7 15h3M12 15h5"/></svg></span><div><b class="ft">{{feat.f3t}}</b><div class="fd">{{feat.f3d}}</div></div></li>
+<li class="feat"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B0A0B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h8M8 4v2M6 6c0 4 3 7 6 8M10 6c0 3-2 6-5 8"/><path d="M13 20l4-9 4 9M14.5 17h5"/></svg></span><div><b class="ft">{{feat.f4t}}</b><div class="fd">{{feat.f4d}}</div></div></li>
+<li class="feat"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B0A0B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"/></svg></span><div><b class="ft">{{feat.f5t}}</b><div class="fd">{{feat.f5d}}</div></div></li>
+<li class="feat"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B0A0B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17a8 8 0 1 1 16 0"/><path d="M12 17l-3.5-4.5"/><circle cx="12" cy="17" r="1.2" fill="#0B0A0B"/></svg></span><div><b class="ft">{{feat.f6t}}</b><div class="fd">{{feat.f6d}}</div></div></li>
+</ul>
+<div class="hints-head center-d">
+<div class="eyebrow eyebrow-keep">{{hints.eyebrow}}</div>
+<h2 class="h2 h2-s" style="max-width:820px">{{hints.h2}}</h2>
+</div>
+<div role="region" aria-label="{{hints.label}}" class="hints-wrap">{{> hints_d}}
+</div>
+</div>
+</section>
+
+<section class="sec" id="roleplay" style="background:#92C5FB">
+<div class="wrap">
+<div class="eyebrow">{{role.eyebrow}}</div>
+<h2 class="h2 h2-l" style="max-width:820px">{{role.h2}}</h2>
+<div class="role-cols">
+<div class="role-col">
+<div>
+<h3 class="sub">{{role.c1t}}</h3>
+<p class="sub-p"><span class="d">{{role.c1dD}}</span><span class="m">{{role.c1dM}}</span></p>
+</div>
+<div class="role-card" role="img" aria-label="{{role.chatLabel}}">{{> chat_d}}</div>
+</div>
+<div class="role-col">
+<div>
+<h3 class="sub">{{role.c2t}}</h3>
+<p class="sub-p"><span class="d">{{role.c2dD}}</span><span class="m">{{role.c2dM}}</span></p>
+</div>
+<div class="role-card" style="position:relative" role="img" aria-label="{{role.scenLabel}}">{{> scen_d}}
+<div class="step-done d"><span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0B0A0B" stroke-width="3.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span>{{role.stepDone}}</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="recap" style="background:#F5F4F8">
+<div class="wrap split">
+<div class="split-text">
+<div class="eyebrow">{{recap.eyebrow}}</div>
+<h2 class="h2"><span class="d">{{recap.h2D}}</span><span class="m">{{recap.h2M}}</span></h2>
+<p class="lead" style="color:#5C5869"><span class="d">{{recap.leadD}}</span><span class="m">{{recap.leadM}}</span></p>
+<ul class="checks d">
+<li><span aria-hidden="true">✓</span>{{recap.l1}}</li>
+<li><span aria-hidden="true">✓</span>{{recap.l2}}</li>
+<li><span aria-hidden="true">✓</span>{{recap.l3}}</li>
+<li><span aria-hidden="true">✓</span>{{recap.l4}}</li>
+<li><span aria-hidden="true">✓</span>{{recap.l5}}</li>
+<li><span aria-hidden="true">✓</span>{{recap.l6}}</li>
+</ul>
+<p class="recap-note d">{{recap.note}}</p>
+</div>
+<div class="split-art"><div class="phone zoom tilt-r" style="--w:340px"><img src="{{$.shots}}/screen-recap.jpg" alt="{{recap.alt}}" width="600" height="1304" loading="lazy"></div></div>
+<ul class="pills m">
+<li><span class="okc" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span>{{recap.m1}}</li>
+<li><span class="okc" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span>{{recap.m2}}</li>
+<li><span class="okc" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span>{{recap.m3}}</li>
+<li><span class="okc" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span>{{recap.m4}}</li>
+</ul>
+</div>
+</section>
+
+<section class="sec" id="errors" style="background:#A9F0EE">
+<div class="wrap split" style="--gap:70px">
+<div class="split-text">
+<div class="eyebrow">{{errors.eyebrow}}</div>
+<h2 class="h2">{{errors.h2}}</h2>
+<p class="lead" style="color:#1F4A48"><span class="d">{{errors.leadD}}</span><span class="m">{{errors.leadM}}</span></p>
+<ol class="numlist d">
+<li><span>01</span>{{errors.p1}}</li>
+<li><span>02</span>{{errors.p2}}</li>
+<li><span>03</span>{{errors.p3}}</li>
+<li><span>04</span>{{errors.p4}}</li>
+</ol>
+</div>
+<div class="err-art zoom">
+<div class="catalog" role="img" aria-label="{{errors.catLabel}}">
+<div class="cat-head"><div><div class="cat-cap">{{mock.catHead}}</div><div class="cat-num"><b>46</b><span>{{mock.catCount}}</span></div></div><span class="cat-trend">↓ 34%</span></div>
+<div class="cat-row"><span class="cat-name"><i style="background:#FF9E9E"></i>{{mock.r1}}</span><span class="bar"><span style="width:100%;background:#FF9E9E"></span></span><span class="cat-end"><b>12×</b><span class="tr tr-rep">{{mock.tRepeat}}</span></span></div>
+<div class="cat-row"><span class="cat-name"><i style="background:#F4B66A"></i>{{mock.r2}}</span><span class="bar"><span style="width:67%;background:#F4B66A"></span></span><span class="cat-end"><b>8×</b><span class="tr tr-ok">{{mock.tBetter}}</span></span></div>
+<div class="cat-row"><span class="cat-name"><i style="background:#C9A7F0"></i>{{mock.r3}}</span><span class="bar"><span style="width:50%;background:#C9A7F0"></span></span><span class="cat-end"><b>6×</b><span class="tr tr-ok">{{mock.tBetter}}</span></span></div>
+<div class="cat-row"><span class="cat-name"><i style="background:#7FC8F8"></i>{{mock.r4}}</span><span class="bar"><span style="width:42%;background:#7FC8F8"></span></span><span class="cat-end"><b>5×</b><span class="tr tr-rep">{{mock.tRepeat}}</span></span></div>
+<div class="cat-row"><span class="cat-name"><i style="background:#9DB8F5"></i>{{mock.r5}}</span><span class="bar"><span style="width:42%;background:#9DB8F5"></span></span><span class="cat-end"><b>5×</b><span class="tr tr-ok">{{mock.tBetter}}</span></span></div>
+<div class="cat-row"><span class="cat-name"><i style="background:#A9E5C9"></i>{{mock.r6}}</span><span class="bar"><span style="width:33%;background:#A9E5C9"></span></span><span class="cat-end"><b>4×</b><span class="tr tr-new">{{mock.tNew}}</span></span></div>
+<div class="cat-row"><span class="cat-name"><i style="background:#FFC9A8"></i>{{mock.r7}}</span><span class="bar"><span style="width:25%;background:#FFC9A8"></span></span><span class="cat-end"><b>3×</b><span class="tr tr-ok">{{mock.tBetter}}</span></span></div>
+<div class="cat-row"><span class="cat-name"><i style="background:#E4B7F3"></i>{{mock.r8}}</span><span class="bar"><span style="width:17%;background:#E4B7F3"></span></span><span class="cat-end"><b>2×</b><span class="tr tr-ok">{{mock.tFixed}}</span></span></div>
+<div class="cat-row"><span class="cat-name"><i style="background:#B9D7C8"></i>{{mock.r9}}</span><span class="bar"><span style="width:8%;background:#B9D7C8"></span></span><span class="cat-end"><b>1×</b><span class="tr tr-ok">{{mock.tFixed}}</span></span></div>
+</div>
+{{> rulecard_d}}
+</div>
+</div>
+</section>
+
+<section class="sec" id="words" style="background:#E4B7F3">
+<div class="wrap split split-rev">
+<div class="split-text">
+<div class="eyebrow">{{words.eyebrow}}</div>
+<h2 class="h2"><span class="d">{{words.h2D}}</span><span class="m">{{words.h2M}}</span></h2>
+<p class="lead" style="color:#4A3D56"><span class="d">{{words.leadD}}</span><span class="m">{{words.leadM}}</span></p>
+<ol class="steps d">
+<li><b class="sn">1</b><div><b>{{words.s1t}}</b><div>{{words.s1d}}</div></div></li>
+<li><b class="sn">2</b><div><b>{{words.s2t}}</b><div>{{words.s2d}}</div></div></li>
+<li><b class="sn">3</b><div><b>{{words.s3t}}</b><div>{{words.s3d}}</div></div></li>
+</ol>
+</div>
+<div class="split-art d">
+<div class="fan zoom" style="position:relative;width:551px;height:635px;flex:none">
+<div style="position:absolute;left:0;top:52px;transform:rotate(-6deg);z-index:1"><div class="phone" style="--w:227px"><img src="{{$.shots}}/screen-all-words.jpg" alt="{{words.altAll}}" width="600" height="1304" loading="lazy"></div></div>
+<div style="position:absolute;right:0;top:52px;transform:rotate(6deg);z-index:1"><div class="phone" style="--w:227px"><img src="{{$.shots}}/screen-review.jpg" alt="{{words.altReview}}" width="600" height="1304" loading="lazy"></div></div>
+<div style="position:absolute;left:50%;top:0;transform:translateX(-50%);z-index:2"><div class="phone" style="--w:270px"><img src="{{$.shots}}/screen-words.jpg" alt="{{words.altToday}}" width="600" height="1304" loading="lazy"></div></div>
+<span class="tag" style="position:absolute;bottom:0;left:41px;z-index:3">{{words.tagAll}}</span>
+<span class="tag" style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);z-index:3">{{words.tagToday}}</span>
+<span class="tag" style="position:absolute;bottom:0;right:41px;z-index:3">{{words.tagReview}}</span>
+</div>
+</div>
+<div class="m">
+<div class="carousel phones" data-carousel tabindex="0" role="region" aria-label="{{words.eyebrow}}">
+<figure class="slide pslide"><div class="phone" style="--w:258px"><img src="{{$.shots}}/screen-words.jpg" alt="{{words.altToday}}" width="600" height="1304" loading="lazy"></div><figcaption class="tag">{{words.tagToday}}</figcaption></figure>
+<figure class="slide pslide"><div class="phone" style="--w:258px"><img src="{{$.shots}}/screen-all-words.jpg" alt="{{words.altAll}}" width="600" height="1304" loading="lazy"></div><figcaption class="tag">{{words.tagAll}}</figcaption></figure>
+<figure class="slide pslide"><div class="phone" style="--w:258px"><img src="{{$.shots}}/screen-review.jpg" alt="{{words.altReview}}" width="600" height="1304" loading="lazy"></div><figcaption class="tag">{{words.tagReview}}</figcaption></figure>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec dark" id="progress">
+<div class="wrap split">
+<div class="split-text">
+<div class="eyebrow"><span class="d">{{progress.eyebrowD}}</span><span class="m">{{progress.eyebrowM}}</span></div>
+<h2 class="h2">{{progress.h2}}</h2>
+<p class="lead" style="color:rgba(255,255,255,.72);max-width:540px"><span class="d">{{progress.leadD}}</span><span class="m">{{progress.leadM}}</span></p>
+<ul class="tags-dark">
+<li>{{progress.t1}}</li><li>{{progress.t2}}</li><li>{{progress.t3}}</li><li class="d">{{progress.t4}}</li><li class="d">{{progress.t5}}</li>
+</ul>
+</div>
+<div class="split-art"><div class="phone zoom tilt-l" style="--w:340px"><img src="{{$.shots}}/screen-progress.jpg" alt="{{progress.alt}}" width="600" height="1304" loading="lazy"></div></div>
+</div>
+</section>
+
+<section class="sec" id="benefits" style="background:#fff">
+<div class="wrap">
+<div class="eyebrow">{{benefits.eyebrow}}</div>
+<h2 class="h2 h2-m36">{{benefits.h2}}</h2>
+<div class="bento carousel" data-carousel tabindex="0" role="region" aria-label="{{benefits.eyebrow}}">
+<div class="slide bcard" style="background:#0B0A0B;color:#fff">
+<div><h3 class="bt">{{benefits.b1t}}</h3><p class="bd" style="color:rgba(255,255,255,.66)">{{benefits.b1d}}</p></div>
+<div class="bfoot" role="img" aria-label="{{benefits.b1chartLabel}}">
+<div class="chart-head"><span>{{benefits.b1chart}}</span><b>{{benefits.b1badge}}</b></div>
+<div class="chart"><div><i style="height:84px;background:rgba(169,240,238,.25)"></i><span>{{benefits.w1}}</span></div><div><i style="height:64px;background:rgba(169,240,238,.4)"></i><span>{{benefits.w2}}</span></div><div><i style="height:40px;background:rgba(169,240,238,.6)"></i><span>{{benefits.w3}}</span></div><div><i style="height:22px;background:#A9F0EE"></i><span>{{benefits.w4}}</span></div></div>
+</div>
+</div>
+<div class="slide bcard" style="background:#E4B7F3">
+<div><h3 class="bt">{{benefits.b2t}}</h3><p class="bd" style="color:#3E3450">{{benefits.b2d}}</p></div>
+<div class="bfoot"><div class="bignum"><span class="bn">{{benefits.b2v}}</span><span class="bu">{{benefits.b2u}}</span></div></div>
+</div>
+<div class="slide bcard" style="background:#92C5FB">
+<div><h3 class="bt">{{benefits.b3t}}</h3><p class="bd" style="color:#1A3A5C">{{benefits.b3d}}</p></div>
+<div class="bfoot"><div class="bignum"><span class="bn">{{benefits.b3v}}</span><span class="bu">{{benefits.b3u}}</span></div><div class="bex">{{benefits.b3ex}}</div></div>
+</div>
+<div class="slide bcard" style="background:#FDE8CB">
+<div><h3 class="bt">{{benefits.b4t}}</h3><p class="bd" style="color:#5A4E3C">{{benefits.b4d}}</p></div>
+<div class="bfoot"><div class="tg" lang="de"><span class="das">das</span><span class="tw">Trinkgeld</span></div><div class="tg-row"><b>{{benefits.b4tr}}</b><span aria-hidden="true">·</span><span lang="de">„…das Trinkgeld war zehn Prozent.“</span></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="free" style="background:#FFA5A5">
+<div class="wrap split">
+<div class="split-text">
+<div class="eyebrow">{{free.eyebrow}}</div>
+<h2 class="h2">{{free.h2}}</h2>
+<p class="lead free-lead" style="color:#4A1F1F"><span class="d">{{free.leadD}}</span><span class="m">{{free.leadM}}</span></p>
+{{> stores}}
+</div>
+<div class="split-art"><div class="zoom ic-box" role="img" aria-label="{{free.cardLabel}}">{{> intro_card}}</div></div>
+</div>
+</section>
+
+<section class="sec" id="author" style="background:#F5F4F8">
+<div class="wrap author">
+<div class="avatar" aria-hidden="true"><i></i><i></i><span>{{author.initial}}</span></div>
+<div class="author-m m"><b>{{author.name}}</b><span>{{author.role}}</span></div>
+<figure class="author-t">
+<div class="eyebrow d">{{author.eyebrow}}</div>
+<blockquote class="quote"><p><span class="d">{{author.quoteD}}</span><span class="m">{{author.quoteM}}</span></p></blockquote>
+<p class="bio d">{{author.bio}}</p>
+<figcaption class="sig d">{{author.name}} · <span>{{author.role}} · <a href="{{$.threads}}" rel="noopener">{{author.handle}}</a></span></figcaption>
+</figure>
+</div>
+</section>
+
+<section class="sec sec-clip" id="pricing" style="background:#fff">
+<div class="wrap" style="position:relative">
+<div class="deco d" aria-hidden="true" style="right:40px;top:-40px;width:260px;height:260px;background:rgba(228,183,243,.35)"></div>
+<div style="position:relative">
+<div class="eyebrow">{{pricing.eyebrow}}</div>
+<h2 class="h2 h2-xl h2-m36">{{pricing.h2}}</h2>
+<p class="price-lead">{{pricing.lead}}</p>
+<div class="plan-toggle m" role="group" aria-label="{{pricing.planChoice}}">
+<button type="button" aria-pressed="true" data-plan="annual">{{pricing.annual}} <span class="badge">{{$.save}}</span></button>
+<button type="button" aria-pressed="false" data-plan="monthly">{{pricing.monthly}} · {{$.priceMonthly}}</button>
+</div>
+<div class="plans" data-active="annual">
+<div class="plan plan-annual">
+<div class="plan-circle" aria-hidden="true"></div>
+<div class="plan-in">
+<h3 class="plan-label"><span class="d">{{pricing.annualCaps}}</span><span class="m sr">{{pricing.annual}}</span><span class="badge d">{{$.save}}</span></h3>
+<div class="price"><b>{{$.priceAnnual}}</b><span>{{pricing.perMonth}}</span></div>
+<p class="price-note">{{pricing.annualBilled}}</p>
+<a class="plan-cta" href="#download">{{pricing.ctaAnnual}}</a>
+</div>
+</div>
+<div class="plan plan-monthly">
+<h3 class="plan-label"><span class="d">{{pricing.monthlyCaps}}</span><span class="m sr">{{pricing.monthly}}</span></h3>
+<div class="price"><b>{{$.priceMonthly}}</b><span>{{pricing.perMonth}}</span></div>
+<p class="price-note">{{pricing.monthlyNote}}</p>
+<a class="plan-cta" href="#download">{{pricing.monthlyCta}}</a>
+</div>
+</div>
+{{$.compare}}
+</div>
+</div>
+</section>
+
+<section class="sec" id="faq" style="background:#F5F4F8">
+<div class="wrap faq">
+<div class="faq-side">
+<div class="eyebrow">{{faq.eyebrow}}</div>
+<h2 class="h2">{{faq.h2}}</h2>
+<p class="faq-ask d">{{faq.ask}}<a href="mailto:{{$.mail}}">{{$.mail}}</a></p>
+</div>
+<div class="faq-list">
+<details><summary>{{faq.q1}}</summary><div class="faq-a"><p>{{faq.a1}}</p></div></details>
+<details><summary>{{faq.q2}}</summary><div class="faq-a"><p>{{faq.a2}}</p></div></details>
+<details><summary>{{faq.q3}}</summary><div class="faq-a"><p>{{faq.a3}}</p></div></details>
+<details><summary>{{faq.q4}}</summary><div class="faq-a"><p>{{faq.a4}}</p></div></details>
+<details><summary>{{faq.q5}}</summary><div class="faq-a"><p>{{faq.a5}}</p></div></details>
+<details><summary>{{faq.q6}}</summary><div class="faq-a"><p>{{faq.a6}}</p></div></details>
+<details><summary>{{faq.q7}}</summary><div class="faq-a"><p>{{faq.a7}}</p></div></details>
+<details><summary>{{faq.q8}}</summary><div class="faq-a"><p>{{faq.a8}}</p></div></details>
+</div>
+</div>
+</section>
+
+<section class="final" id="download">
+<div class="glow glow-a" aria-hidden="true"></div>
+<div class="glow glow-b" aria-hidden="true"></div>
+<div class="wrap" style="position:relative">
+<h2 class="final-h">{{final.l1}}<br><span>{{final.l2}}</span></h2>
+<div class="stores-light">{{> stores}}</div>
+</div>
+</section>
+{{$.footer}}

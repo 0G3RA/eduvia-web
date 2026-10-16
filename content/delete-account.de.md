@@ -65,6 +65,8 @@ Nutzen Sie dieses Formular oder schreiben Sie uns einfach eine E-Mail. Beides la
 })();
 </script>
 
+Was mit Ihren Angaben geschieht: Wir speichern die eingegebene Adresse und Ihre optionale Notiz, um Ihnen zu antworten und das Konto zu finden, und löschen sie spätestens nach 60 Tagen automatisch. Ihre IP-Adresse speichern wir nicht. Einzelheiten stehen in der [Datenschutzerklärung](https://geteduvia.com/privacy/de/), Abschnitt 10.
+
 ## Was gelöscht wird
 
 Alles, was wir über Sie gespeichert haben: Konto und Anmeldedatensatz, Profil und Einstellungen, sämtliche Gesprächstranskripte, die Erinnerung des Tutors an Sie, Ihren Wortschatz, Ihren Fortschritt und Ihre Niveau-Historie, Ihren Abonnementdatensatz bei uns sowie Ihren Kundendatensatz bei RevenueCat.

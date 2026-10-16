@@ -50,4 +50,5 @@ Exact version numbers are pinned in the project lockfiles (Package.resolved for 
 - The Silero VAD model ships inside the App bundle; nothing is downloaded from third parties at runtime.
 - GPL-3.0 licensed components (Piper, eSpeak NG) run exclusively on the server side and are not distributed to end users as part of the App. GPL-3.0 source obligations attach to the distribution of binaries.
 - The de_DE-thorsten-medium voice model card states that the training dataset is CC0 and that the model was finetuned from the U.S. English lessac voice.
+- The geteduvia.com website uses the Manrope typeface by Mikhail Sharanda, licensed under the SIL Open Font License 1.1 (<https://github.com/sharanda/manrope>); the font files are served from geteduvia.com itself.
 - Full license texts are available at the linked repositories.

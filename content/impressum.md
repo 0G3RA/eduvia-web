@@ -25,7 +25,7 @@ Oleh Herasymenko, Röntgenstraße 5, 88048 Friedrichshafen, Deutschland
 
 ## Umsatzsteuer
 
-Als Kleinunternehmer im Sinne von § 19 Abs. 1 UStG wird keine Umsatzsteuer berechnet. Die Umsatzsteuer-Identifikationsnummer wird nach Erteilung hier ergänzt.
+Kleinunternehmer im Sinne von § 19 Abs. 1 UStG; in eigenen Rechnungen wird keine Umsatzsteuer ausgewiesen. Die Abonnements der App werden über den App Store und Google Play abgerechnet; die dort angezeigten Preise enthalten die jeweils gültige Umsatzsteuer. Eine Umsatzsteuer-Identifikationsnummer oder Wirtschafts-Identifikationsnummer wird nach Erteilung hier ergänzt.
 
 ## Verbraucherstreitbeilegung
 

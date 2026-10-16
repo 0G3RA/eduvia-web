@@ -65,6 +65,8 @@ Use this form, or simply email us. Both reach the same place. We reply to the ad
 })();
 </script>
 
+What happens to what you send: we store the address you type and your optional note, in order to reply to you and find the account, and delete them automatically after 60 days at the latest. We do not store your IP address. The details are in the [Privacy Policy](https://geteduvia.com/privacy), Section 10.
+
 ## What is deleted
 
 Everything we hold about you: your account and sign-in record, your profile and settings, every conversation transcript, the tutor's memory of you, your vocabulary, your progress and level history, your subscription record with us, and your customer record at RevenueCat.

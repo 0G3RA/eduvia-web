@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Effective Date: 2026-10-13 · Version 1.3
+Effective Date: 2026-10-16 · Version 1.4
 
 This Privacy Policy ("Policy") explains how Oleh Herasymenko ("we", "us", "our") collects, uses and protects your personal information when you use the mobile application Eduvia (the "App").
 
@@ -25,6 +25,7 @@ Website: <https://geteduvia.com>
 - **The tutor remembers you.** After each free conversation, the AI saves short personal facts you shared (for example, about your job or family) so the next conversation can continue naturally.
 - **Your data lives in Frankfurt, Germany (EU).** Understanding your speech with Google's Gemini model happens in the EU too. Google does not train models on it.
 - **Analytics are off** until you switch them on. **Crash reports are on** by default, and you can switch them off.
+- **The website uses the Meta Pixel only if you agree** in its cookie banner, to measure our ads. The App does not use it.
 - **Reminders are local.** They are scheduled on your phone. Nothing is sent from our servers, and there are no push tokens.
 - We **never sell** your data, and we **never share it** with examination organizations, language schools or authorities.
 - You can **export your data** as a JSON file and **delete your account** directly in the App.
@@ -133,15 +134,31 @@ Eduvia is intended for users aged 16 and older. We do not knowingly collect data
 
 ### 3.9 The geteduvia.com website
 
-This website (with the Privacy Policy, the Terms of Use, the Impressum, the deletion form and the contact form) is hosted on GitHub Pages, a service of GitHub, Inc. in the USA. When you visit the website, GitHub logs your IP address for security reasons. GitHub is responsible for this itself, not us; the [GitHub General Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) applies, and GitHub is certified under the EU-US Data Privacy Framework.
+This website (with the Privacy Policy, the Terms of Use, the Impressum, the deletion form and the contact form) is hosted on GitHub Pages, a service of GitHub, Inc. in the USA. When you visit the website, GitHub logs your IP address for security reasons. GitHub is responsible for this itself, not us; the [GitHub General Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) applies, and GitHub is certified under the EU-US Data Privacy Framework. Our own legal basis for hosting the website with GitHub is our legitimate interest in reliable, secure hosting (Art. 6(1)(f) GDPR); the website holds no account data, and visiting it does not require you to provide any data.
 
-The website sets no cookies, loads no external fonts, and contains no analytics or tracking tools. Only when you submit the deletion form or the contact form does data go to our own server (Sections 10 and 3.10).
+The website loads no external fonts. Without your consent it sets no cookies and contains no analytics or tracking tools; the only analytics tool, the Meta Pixel, runs only if you agree in the cookie banner (Section 3.11). When you submit the deletion form or the contact form, data goes to our own server (Sections 10 and 3.10). The App Store and Google Play buttons carry a campaign label (the name of the ad that brought you to the website, otherwise the website language), so that Apple and Google can tell us how many installs came from the website or from an ad; the label names a campaign, not you, and nothing is stored on your device for it.
 
 ### 3.10 Contact form
 
 On the [Contact](https://geteduvia.com/contact) page you can send us a message, as a second way to reach us next to email. What that form stores, and nothing else: your name if you give one, your email address, your message and the time you sent it. We use these only to answer your request. The legal basis is Art. 6(1)(b) GDPR where your request concerns your account, your subscription or another contract with us, and otherwise our legitimate interest in answering requests sent to us (Art. 6(1)(f) GDPR).
 
 The message is kept in our database in Frankfurt (Section 9) and is **deleted automatically after 60 days**, whether or not we have answered it. **Our server does not store your IP address for it.** It holds the address only in memory, to turn away too many messages from the same source, and forgets it at the latest about one hour after you last submitted the form. What you type is not written to our server logs. Technically, though, there is no way around IP addresses entirely: the load balancer of our hosting provider processes IP addresses in its technical logs (Section 3.6), and GitHub Pages, where this website and the form are hosted, logs IP addresses under its own rules (Section 3.9). The form sets no cookies and contains no tracking. A field invisible to people keeps automated spam out; a submission with that field filled in is not stored.
+
+### 3.11 Meta Pixel on the website (only with your consent)
+
+With your consent, this website uses the Meta Pixel, a service of Meta Platforms Ireland Limited, Block J, Serpentine Avenue, Dublin 4, Ireland ("Meta"). We use it to measure how well our advertising on Facebook and Instagram works. **Without your consent the pixel is not loaded at all**: when you open the website, a banner asks first, and nothing from Meta runs until you choose "Accept all" or switch "Marketing (Meta Pixel)" on in the cookie settings.
+
+If you consent, the pixel may collect your IP address, information about your browser and device, the pages of this website you visit, the page you came from, the time of your visit, and two events we define: that a page was viewed, and that you tapped the App Store or Google Play button (and which of the two). For this, the pixel stores a cookie (_fbp) on your device for up to 90 days; if you arrived through a link in one of our Meta ads, it also stores the click identifier from that link in a cookie (_fbc) for up to 90 days. If you are logged in to Facebook or Instagram, Meta can link this data to your account.
+
+What the pixel does not receive: the pixel is never loaded on the pages with a form (the contact form and the account-deletion form), so nothing you type there reaches Meta. We do not use Meta's automatic event detection or automatic advanced matching, so no form contents, email addresses or phone numbers are sent to Meta. The pixel is used only on this website, never in the App.
+
+**Legal basis.** Your consent (Art. 6(1)(a) GDPR, §25(1) TDDDG). You can withdraw it at any time with effect for the future through the "Cookies" link at the bottom of every page of this website. When you withdraw it, we stop loading the pixel and delete the _fbp and _fbc cookies from your browser.
+
+**Joint controllership.** For collecting the data on this website and transmitting it to Meta, we and Meta are joint controllers under Art. 26 GDPR. The essential content of the agreement is available at <https://www.facebook.com/legal/controller_addendum>. You can exercise your rights against us or against Meta; under that agreement, Meta is responsible for answering requests about the data it holds after the transmission, and you can always write to us as well. Meta is solely responsible for any further processing of the data after it has been transmitted; this is described in Meta's privacy policy at <https://www.facebook.com/privacy/policy>.
+
+**Transfer to third countries.** Meta may transfer the data to Meta Platforms, Inc. in the USA. Meta Platforms, Inc. is certified under the EU-US Data Privacy Framework, which the European Commission has recognised as providing adequate protection (Art. 45 GDPR).
+
+To remember your choice, the website stores your consent decision (with its date) in your browser's local storage. This is necessary to respect your decision (§25(2) No. 2 TDDDG); it stays until you clear your browser data and is never sent to us or to anyone else.
 
 ## 4. What we send to Google Gemini
 
@@ -204,6 +221,7 @@ We use the following providers to run the App.
 | Apple Inc. | Sign in with Apple, on both platforms; App Store and In-App Purchase, for purchases made on iOS | For sign-in: that you authenticated and when, your Apple ID, and the email address or Apple relay address you choose to release to us. For purchases: payment data (we never see it) | USA; under Apple's own terms |
 | Google (Google Play) | Google Play Store and Google Play Billing, for purchases made on Android | Payment data (we never see it) | Under Google's own terms |
 | GitHub, Inc. (GitHub Pages) | Hosting of this website, as an independent controller (Section 3.9) | IP addresses of website visitors | USA; GitHub Privacy Statement, EU-US Data Privacy Framework |
+| Meta Platforms Ireland Limited | Measuring our advertising on Facebook and Instagram, through the Meta Pixel on this website, only with your consent; joint controller with us (Section 3.11) | IP address, browser and device information, pages visited, page views and taps on the store buttons, cookies _fbp and _fbc | Ireland, EU; onward transfer to Meta Platforms, Inc. in the USA under the EU-US Data Privacy Framework |
 
 Transfers outside the EU and EEA rely on the European Commission's Standard Contractual Clauses and, where applicable, our providers' certification under the EU-US Data Privacy Framework. You can obtain a copy of the safeguards that apply to a given transfer by writing to <thevaltorna@gmail.com>.
 
@@ -247,11 +265,11 @@ These are two different things with two different rules.
 ## 8. Legal bases at a glance
 
 - **Contract (Art. 6(1)(b) GDPR)**: everything needed to provide the service you asked for: Practice Sessions including the processing of your Voice Data, Transcripts, Tutor Memory, feedback and analysis, vocabulary and progress, personalization, subscription management, and the in-app export and deletion. Voice processing is technically necessary for a voice tutor, and every recording happens inside a session you started.
-- **Consent (Art. 6(1)(a) GDPR, §25(1) TDDDG)**: Firebase Analytics, which is a separate decision you make on its own screen. **Explicit consent (Art. 9(2)(a) GDPR)**: sensitive information you choose to share in conversation, in the sense described in Section 3.5 (we are introducing a step of its own for it with App update 1.0.3; until then we tell you what happens and you decide what to say).
+- **Consent (Art. 6(1)(a) GDPR, §25(1) TDDDG)**: Firebase Analytics, which is a separate decision you make on its own screen; the Meta Pixel on this website, which you decide on in the cookie banner (Section 3.11). **Explicit consent (Art. 9(2)(a) GDPR)**: sensitive information you choose to share in conversation, in the sense described in Section 3.5 (we are introducing a step of its own for it with App update 1.0.3; until then we tell you what happens and you decide what to say).
 - **Legitimate interests (Art. 6(1)(f) GDPR)**: crash reports (with your right to object), security and abuse protection, server logs, and internal AI usage records for cost control.
 - **Legal obligation (Art. 6(1)(c) GDPR)**: where the law requires processing.
 
-How to withdraw or object: analytics with the switch in your Profile; crash reports under Profile → Privacy; notifications and the microphone in your phone's settings (without the microphone, voice features stop working and everything else keeps working); sensitive topics by not raising them, or by deleting your account.
+How to withdraw or object: analytics with the switch in your Profile; the Meta Pixel through the "Cookies" link at the bottom of every page of this website; crash reports under Profile → Privacy; notifications and the microphone in your phone's settings (without the microphone, voice features stop working and everything else keeps working); sensitive topics by not raising them, or by deleting your account.
 
 ## 9. Where your data lives and for how long
 
@@ -271,6 +289,9 @@ Your account data is stored in Google Cloud Firestore in Frankfurt, Germany (EU)
 | Requests to Gemini that Google's safety filters flag as possible abuse | Up to 90 days at Google |
 | Analytics data (only if you consented) | 2 months at Google |
 | Crash reports | 90 days at Google |
+| Meta Pixel cookies _fbp and _fbc in your browser (only if you consented) | Up to 90 days, or until you withdraw consent or clear them |
+| Your cookie consent decision, in your browser's local storage | Until you clear your browser data |
+| Data received by Meta through the pixel | Under Meta's own rules (Section 3.11) |
 
 ## 10. Deleting your account and taking your data with you
 
@@ -324,8 +345,8 @@ The last two items are still your personal data. If you want them, write to us a
 - **Data portability**: the in-app export gives you a machine-readable JSON copy.
 - **Restriction of processing**: write to us.
 - **Objection**: to crash reports, use the switch under Profile → Privacy; to other processing based on legitimate interests, write to us.
-- **Withdrawing consent**: analytics with the switch in your Profile; for sensitive topics, by not raising them further and, if you wish, deleting your account.
-- **Complaint**: you can complain to a data protection supervisory authority, in particular in the country where you live. The authority responsible for us is Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg, Heilbronner Straße 35, 70191 Stuttgart, Germany, <https://www.baden-wuerttemberg.datenschutz.de>.
+- **Withdrawing consent**: analytics with the switch in your Profile; the Meta Pixel through the "Cookies" link at the bottom of every page of this website; for sensitive topics, by not raising them further and, if you wish, deleting your account.
+- **Complaint**: you can complain to a data protection supervisory authority, in particular in the country where you live. The authority responsible for us is Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg, Lautenschlagerstraße 20, 70173 Stuttgart, Germany, <https://www.baden-wuerttemberg.datenschutz.de>.
 
 We reply within one month. Contact: <thevaltorna@gmail.com>.
 
@@ -372,6 +393,8 @@ Email: <thevaltorna@gmail.com>
 Website: <https://geteduvia.com>
 
 ## 18. Changelog
+
+**Version 1.4 (2026-10-16)**: The website geteduvia.com now asks for consent in a cookie banner and, only if you agree, uses the Meta Pixel to measure our advertising on Facebook and Instagram. Meta is a new recipient and joint controller for this (Sections 3.9, 3.11, 5, 8 and 9). The pixel is never loaded on the pages with a form and is not used in the App. Nothing changes for data processed in the App.
 
 **Version 1.3 (2026-10-13)**: The analysis now also uses our own grammar checker. It reviews the text of your German utterances during the conversation on a Hetzner server in Helsinki (Finland, EU), stores nothing there, and its notes are stored with your Transcript (Sections 3.3, 4 and 5). No new recipient: Hetzner was already our processor. No legal basis has changed.
 

@@ -1,6 +1,6 @@
 # Datenschutzerklärung
 
-Gültig ab: 2026-10-13 · Version 1.3
+Gültig ab: 2026-10-16 · Version 1.4
 
 Diese Datenschutzerklärung ("Erklärung") beschreibt, wie Oleh Herasymenko ("wir", "uns", "unser") Ihre personenbezogenen Daten verarbeitet und schützt, wenn Sie die mobile Anwendung Eduvia (die "App") nutzen.
 
@@ -25,6 +25,7 @@ Website: <https://geteduvia.com>
 - **Der Tutor merkt sich Sie.** Nach jedem freien Gespräch speichert die KI kurze persönliche Fakten, die Sie erzählt haben (zum Beispiel über Ihre Arbeit oder Familie), damit das nächste Gespräch natürlich weitergehen kann.
 - **Ihre Daten liegen in Frankfurt (Deutschland, EU).** Auch das Verstehen Ihrer Sprache durch Googles Gemini-Modell findet in der EU statt. Google trainiert damit keine Modelle.
 - **Analyse ist aus**, bis Sie sie einschalten. **Absturzberichte sind an** und können ausgeschaltet werden.
+- **Die Website nutzt das Meta Pixel nur, wenn Sie zustimmen**, im Cookie-Banner, um unsere Werbung zu messen. Die App nutzt es nicht.
 - **Erinnerungen sind lokal.** Sie werden auf Ihrem Telefon geplant. Nichts wird von unseren Servern gesendet, und es gibt keine Push-Token.
 - Wir **verkaufen Ihre Daten nie** und geben sie **nie an Prüfungsanbieter, Sprachschulen oder Behörden** weiter.
 - Sie können **Ihre Daten als JSON-Datei exportieren** und **Ihr Konto direkt in der App löschen**.
@@ -133,15 +134,31 @@ Eduvia ist für Personen ab 16 Jahren bestimmt. Wir erheben wissentlich keine Da
 
 ### 3.9 Website geteduvia.com
 
-Diese Website (mit der Datenschutzerklärung, den Nutzungsbedingungen, dem Impressum, dem Löschformular und dem Kontaktformular) liegt bei GitHub Pages, einem Dienst von GitHub, Inc. in den USA. Wenn Sie die Website aufrufen, protokolliert GitHub Ihre IP-Adresse aus Sicherheitsgründen. Dafür ist GitHub selbst verantwortlich, nicht wir; es gilt das [GitHub General Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement), und GitHub ist nach dem EU-US Data Privacy Framework zertifiziert.
+Diese Website (mit der Datenschutzerklärung, den Nutzungsbedingungen, dem Impressum, dem Löschformular und dem Kontaktformular) liegt bei GitHub Pages, einem Dienst von GitHub, Inc. in den USA. Wenn Sie die Website aufrufen, protokolliert GitHub Ihre IP-Adresse aus Sicherheitsgründen. Dafür ist GitHub selbst verantwortlich, nicht wir; es gilt das [GitHub General Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement), und GitHub ist nach dem EU-US Data Privacy Framework zertifiziert. Unsere eigene Rechtsgrundlage für das Hosting der Website bei GitHub ist unser berechtigtes Interesse an einem zuverlässigen und sicheren Betrieb (Art. 6 Abs. 1 lit. f DSGVO); die Website enthält keine Kontodaten, und für ihren Besuch müssen Sie keine Daten angeben.
 
-Die Website setzt keine Cookies, lädt keine externen Schriftarten und enthält keine Analyse- oder Tracking-Werkzeuge. Nur wenn Sie das Löschformular oder das Kontaktformular absenden, gehen Daten an unseren eigenen Server (Abschnitte 10 und 3.10).
+Die Website lädt keine externen Schriftarten. Ohne Ihre Einwilligung setzt sie keine Cookies und enthält keine Analyse- oder Tracking-Werkzeuge; das einzige Analysewerkzeug, das Meta Pixel, läuft nur, wenn Sie im Cookie-Banner zustimmen (Abschnitt 3.11). Wenn Sie das Löschformular oder das Kontaktformular absenden, gehen Daten an unseren eigenen Server (Abschnitte 10 und 3.10). Die Schaltflächen App Store und Google Play tragen eine Kampagnenbezeichnung (den Namen der Anzeige, über die Sie auf die Website gekommen sind, sonst die Sprache der Website), damit Apple und Google uns sagen können, wie viele Installationen von der Website oder von einer Anzeige kamen; die Bezeichnung benennt eine Kampagne, nicht Sie, und auf Ihrem Gerät wird dafür nichts gespeichert.
 
 ### 3.10 Kontaktformular
 
 Auf der Seite [Kontakt](https://geteduvia.com/contact/de/) können Sie uns eine Nachricht schreiben, als zweiten Weg neben der E-Mail. Was das Formular speichert, und sonst nichts: Ihren Namen, falls Sie einen angeben, Ihre E-Mail-Adresse, Ihre Nachricht und den Zeitpunkt des Absendens. Wir verwenden diese Angaben nur, um Ihre Anfrage zu beantworten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, wenn Ihre Anfrage Ihr Konto, Ihr Abonnement oder sonst einen Vertrag mit uns betrifft, und im Übrigen unser berechtigtes Interesse, Anfragen an uns zu beantworten (Art. 6 Abs. 1 lit. f DSGVO).
 
 Die Nachricht liegt in unserer Datenbank in Frankfurt (Abschnitt 9) und wird **nach 60 Tagen automatisch gelöscht**, ob wir sie beantwortet haben oder nicht. **Unser Server speichert Ihre IP-Adresse dabei nicht.** Er hält sie nur im Arbeitsspeicher, um zu viele Nachrichten von derselben Quelle abzuweisen, und vergisst sie spätestens etwa eine Stunde, nachdem Sie das Formular zuletzt abgesendet haben. Was Sie eingeben, schreiben wir nicht in unsere Server-Protokolle. Ganz ohne IP-Adresse geht es technisch aber nicht: Der Load Balancer unseres Hosting-Anbieters verarbeitet IP-Adressen in seinen technischen Protokollen (Abschnitt 3.6), und GitHub Pages, wo diese Website mit dem Formular liegt, protokolliert IP-Adressen nach seinen eigenen Regeln (Abschnitt 3.9). Das Formular setzt keine Cookies und enthält kein Tracking. Ein für Menschen unsichtbares Feld hält automatisierte Spam-Einsendungen ab; eine Einsendung, in der dieses Feld ausgefüllt ist, wird nicht gespeichert.
+
+### 3.11 Meta Pixel auf der Website (nur mit Ihrer Einwilligung)
+
+Mit Ihrer Einwilligung verwendet diese Website das Meta Pixel, einen Dienst der Meta Platforms Ireland Limited, Block J, Serpentine Avenue, Dublin 4, Irland („Meta“). Wir nutzen es, um zu messen, wie gut unsere Werbung auf Facebook und Instagram wirkt. **Ohne Ihre Einwilligung wird das Pixel überhaupt nicht geladen**: Wenn Sie die Website öffnen, fragt zuerst ein Banner, und nichts von Meta läuft, bevor Sie „Alle akzeptieren“ wählen oder in den Cookie-Einstellungen „Marketing (Meta Pixel)“ einschalten.
+
+Wenn Sie einwilligen, kann das Pixel Ihre IP-Adresse, Informationen über Ihren Browser und Ihr Gerät, die aufgerufenen Seiten dieser Website, die Seite, von der Sie gekommen sind, den Zeitpunkt Ihres Besuchs und zwei von uns festgelegte Ereignisse erfassen: dass eine Seite aufgerufen wurde und dass Sie auf die Schaltfläche App Store oder Google Play getippt haben (und auf welche der beiden). Dazu speichert das Pixel ein Cookie (_fbp) für bis zu 90 Tage auf Ihrem Gerät; sind Sie über einen Link in einer unserer Meta-Anzeigen gekommen, speichert es zusätzlich die Klick-Kennung aus diesem Link in einem Cookie (_fbc) für bis zu 90 Tage. Wenn Sie bei Facebook oder Instagram eingeloggt sind, kann Meta diese Daten Ihrem Konto zuordnen.
+
+Was das Pixel nicht erhält: Auf den Seiten mit einem Formular (Kontaktformular und Löschformular) wird das Pixel nie geladen, sodass nichts, was Sie dort eingeben, an Meta gelangt. Wir nutzen weder die automatische Ereigniserkennung noch den automatischen erweiterten Abgleich von Meta, daher werden keine Formularinhalte, E-Mail-Adressen oder Telefonnummern an Meta gesendet. Das Pixel wird nur auf dieser Website eingesetzt, nie in der App.
+
+**Rechtsgrundlage.** Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, §25 Abs. 1 TDDDG). Sie können sie jederzeit mit Wirkung für die Zukunft über den Link „Cookies“ unten auf jeder Seite dieser Website widerrufen. Beim Widerruf laden wir das Pixel nicht mehr und löschen die Cookies _fbp und _fbc aus Ihrem Browser.
+
+**Gemeinsame Verantwortlichkeit.** Für die Erhebung der Daten auf dieser Website und ihre Übermittlung an Meta sind wir und Meta gemeinsam Verantwortliche nach Art. 26 DSGVO. Das Wesentliche der Vereinbarung finden Sie unter <https://www.facebook.com/legal/controller_addendum>. Sie können Ihre Rechte uns gegenüber oder gegenüber Meta geltend machen; nach dieser Vereinbarung ist Meta dafür zuständig, Anfragen zu den Daten zu beantworten, die es nach der Übermittlung hält, und Sie können sich jederzeit auch an uns wenden. Für die weitere Verarbeitung der Daten nach der Übermittlung ist allein Meta verantwortlich; sie ist in der Datenrichtlinie von Meta beschrieben: <https://www.facebook.com/privacy/policy>.
+
+**Übermittlung in Drittländer.** Meta kann die Daten an Meta Platforms, Inc. in den USA übermitteln. Meta Platforms, Inc. ist nach dem EU-US Data Privacy Framework zertifiziert, das die Europäische Kommission als angemessenes Schutzniveau anerkannt hat (Art. 45 DSGVO).
+
+Damit Ihre Entscheidung respektiert wird, speichert die Website Ihre Einwilligungsentscheidung (mit Datum) im lokalen Speicher Ihres Browsers. Das ist dafür unbedingt erforderlich (§25 Abs. 2 Nr. 2 TDDDG); der Eintrag bleibt, bis Sie Ihre Browserdaten löschen, und wird nie an uns oder an Dritte gesendet.
 
 ## 4. Was wir an Google Gemini senden
 
@@ -204,6 +221,7 @@ Wir setzen die folgenden Anbieter ein, um die App zu betreiben.
 | Apple Inc. | "Mit Apple anmelden", auf beiden Plattformen; App Store und In-App-Kauf, für Käufe unter iOS | Bei der Anmeldung: dass und wann Sie sich authentifiziert haben, Ihre Apple-ID sowie die E-Mail-Adresse oder Apple-Weiterleitungsadresse, die Sie an uns freigeben. Bei Käufen: Zahlungsdaten (wir sehen sie nie) | USA; nach Apples eigenen Bedingungen |
 | Google (Google Play) | Google Play Store und Google Play Billing, für Käufe unter Android | Zahlungsdaten (wir sehen sie nie) | Nach Googles eigenen Bedingungen |
 | GitHub, Inc. (GitHub Pages) | Hosting dieser Website, als eigenständig Verantwortlicher (Abschnitt 3.9) | IP-Adressen der Website-Besucher | USA; GitHub Privacy Statement, EU-US Data Privacy Framework |
+| Meta Platforms Ireland Limited | Messung unserer Werbung auf Facebook und Instagram über das Meta Pixel auf dieser Website, nur mit Ihrer Einwilligung; gemeinsam mit uns verantwortlich (Abschnitt 3.11) | IP-Adresse, Browser- und Geräteinformationen, aufgerufene Seiten, Seitenaufrufe und Tipps auf die Store-Schaltflächen, Cookies _fbp und _fbc | Irland, EU; Weiterübermittlung an Meta Platforms, Inc. in den USA nach dem EU-US Data Privacy Framework |
 
 Übermittlungen außerhalb der EU und des EWR stützen sich auf die Standardvertragsklauseln der Europäischen Kommission und, soweit anwendbar, auf die Zertifizierung unserer Anbieter nach dem EU-US Data Privacy Framework. Eine Kopie der Garantien, die für eine bestimmte Übermittlung gelten, erhalten Sie unter <thevaltorna@gmail.com>.
 
@@ -247,11 +265,11 @@ Das sind zwei verschiedene Dinge mit zwei verschiedenen Regeln.
 ## 8. Rechtsgrundlagen im Überblick
 
 - **Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)**: alles, was nötig ist, um den von Ihnen gewünschten Dienst zu erbringen: Übungssitzungen einschließlich der Verarbeitung Ihrer Sprachdaten, Transkripte, Tutor-Gedächtnis, Rückmeldungen und Auswertungen, Wortschatz und Fortschritt, Personalisierung, Abonnementverwaltung sowie Export und Löschung in der App. Die Sprachverarbeitung ist für einen Sprachtutor technisch notwendig, und jede Aufnahme geschieht innerhalb einer Sitzung, die Sie gestartet haben.
-- **Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, §25 Abs. 1 TDDDG)**: Firebase Analytics, eine eigene Entscheidung auf einem eigenen Bildschirm. **Ausdrückliche Einwilligung (Art. 9 Abs. 2 lit. a DSGVO)**: sensible Informationen, die Sie im Gespräch teilen, in dem in Abschnitt 3.5 beschriebenen Sinn (einen eigenen Schritt dafür führen wir mit dem App-Update 1.0.3 ein; bis dahin sagen wir Ihnen, was passiert, und Sie entscheiden, was Sie sagen).
+- **Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, §25 Abs. 1 TDDDG)**: Firebase Analytics, eine eigene Entscheidung auf einem eigenen Bildschirm; das Meta Pixel auf dieser Website, über das Sie im Cookie-Banner entscheiden (Abschnitt 3.11). **Ausdrückliche Einwilligung (Art. 9 Abs. 2 lit. a DSGVO)**: sensible Informationen, die Sie im Gespräch teilen, in dem in Abschnitt 3.5 beschriebenen Sinn (einen eigenen Schritt dafür führen wir mit dem App-Update 1.0.3 ein; bis dahin sagen wir Ihnen, was passiert, und Sie entscheiden, was Sie sagen).
 - **Berechtigte Interessen (Art. 6 Abs. 1 lit. f DSGVO)**: Absturzberichte (mit Ihrem Widerspruchsrecht), Sicherheit und Missbrauchsschutz, Server-Protokolle und interne KI-Nutzungsdaten zur Kostenkontrolle.
 - **Rechtliche Verpflichtung (Art. 6 Abs. 1 lit. c DSGVO)**: soweit Gesetze eine Verarbeitung verlangen.
 
-So widerrufen oder widersprechen Sie: Analyse über den Schalter in Ihrem Profil; Absturzberichte im Profil unter Datenschutz; Mitteilungen und Mikrofon in den Einstellungen Ihres Telefons (ohne Mikrofon funktionieren die Sprachfunktionen nicht mehr, alles andere weiter); sensible Themen, indem Sie sie nicht ansprechen oder Ihr Konto löschen.
+So widerrufen oder widersprechen Sie: Analyse über den Schalter in Ihrem Profil; das Meta Pixel über den Link „Cookies“ unten auf jeder Seite dieser Website; Absturzberichte im Profil unter Datenschutz; Mitteilungen und Mikrofon in den Einstellungen Ihres Telefons (ohne Mikrofon funktionieren die Sprachfunktionen nicht mehr, alles andere weiter); sensible Themen, indem Sie sie nicht ansprechen oder Ihr Konto löschen.
 
 ## 9. Wo Ihre Daten liegen und wie lange
 
@@ -271,6 +289,9 @@ Ihre Kontodaten werden in Google Cloud Firestore in Frankfurt (Deutschland, EU) 
 | Anfragen an Gemini, die Googles Sicherheitsfilter als möglichen Missbrauch einstufen | Bis zu 90 Tage bei Google |
 | Analysedaten (nur mit Ihrer Einwilligung) | 2 Monate bei Google |
 | Absturzberichte | 90 Tage bei Google |
+| Cookies des Meta Pixels _fbp und _fbc in Ihrem Browser (nur mit Ihrer Einwilligung) | Bis zu 90 Tage, oder bis Sie die Einwilligung widerrufen oder die Cookies löschen |
+| Ihre Cookie-Entscheidung im lokalen Speicher Ihres Browsers | Bis Sie Ihre Browserdaten löschen |
+| Daten, die Meta über das Pixel erhält | Nach Metas eigenen Regeln (Abschnitt 3.11) |
 
 ## 10. Konto löschen und Daten mitnehmen
 
@@ -324,8 +345,8 @@ Die letzten beiden Punkte sind weiterhin Ihre personenbezogenen Daten. Wenn Sie 
 - **Datenübertragbarkeit**: Der Export in der App liefert eine maschinenlesbare JSON-Kopie.
 - **Einschränkung der Verarbeitung**: Schreiben Sie uns.
 - **Widerspruch**: gegen Absturzberichte über den Schalter im Profil unter Datenschutz; gegen andere Verarbeitung auf Grundlage berechtigter Interessen schreiben Sie uns.
-- **Widerruf der Einwilligung**: Analyse über den Schalter in Ihrem Profil; bei sensiblen Themen, indem Sie sie nicht weiter ansprechen und, wenn Sie möchten, Ihr Konto löschen.
-- **Beschwerde**: Sie können sich bei einer Datenschutz-Aufsichtsbehörde beschweren, insbesondere in dem Land, in dem Sie leben. Die für uns zuständige Behörde ist Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg, Heilbronner Straße 35, 70191 Stuttgart, <https://www.baden-wuerttemberg.datenschutz.de>.
+- **Widerruf der Einwilligung**: Analyse über den Schalter in Ihrem Profil; das Meta Pixel über den Link „Cookies“ unten auf jeder Seite dieser Website; bei sensiblen Themen, indem Sie sie nicht weiter ansprechen und, wenn Sie möchten, Ihr Konto löschen.
+- **Beschwerde**: Sie können sich bei einer Datenschutz-Aufsichtsbehörde beschweren, insbesondere in dem Land, in dem Sie leben. Die für uns zuständige Behörde ist Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg, Lautenschlagerstraße 20, 70173 Stuttgart, <https://www.baden-wuerttemberg.datenschutz.de>.
 
 Wir antworten innerhalb eines Monats. Kontakt: <thevaltorna@gmail.com>.
 
@@ -372,6 +393,8 @@ E-Mail: <thevaltorna@gmail.com>
 Website: <https://geteduvia.com>
 
 ## 18. Änderungsprotokoll
+
+**Version 1.4 (2026-10-16)**: Die Website geteduvia.com fragt jetzt in einem Cookie-Banner nach Ihrer Einwilligung und nutzt, nur wenn Sie zustimmen, das Meta Pixel, um unsere Werbung auf Facebook und Instagram zu messen. Meta ist dafür ein neuer Empfänger und gemeinsam mit uns verantwortlich (Abschnitte 3.9, 3.11, 5, 8 und 9). Auf den Seiten mit einem Formular wird das Pixel nie geladen, und in der App wird es nicht eingesetzt. Für Daten, die in der App verarbeitet werden, ändert sich nichts.
 
 **Version 1.3 (2026-10-13)**: Die Auswertung nutzt zusätzlich unsere eigene Grammatikprüfung. Sie prüft den Text Ihrer deutschen Äußerungen während des Gesprächs auf einem Hetzner-Server in Helsinki (Finnland, EU), speichert dort nichts, und ihre Hinweise werden mit Ihrem Transkript gespeichert (Abschnitte 3.3, 4 und 5). Kein neuer Empfänger: Hetzner war bereits unser Auftragsverarbeiter. Keine Rechtsgrundlage hat sich geändert.
 

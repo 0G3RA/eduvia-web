@@ -5,13 +5,15 @@
 
 | Маршрут | Документ |
 | --- | --- |
-| `/` | мінімальний лендінг зі списком документів |
+| `/` | лендінг українською (`templates/landing.html` + `content/landing.uk.json`) |
 | `/privacy/` | Privacy Policy (EN) |
 | `/privacy/de/` | Datenschutzerklärung (DE) |
 | `/terms/` | Terms of Use (EN) |
 | `/terms/de/` | Nutzungsbedingungen (DE) |
 | `/impressum/` | Impressum (§ 5 DDG, лише німецькою) |
 | `/third-party-notices/` | Open-source компоненти |
+| `/delete-account/`, `/delete-account/de/` | видалення акаунта (форма шле на API) |
+| `/contact/`, `/contact/de/` | контакт (форма шле на API) |
 
 ## Як оновити документи
 
@@ -29,8 +31,16 @@ npm run build     # генерує dist/
 npm run serve     # локальний перегляд
 ```
 
-Збірка: `build.mjs` рендерить markdown через `marked` у спільний layout,
-стилі в `assets/style.css`. Жодного фреймворка.
+Збірка: `build.mjs` рендерить markdown через `marked` у спільну оболонку юридичних сторінок,
+а лендінг збирає з `templates/landing.html` (плейсхолдери `{{ключ}}`, частини в `templates/partials/`)
+і словника `content/landing.<мова>.json`. Стилі `assets/style.css`, скрипт `assets/site.js`,
+шрифт Manrope лежить у `assets/fonts/` (жодних зовнішніх запитів). Жодного фреймворка.
+
+- Ціни і пробний період: `PRICES` і `TRIAL_DAYS` у `build.mjs` (формат за локаллю: "9,99 €", англійською "€9.99").
+- Мови лендінгу: список `LANGS` у `build.mjs`; мова збирається, лише коли є `content/landing.<код>.json`
+  з усіма ключами з `landing.uk.json`. `/` = uk, інші на `/<код>/`, сербська `/sr/` з `lang="sr-Latn"`.
+- Cookies і Meta Pixel: `META_PIXEL_ID` у `build.mjs`. Поки він порожній, банера, `cookies.js` і коду Meta
+  немає. З ID банер з'являється, а піксель вантажиться лише після згоди на аналітику.
 
 ## Одноразове налаштування GitHub Pages
 
