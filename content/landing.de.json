@@ -1,5 +1,6 @@
 {
   "mock": {
+    "example": "Beispiel",
     "callTitle": "Freies Gespräch · Thorsten",
     "weaving": "Wir üben ",
     "thorstenSays": "THORSTEN SAGT",
@@ -122,10 +123,8 @@
     "menu": "Menü"
   },
   "store": {
-    "appleSmall": "Laden im",
-    "apple": "App Store",
-    "googleSmall": "Jetzt bei",
-    "google": "Google Play"
+    "appleAlt": "Laden im App Store",
+    "googleAlt": "Jetzt bei Google Play"
   },
   "hero": {
     "chip": "Sprach-Tutor für Deutsch",
@@ -302,6 +301,9 @@
     "monthly": "Monatlich",
     "monthlyCaps": "MONATLICH",
     "perMonth": "/Monat",
+    "perYear": "/Jahr",
+    "perMonthEq": "entspricht {perMonth} pro Monat",
+    "saveVs": "{save} gegenüber monatlicher Zahlung",
     "ctaAnnual": "Kostenlos testen",
     "planChoice": "Planauswahl",
     "annualBilled": "{trialDays} Tage kostenlos, danach {annualTotal} pro Jahr, verlängert sich automatisch · inkl. MwSt.",

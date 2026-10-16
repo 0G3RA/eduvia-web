@@ -1,5 +1,6 @@
 {
   "mock": {
+    "example": "Exemplu",
     "callTitle": "Conversație liberă · Thorsten",
     "weaving": "Împletim ",
     "thorstenSays": "THORSTEN SPUNE",
@@ -122,10 +123,8 @@
     "menu": "Meniu"
   },
   "store": {
-    "appleSmall": "Descarcă din",
-    "apple": "App Store",
-    "googleSmall": "Disponibil în",
-    "google": "Google Play"
+    "appleAlt": "Descarcă din App Store",
+    "googleAlt": "Descarcă de pe Google Play"
   },
   "hero": {
     "chip": "Tutore vocal de germană",
@@ -302,6 +301,9 @@
     "monthly": "Lunar",
     "monthlyCaps": "LUNAR",
     "perMonth": "/lună",
+    "perYear": "/an",
+    "perMonthEq": "adică {perMonth} pe lună",
+    "saveVs": "{save} față de plata lunară",
     "ctaAnnual": "Încearcă gratuit",
     "planChoice": "Alegerea planului",
     "annualBilled": "{trialDays} zile gratuite, apoi {annualTotal} pe an, se reînnoiește automat · TVA inclus",

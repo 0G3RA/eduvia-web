@@ -1,5 +1,6 @@
 {
   "mock": {
+    "example": "Esempio",
     "callTitle": "Conversazione libera · Thorsten",
     "weaving": "Inseriamo ",
     "thorstenSays": "THORSTEN DICE",
@@ -122,10 +123,8 @@
     "menu": "Menu"
   },
   "store": {
-    "appleSmall": "Scarica su",
-    "apple": "App Store",
-    "googleSmall": "Disponibile su",
-    "google": "Google Play"
+    "appleAlt": "Scarica su App Store",
+    "googleAlt": "Disponibile su Google Play"
   },
   "hero": {
     "chip": "Tutor vocale di tedesco",
@@ -302,6 +301,9 @@
     "monthly": "Mensile",
     "monthlyCaps": "MENSILE",
     "perMonth": "/mese",
+    "perYear": "/anno",
+    "perMonthEq": "pari a {perMonth} al mese",
+    "saveVs": "{save} rispetto al pagamento mensile",
     "ctaAnnual": "Prova gratis",
     "planChoice": "Scelta del piano",
     "annualBilled": "{trialDays} giorni gratis, poi {annualTotal} all'anno, si rinnova automaticamente · IVA inclusa",

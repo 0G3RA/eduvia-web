@@ -1,5 +1,6 @@
 {
   "mock": {
+    "example": "Shembull",
     "callTitle": "Bisedë e lirë · Thorsten",
     "weaving": "Po fusim ",
     "thorstenSays": "THORSTEN THOTË",
@@ -122,10 +123,8 @@
     "menu": "Menu"
   },
   "store": {
-    "appleSmall": "Shkarko nga",
-    "apple": "App Store",
-    "googleSmall": "Gjendet në",
-    "google": "Google Play"
+    "appleAlt": "Shkarko në App Store",
+    "googleAlt": "Merre në Google Play"
   },
   "hero": {
     "chip": "Tutor zanor i gjermanishtes",
@@ -302,6 +301,9 @@
     "monthly": "Mujor",
     "monthlyCaps": "MUJOR",
     "perMonth": "/muaj",
+    "perYear": "/vit",
+    "perMonthEq": "pra {perMonth} në muaj",
+    "saveVs": "{save} krahasuar me pagesën mujore",
     "ctaAnnual": "Provo falas",
     "planChoice": "Zgjedhja e planit",
     "annualBilled": "{trialDays} ditë falas, pastaj {annualTotal} në vit, rinovohet automatikisht · me TVSH",

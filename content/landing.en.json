@@ -1,5 +1,6 @@
 {
   "mock": {
+    "example": "Example",
     "callTitle": "Free talk · Thorsten",
     "weaving": "Weaving in ",
     "thorstenSays": "THORSTEN SAYS",
@@ -122,10 +123,8 @@
     "menu": "Menu"
   },
   "store": {
-    "appleSmall": "Download on the",
-    "apple": "App Store",
-    "googleSmall": "Get it on",
-    "google": "Google Play"
+    "appleAlt": "Download on the App Store",
+    "googleAlt": "Get it on Google Play"
   },
   "hero": {
     "chip": "A voice tutor for German",
@@ -302,6 +301,9 @@
     "monthly": "Monthly",
     "monthlyCaps": "MONTHLY",
     "perMonth": "/mo",
+    "perYear": "/yr",
+    "perMonthEq": "that's {perMonth} a month",
+    "saveVs": "{save} vs. paying monthly",
     "ctaAnnual": "Try for free",
     "planChoice": "Plan choice",
     "annualBilled": "{trialDays} days free, then {annualTotal} per year, renews automatically · incl. VAT",

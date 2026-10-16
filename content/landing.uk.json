@@ -1,5 +1,6 @@
 {
   "mock": {
+    "example": "Приклад",
     "callTitle": "Вільна розмова · Thorsten",
     "weaving": "Вплітаємо ",
     "thorstenSays": "THORSTEN КАЖЕ",
@@ -122,10 +123,8 @@
     "menu": "Меню"
   },
   "store": {
-    "appleSmall": "Завантажити в",
-    "apple": "App Store",
-    "googleSmall": "Доступно в",
-    "google": "Google Play"
+    "appleAlt": "Завантажити в App Store",
+    "googleAlt": "Завантажити з Google Play"
   },
   "hero": {
     "chip": "Голосовий тьютор німецької",
@@ -302,6 +301,9 @@
     "monthly": "Місячна",
     "monthlyCaps": "МІСЯЧНА",
     "perMonth": "/міс",
+    "perYear": "/рік",
+    "perMonthEq": "це {perMonth} на місяць",
+    "saveVs": "{save} порівняно з помісячною оплатою",
     "ctaAnnual": "Спробувати безкоштовно",
     "planChoice": "Вибір плану",
     "annualBilled": "{trialDays} днів безкоштовно, далі {annualTotal} на рік, продовжується автоматично · з ПДВ",

@@ -9,7 +9,7 @@
 {{> stores}}
 <p class="hero-note"><span class="d">{{hero.noteD}}</span><span class="m">{{hero.noteM}}</span></p>
 </div>
-<div class="d hero-art-box" role="img" aria-label="{{hero.artLabel}}">{{> hero_art_d}}</div>
+<div class="d hero-art-box" role="img" aria-label="{{mock.example}}: {{hero.artLabel}}">{{> hero_art_d}}</div>
 <div class="m hero-art-m" role="img" aria-label="{{conv.altQuick}}">{{> hero_art_m}}</div>
 </div>
 </section>
@@ -135,8 +135,8 @@
 </ol>
 </div>
 <div class="err-art zoom">
-<div class="catalog" role="img" aria-label="{{errors.catLabel}}">
-<div class="cat-head"><div><div class="cat-cap">{{mock.catHead}}</div><div class="cat-num"><b>46</b><span>{{mock.catCount}}</span></div></div><span class="cat-trend">↓ 34%</span></div>
+<div class="catalog" role="img" aria-label="{{mock.example}}: {{errors.catLabel}}">
+<div class="cat-head"><div><div class="cat-cap">{{mock.catHead}} <span class="ex-tag">{{mock.example}}</span></div><div class="cat-num"><b>46</b><span>{{mock.catCount}}</span></div></div><span class="cat-trend">↓ 34%</span></div>
 <div class="cat-row"><span class="cat-name"><i style="background:#FF9E9E"></i>{{mock.r1}}</span><span class="bar"><span style="width:100%;background:#FF9E9E"></span></span><span class="cat-end"><b>12×</b><span class="tr tr-rep">{{mock.tRepeat}}</span></span></div>
 <div class="cat-row"><span class="cat-name"><i style="background:#F4B66A"></i>{{mock.r2}}</span><span class="bar"><span style="width:67%;background:#F4B66A"></span></span><span class="cat-end"><b>8×</b><span class="tr tr-ok">{{mock.tBetter}}</span></span></div>
 <div class="cat-row"><span class="cat-name"><i style="background:#C9A7F0"></i>{{mock.r3}}</span><span class="bar"><span style="width:50%;background:#C9A7F0"></span></span><span class="cat-end"><b>6×</b><span class="tr tr-ok">{{mock.tBetter}}</span></span></div>
@@ -205,8 +205,8 @@
 <div class="bento carousel" data-carousel tabindex="0" role="region" aria-label="{{benefits.eyebrow}}">
 <div class="slide bcard" style="background:#0B0A0B;color:#fff">
 <div><h3 class="bt">{{benefits.b1t}}</h3><p class="bd" style="color:rgba(255,255,255,.66)">{{benefits.b1d}}</p></div>
-<div class="bfoot" role="img" aria-label="{{benefits.b1chartLabel}}">
-<div class="chart-head"><span>{{benefits.b1chart}}</span><b>{{benefits.b1badge}}</b></div>
+<div class="bfoot" role="img" aria-label="{{mock.example}}: {{benefits.b1chartLabel}}">
+<div class="chart-head"><span>{{benefits.b1chart}} <span class="ex-tag">{{mock.example}}</span></span><b>{{benefits.b1badge}}</b></div>
 <div class="chart"><div><i style="height:84px;background:rgba(169,240,238,.25)"></i><span>{{benefits.w1}}</span></div><div><i style="height:64px;background:rgba(169,240,238,.4)"></i><span>{{benefits.w2}}</span></div><div><i style="height:40px;background:rgba(169,240,238,.6)"></i><span>{{benefits.w3}}</span></div><div><i style="height:22px;background:#A9F0EE"></i><span>{{benefits.w4}}</span></div></div>
 </div>
 </div>
@@ -234,7 +234,7 @@
 <p class="lead free-lead" style="color:#4A1F1F"><span class="d">{{free.leadD}}</span><span class="m">{{free.leadM}}</span></p>
 {{> stores}}
 </div>
-<div class="split-art"><div class="zoom ic-box" role="img" aria-label="{{free.cardLabel}}">{{> intro_card}}</div></div>
+<div class="split-art"><div class="zoom ic-box" role="img" aria-label="{{mock.example}}: {{free.cardLabel}}">{{> intro_card}}</div></div>
 </div>
 </section>
 
@@ -266,8 +266,10 @@
 <div class="plan plan-annual">
 <div class="plan-circle" aria-hidden="true"></div>
 <div class="plan-in">
-<h3 class="plan-label"><span class="d">{{pricing.annualCaps}}</span><span class="m sr">{{pricing.annual}}</span><span class="badge d">{{$.save}}</span></h3>
-<div class="price"><b>{{$.priceAnnual}}</b><span>{{pricing.perMonth}}</span></div>
+<h3 class="plan-label"><span class="d">{{pricing.annualCaps}}</span><span class="m sr">{{pricing.annual}}</span><span class="badge d">{{pricing.saveVs}}</span></h3>
+<div class="price"><b>{{$.priceAnnualTotal}}</b><span>{{pricing.perYear}}</span></div>
+<p class="price-eq">{{pricing.perMonthEq}}</p>
+<p class="save-m m"><span class="badge">{{pricing.saveVs}}</span></p>
 <p class="price-note">{{pricing.annualBilled}}</p>
 <a class="plan-cta" href="#download">{{pricing.ctaAnnual}}</a>
 </div>

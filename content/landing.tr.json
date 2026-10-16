@@ -1,5 +1,6 @@
 {
   "mock": {
+    "example": "Örnek",
     "callTitle": "Serbest sohbet · Thorsten",
     "weaving": "İşliyoruz: ",
     "thorstenSays": "THORSTEN DİYOR",
@@ -122,10 +123,8 @@
     "menu": "Menü"
   },
   "store": {
-    "appleSmall": "İndir:",
-    "apple": "App Store",
-    "googleSmall": "Şuradan edin:",
-    "google": "Google Play"
+    "appleAlt": "App Store'dan indirin",
+    "googleAlt": "Google Play'den alın"
   },
   "hero": {
     "chip": "Sesli Almanca eğitmeni",
@@ -302,6 +301,9 @@
     "monthly": "Aylık",
     "monthlyCaps": "AYLIK",
     "perMonth": "/ay",
+    "perYear": "/yıl",
+    "perMonthEq": "aylık {perMonth} demek",
+    "saveVs": "aylık ödemeye göre {save}",
     "ctaAnnual": "Ücretsiz dene",
     "planChoice": "Plan seçimi",
     "annualBilled": "{trialDays} gün ücretsiz, sonra yılda {annualTotal}, otomatik yenilenir · KDV dahil",

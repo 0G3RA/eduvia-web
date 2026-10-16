@@ -30,8 +30,9 @@ const CONSENT_ENABLED = META_PIXEL_ID !== '';
 // Bump when what we ask consent for changes: every stored choice is then asked again.
 const CONSENT_VERSION = 1;
 
-// Prices and trial in one place. The annual plan is shown per month (89,99 / 12) with the
-// yearly total under it; strings reference them as {annualTotal} and {trialDays}.
+// Prices and trial in one place. The annual plan shows its yearly total as the price (PAngV) and
+// the per-month equivalent (89,99 / 12) under it; strings reference them as {annualTotal},
+// {perMonth}, {save} and {trialDays}.
 const PRICES = { monthly: 9.99, annual: 89.99 };
 const TRIAL_DAYS = 7;
 // Saving of the annual plan against twelve monthly payments, for the "−25%" badge.
@@ -199,7 +200,7 @@ const UI = {
     contents: 'Contents', sections: (n) => `${n} sections`, minRead: (n) => `${n} min read`, min: (n) => `${n} min`,
     other: '↗ Deutsche Fassung', tagline: 'Practice speaking German with an AI voice tutor.',
     menuOpen: 'Open menu', menuClose: 'Close menu', menu: 'Menu', skip: 'Skip to content', home: 'Eduvia, home',
-    appleSmall: 'Download on the', googleSmall: 'Get it on', legalNav: 'Legal documents and contact', mainNav: 'Main',
+    appleAlt: 'Download on the App Store', googleAlt: 'Get it on Google Play', legalNav: 'Legal documents and contact', mainNav: 'Main',
     country: 'Germany', writeToUs: 'Write to us', deleteHint: ['Want to delete your account? ', 'Use this page', ', it is faster.'],
     table: 'Table, scrolls sideways', langSwitch: 'Language',
   },
@@ -209,7 +210,7 @@ const UI = {
     contents: 'Inhalt', sections: (n) => `${n} Abschnitte`, minRead: (n) => `${n} Min. Lesezeit`, min: (n) => `${n} Min.`,
     other: '↗ English version', tagline: 'Gesprochenes Deutsch üben, mit einem KI-Sprachtutor.',
     menuOpen: 'Menü öffnen', menuClose: 'Menü schließen', menu: 'Menü', skip: 'Zum Inhalt springen', home: 'Eduvia, Startseite',
-    appleSmall: 'Laden im', googleSmall: 'Jetzt bei', legalNav: 'Rechtliches und Kontakt', mainNav: 'Hauptnavigation',
+    appleAlt: 'Laden im App Store', googleAlt: 'Jetzt bei Google Play', legalNav: 'Rechtliches und Kontakt', mainNav: 'Hauptnavigation',
     country: 'Deutschland', writeToUs: 'Schreiben Sie uns', deleteHint: ['Sie möchten Ihr Konto löschen? ', 'Diese Seite', ' ist schneller.'],
     table: 'Tabelle, seitlich scrollbar', langSwitch: 'Sprache',
   },
@@ -232,6 +233,14 @@ function formatPrice(value, code) {
   return code === 'en' ? `€${n}` : `${n.replace('.', ',')} €`;
 }
 const round2 = (v) => Math.round(v * 100) / 100;
+
+// Official store badges, self-hosted in assets/img/badges/ (one file per page language; sq and
+// sr use the English Apple badge, sr also the English Google one, since Google's is Cyrillic).
+// The Google PNGs are trimmed to the badge edge so both render at the same visible height.
+const badges = (prefix, code) => ({
+  badgeApple: `${prefix}assets/img/badges/apple-${code}.svg`,
+  badgeGoogle: `${prefix}assets/img/badges/google-${code}.png`,
+});
 
 // ---------- tiny template engine: {{key.path}} from the dictionary, {{$.name}} from the
 // build context, {{> partial}} from templates/partials. {name} inside a dictionary string is
@@ -340,7 +349,7 @@ ${extra}
 
 // Trademark credit for the store badges (Apple App Store Marketing Guidelines and Google Play
 // badge guidelines both require it where the badges appear). Kept in English on every page.
-const TM_CREDIT = 'Apple, the Apple logo and App Store are trademarks of Apple Inc. Google Play and the Google Play logo are trademarks of Google LLC.';
+const TM_CREDIT = 'Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is a service mark of Apple Inc. Google Play and the Google Play logo are trademarks of Google LLC.';
 
 // The one footer of every page (landing in all languages, legal pages, 404).
 function siteFooter({ logoSrc, tagline, navLabel, links, cookies, mail, langs, langLabel }) {
@@ -435,6 +444,8 @@ async function buildLanding(partials) {
       : '';
     const vars = {
       annualTotal: formatPrice(PRICES.annual, lang.code),
+      perMonth: formatPrice(round2(PRICES.annual / 12), lang.code),
+      save: `\u2212${SAVE_PCT}%`,
       trialDays: String(TRIAL_DAYS),
     };
     const ctx = {
@@ -444,10 +455,11 @@ async function buildLanding(partials) {
       home: prefix || './',
       appStore: LINKS.appStore,
       googlePlay: LINKS.googlePlay,
+      ...badges(prefix, lang.code),
       threads: LINKS.threads,
       mail: LINKS.mail,
       langSwitch,
-      priceAnnual: formatPrice(round2(PRICES.annual / 12), lang.code),
+      priceAnnualTotal: formatPrice(PRICES.annual, lang.code),
       priceMonthly: formatPrice(PRICES.monthly, lang.code),
       save: `\u2212${SAVE_PCT}%`,
       compare: compareTable(t.pricing),
@@ -550,9 +562,9 @@ async function loadLegalCookies() {
   for (const [code, d] of [['en', en], ['de', de]]) LEGAL_COOKIES[code] = { c: d.cookies, footer: d.footer.cookies };
 }
 
-function legalStores(lang, partials) {
+function legalStores(lang, partials, prefix) {
   const ui = UI[lang];
-  return fill(partials.stores, { store: { appleSmall: ui.appleSmall, apple: 'App Store', googleSmall: ui.googleSmall, google: 'Google Play' } }, { appStore: LINKS.appStore, googlePlay: LINKS.googlePlay }, partials);
+  return fill(partials.stores, { store: { appleAlt: ui.appleAlt, googleAlt: ui.googleAlt } }, { appStore: LINKS.appStore, googlePlay: LINKS.googlePlay, ...badges(prefix, lang) }, partials);
 }
 
 function legalLayout({ page, title, heroTitle, pills, body, depth, partials, absolute = false }) {
@@ -591,7 +603,7 @@ ${crumb}
 ${page.sub ? `<p class="lsub">${esc(page.sub)}</p>` : ''}
 ${pills.length ? `<div class="lpills">${pills.map((p) => `<span>${esc(p)}</span>`).join('')}</div>` : ''}
 </div>`;
-  const stores = legalStores(lang, partials);
+  const stores = legalStores(lang, partials, prefix);
   const menu = menuHtml({
     logoSrc: u('/assets/img/logo-dark.png'),
     homeHref: home,

@@ -1,5 +1,6 @@
 {
   "mock": {
+    "example": "Primer",
     "callTitle": "Slobodan razgovor · Thorsten",
     "weaving": "Uplićemo ",
     "thorstenSays": "THORSTEN KAŽE",
@@ -122,10 +123,8 @@
     "menu": "Meni"
   },
   "store": {
-    "appleSmall": "Preuzmi na",
-    "apple": "App Store",
-    "googleSmall": "Dostupno na",
-    "google": "Google Play"
+    "appleAlt": "Preuzmi iz App Store-a",
+    "googleAlt": "Nabavi na Google Play-u"
   },
   "hero": {
     "chip": "Glasovni tutor nemačkog",
@@ -302,6 +301,9 @@
     "monthly": "Mesečna",
     "monthlyCaps": "MESEČNA",
     "perMonth": "/mes",
+    "perYear": "/god.",
+    "perMonthEq": "to je {perMonth} mesečno",
+    "saveVs": "{save} u odnosu na mesečno plaćanje",
     "ctaAnnual": "Probaj besplatno",
     "planChoice": "Izbor plana",
     "annualBilled": "{trialDays} dana besplatno, zatim {annualTotal} godišnje, obnavlja se automatski · sa PDV-om",

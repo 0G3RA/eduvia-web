@@ -48,17 +48,13 @@ h1,h2,h3,.bt,.sub,.ft,.quote p,.final-h,.manifesto-p,.menu-list a{overflow-wrap:
 
 /* buttons */
 .btn-dark{display:inline-flex;align-items:center;justify-content:center;text-align:center;min-height:48px;padding:0 24px;border-radius:14px;background:var(--ink);color:#fff;font-size:15px;font-weight:800;white-space:nowrap}
-.stores{display:flex;gap:12px;flex-wrap:wrap}
-.store{display:flex;align-items:center;gap:12px;height:64px;min-width:196px;padding:0 22px 0 20px;border-radius:18px;background:var(--ink);color:#fff;white-space:nowrap;flex:none;justify-content:flex-start}
-.store-i{flex:none;display:block}
-.store-t{display:flex;flex-direction:column;align-items:flex-start;gap:3px;line-height:1;text-align:left}
-.store-s{font-size:11.5px;font-weight:600;opacity:.75;letter-spacing:.1px}
-.store-b{font-size:19px;font-weight:800;letter-spacing:-.3px;line-height:1}
-.stores-light .store{background:#fff;color:var(--ink)}
+.stores{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+/* Official badges, unaltered; both at one visible height, clear space = a quarter of it. */
+.store{display:block;flex:none;line-height:0;border-radius:8px}
+.store img{display:block;height:56px;width:auto}
 @media (max-width:767px){
-  .stores{flex-wrap:nowrap;width:100%}
-  .store{flex:1;height:58px;padding:0 12px;gap:9px;min-width:0;justify-content:center}
-  .store-b{font-size:16px}
+  .stores{flex-wrap:nowrap;gap:12px}
+  .store img{height:46px}
 }
 
 /* sections */
@@ -141,7 +137,7 @@ html:not(.js) .site-head{position:relative}
 .rf-tiles div{display:flex;flex-direction:column;align-items:center;gap:5px;min-width:0;padding:12px 4px 11px;border-radius:14px;background:#F6F4F9}
 .rf-tiles b{font-size:22px;font-weight:800;line-height:1;letter-spacing:-.5px}
 .rf-tiles span{max-width:100%;font-size:11px;font-weight:600;line-height:1.2;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-@media (min-width:768px) and (max-width:1023px){.hero h1{font-size:6.5vw}.hero-lead{font-size:18px}.hero-copy{gap:24px;padding-bottom:56px}.store{height:56px;padding:0 16px}.store-b{font-size:16px}}
+@media (min-width:768px) and (max-width:1023px){.hero h1{font-size:6.5vw}.hero-lead{font-size:18px}.hero-copy{gap:24px;padding-bottom:56px}.store img{height:50px}}
 @media (max-width:767px){
   .hero-in{display:block;padding:34px 0 0}
   .hero-copy{display:block;padding:0 var(--pad)}
@@ -298,7 +294,7 @@ html:not(.js) .site-head{position:relative}
 .cat-num{display:flex;align-items:baseline;gap:10px;margin-top:6px}
 .cat-num b{font-size:40px;letter-spacing:-1.6px}
 .cat-num span{font-size:14px;color:var(--muted);font-weight:600}
-.cat-trend{padding:8px 12px;border-radius:12px;background:#EAF6EF;color:var(--green);font-size:15px;font-weight:800}
+.cat-trend{flex:none;white-space:nowrap;padding:8px 12px;border-radius:12px;background:#EAF6EF;color:var(--green);font-size:15px;font-weight:800}
 .cat-row{display:grid;grid-template-columns:1fr 90px auto;gap:14px;align-items:center;padding:11px 0;border-top:1px solid rgba(11,10,11,.06)}
 .cat-name{display:flex;align-items:center;gap:10px;font-size:14.5px;font-weight:700}
 .cat-name i{flex:none;width:9px;height:9px;border-radius:3px}
@@ -337,7 +333,7 @@ html:not(.js) .site-head{position:relative}
 .bfoot{margin-top:auto}
 .chart-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
 .chart-head span{font-size:13px;font-weight:700;color:rgba(255,255,255,.66)}
-.chart-head b{padding:5px 10px;border-radius:9px;background:var(--mint);color:var(--ink);font-size:13px;font-weight:800}
+.chart-head b{white-space:nowrap;flex:none;padding:5px 10px;border-radius:9px;background:var(--mint);color:var(--ink);font-size:13px;font-weight:800}
 .chart{display:flex;gap:10px;align-items:flex-end;height:110px}
 .chart div{flex:1;display:flex;flex-direction:column;align-items:center;gap:8px}
 .chart i{width:100%;border-radius:10px}
@@ -416,6 +412,9 @@ html:not(.js) .site-head{position:relative}
 .plan-annual .price span{color:rgba(255,255,255,.5)}
 .price-note{font-size:14.5px;line-height:1.45;color:var(--muted);margin-bottom:28px}
 .plan-annual .price-note{color:rgba(255,255,255,.6)}
+.price-eq{font-size:17px;font-weight:700;color:var(--muted);margin-bottom:6px}
+.plan-annual .price-eq{color:rgba(255,255,255,.8)}
+.save-m{margin:2px 0 4px}
 .plan-cta{margin-top:auto;min-height:58px;padding:8px 16px;text-align:center;border-radius:18px;background:#fff;color:var(--ink);display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:800}
 .plan-toggle{display:flex;padding:4px;border-radius:16px;background:#F3F1F6;margin-top:26px}
 .plan-toggle button{flex:1;min-height:44px;padding:4px 8px;flex-wrap:wrap;border:0;border-radius:12px;background:transparent;display:flex;align-items:center;justify-content:center;gap:8px;font-size:14.5px;font-weight:700;color:var(--muted);cursor:pointer}
@@ -526,6 +525,11 @@ html:not(.js) .site-head{position:relative}
 .menu-small{position:relative;display:flex;flex-wrap:wrap;gap:16px;margin-top:20px;font-size:13.5px;font-weight:700;color:var(--muted)}
 .menu-small button{background:none;border:0;padding:0;font-weight:700;color:inherit;cursor:pointer}
 .menu .stores{position:relative}
+/* "Example" on mockups whose numbers could read as a promised result. */
+.ex-tag{display:inline-block;vertical-align:middle;padding:2px 7px;border-radius:6px;background:rgba(11,10,11,.07);color:#5C5869;font-size:10.5px;font-weight:800;letter-spacing:.3px;line-height:1.4;text-transform:none;white-space:nowrap}
+.ex-end{margin-left:auto}
+.chart-head .ex-tag{background:rgba(255,255,255,.14);color:rgba(255,255,255,.82);margin-left:6px}
+.rf-head .ex-tag{margin-left:auto;align-self:flex-start}
 
 /* ---------- legal pages ---------- */
 .lhero{position:relative;overflow:hidden;background:radial-gradient(90% 120% at 20% 0%,#EFCBF8,#E4B7F3 65%);padding:var(--head) var(--pad) 0}
