@@ -279,7 +279,7 @@ async function loadDict(code) {
 }
 
 // ---------- shared chrome ----------
-function head({ lang, title, description, canonicalPath, prefix, og, fonts, alternates = [] }) {
+function head({ lang, title, description, canonicalPath, prefix, og, fonts, alternates = [], langRedirect = '' }) {
   const asset = (p) => `${prefix}assets/${p}`;
   const ogTags = og
     ? `
@@ -300,7 +300,7 @@ function head({ lang, title, description, canonicalPath, prefix, og, fonts, alte
 <html lang="${lang}">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">${langRedirect}
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
 <link rel="canonical" href="${SITE}${canonicalPath}">${alt}${ogTags}
@@ -312,6 +312,15 @@ ${fonts.map((f) => `<link rel="preload" href="${asset(`fonts/manrope-${f}.woff2`
 <script>document.documentElement.classList.add('js')</script>
 <script src="${asset('site.js')}" defer></script>${CONSENT_ENABLED ? `\n<script src="${asset('cookies.js')}" data-pixel="${META_PIXEL_ID}" data-version="${CONSENT_VERSION}" defer></script>` : ''}
 </head>`;
+}
+
+// Root page only: send a first-time visitor to the landing in their browser language. Nothing is
+// stored on the device (no consent needed): a visitor who came from another page of this site (e.g.
+// chose UA in the switcher) stays here, a language we don't have goes to English; crawlers are never
+// redirected so / stays indexable; the query (?ct=…) travels along so the campaign survives.
+function langRedirectScript(codes) {
+  const map = JSON.stringify(Object.fromEntries(codes.map((c) => [c, c === 'uk' ? '' : `${c}/`])));
+  return `\n<script>(function(){try{if(/bot|crawl|spider|slurp|lighthouse|facebookexternalhit|preview/i.test(navigator.userAgent))return;var r=document.referrer;if(r&&r.indexOf(location.host)>-1)return;var m=${map},l=navigator.languages||[navigator.language];for(var i=0;i<l.length;i++){var c=String(l[i]||'').toLowerCase().split('-')[0];if(c in m){if(m[c])location.replace(m[c]+location.search+location.hash);return}}if(m.en)location.replace(m.en+location.search+location.hash)}catch(e){}})();</script>`;
 }
 
 const CHEVRON = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B0A0B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>';
@@ -528,6 +537,7 @@ async function buildLanding(partials) {
     });
     const fonts = ['latin', ...(['uk', 'ru'].includes(lang.code) ? ['cyrillic'] : []), ...(['tr', 'pl', 'ro', 'sq', 'sr'].includes(lang.code) ? ['latin-ext'] : [])];
     const html = `${head({
+      langRedirect: canonicalPath === '/' ? langRedirectScript(BUILT_LANGS.map((l) => l.code)) : '',
       lang: lang.html,
       title: t.meta.title,
       description: t.meta.description,
