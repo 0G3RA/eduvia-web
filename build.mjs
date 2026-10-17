@@ -883,7 +883,33 @@ async function main() {
     filter: (src) => CONSENT_ENABLED || path.basename(src) !== 'cookies.js',
   });
   await writeFile(path.join(DIST, '.nojekyll'), '');
+  await buildSitemap();
   console.log('done');
+}
+
+// robots.txt + sitemap.xml: every built page except 404, landing languages cross-linked with hreflang
+// (same set as the <link rel="alternate"> tags in each landing's head).
+async function buildSitemap() {
+  const { readdir } = await import('node:fs/promises');
+  const pages = [];
+  const walk = async (dir) => {
+    for (const e of await readdir(dir, { withFileTypes: true })) {
+      if (e.name === 'assets') continue;
+      const p = path.join(dir, e.name);
+      if (e.isDirectory()) await walk(p);
+      else if (e.name === 'index.html') pages.push('/' + path.relative(DIST, dir).split(path.sep).join('/') + (dir === DIST ? '' : '/'));
+    }
+  };
+  await walk(DIST);
+  pages.sort();
+  const landing = BUILT_LANGS.map((l) => ({ hreflang: l.html, path: langPath(l.code) }));
+  const isLanding = (p) => landing.some((l) => l.path === p);
+  const alt = landing.map((l) => `<xhtml:link rel="alternate" hreflang="${l.hreflang}" href="${SITE}${l.path}"/>`).join('')
+    + `<xhtml:link rel="alternate" hreflang="x-default" href="${SITE}/"/>`;
+  const today = new Date().toISOString().slice(0, 10);
+  const urls = pages.map((p) => `<url><loc>${SITE}${p.replace(/^\/\//, '/')}</loc><lastmod>${today}</lastmod>${isLanding(p) ? alt : ''}</url>`).join('\n');
+  await writeFile(path.join(DIST, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls}\n</urlset>\n`);
+  await writeFile(path.join(DIST, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
 }
 
 main().catch((err) => {
