@@ -1,6 +1,6 @@
 # Third-Party Notices
 
-Last updated: 2026-08-26
+Last updated: 2026-10-17
 
 Eduvia (the iOS app and its backend service) includes the open-source components listed below. We are grateful to their authors and maintainers.
 
@@ -13,7 +13,7 @@ Exact version numbers are pinned in the project lockfiles (Package.resolved for 
 | Piper (piper1-gpl) | GPL-3.0 | <https://github.com/OHF-Voice/piper1-gpl> |
 | eSpeak NG (used by Piper for phonemization) | GPL-3.0 | <https://github.com/espeak-ng/espeak-ng> |
 | ONNX Runtime | MIT | <https://github.com/microsoft/onnxruntime> |
-| Voice model de_DE-thorsten-medium | Training dataset released under CC0 by the Thorsten-Voice project; distributed via rhasspy/piper-voices; per its model card, finetuned from the U.S. English lessac voice | <https://github.com/rhasspy/piper-voices> and <https://www.thorsten-voice.de> |
+| Voice model de_DE-thorsten-medium | Training dataset released under CC0 by the Thorsten-Voice project; distributed via rhasspy/piper-voices | <https://github.com/rhasspy/piper-voices> and <https://www.thorsten-voice.de> |
 
 ## Server
 
@@ -49,6 +49,5 @@ Exact version numbers are pinned in the project lockfiles (Package.resolved for 
 
 - The Silero VAD model ships inside the App bundle; nothing is downloaded from third parties at runtime.
 - GPL-3.0 licensed components (Piper, eSpeak NG) run exclusively on the server side and are not distributed to end users as part of the App. GPL-3.0 source obligations attach to the distribution of binaries.
-- The de_DE-thorsten-medium voice model card states that the training dataset is CC0 and that the model was finetuned from the U.S. English lessac voice.
 - The geteduvia.com website uses the Manrope typeface by Mikhail Sharanda, licensed under the SIL Open Font License 1.1 (<https://github.com/sharanda/manrope>); the font files are served from geteduvia.com itself.
 - Full license texts are available at the linked repositories.
