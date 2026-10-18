@@ -305,8 +305,11 @@ function head({ lang, title, description, canonicalPath, prefix, og, fonts, alte
 <meta name="description" content="${esc(description)}">
 <link rel="canonical" href="${SITE}${canonicalPath}">${alt}${ogTags}
 <meta name="theme-color" content="#E4B7F3">
-<link rel="icon" type="image/png" href="${asset('img/favicon.png')}">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="${asset('img/favicon-96.png')}">
+<link rel="icon" type="image/png" sizes="192x192" href="${asset('img/favicon-192.png')}">
 <link rel="apple-touch-icon" href="${asset('img/apple-touch-icon.png')}">
+<link rel="manifest" href="/site.webmanifest">
 ${fonts.map((f) => `<link rel="preload" href="${asset(`fonts/manrope-${f}.woff2`)}" as="font" type="font/woff2" crossorigin>`).join('\n')}
 <link rel="stylesheet" href="${asset('style.css')}">
 <script>document.documentElement.classList.add('js')</script>
@@ -909,6 +912,15 @@ async function buildSitemap() {
   const today = new Date().toISOString().slice(0, 10);
   const urls = pages.map((p) => `<url><loc>${SITE}${p.replace(/^\/\//, '/')}</loc><lastmod>${today}</lastmod>${isLanding(p) ? alt : ''}</url>`).join('\n');
   await writeFile(path.join(DIST, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls}\n</urlset>\n`);
+  // favicon at the root: Google and browsers request /favicon.ico regardless of the <link> tags
+  await cp(path.join(ROOT, 'assets/img/favicon.ico'), path.join(DIST, 'favicon.ico'));
+  await writeFile(path.join(DIST, 'site.webmanifest'), JSON.stringify({
+    name: 'Eduvia', short_name: 'Eduvia', start_url: '/', display: 'browser', background_color: '#141216', theme_color: '#141216',
+    icons: [
+      { src: '/assets/img/favicon-192.png', sizes: '192x192', type: 'image/png' },
+      { src: '/assets/img/favicon-512.png', sizes: '512x512', type: 'image/png' },
+    ],
+  }, null, 2) + '\n');
   await writeFile(path.join(DIST, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
 }
 
